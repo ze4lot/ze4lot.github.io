@@ -1,0 +1,33 @@
+baseURL = "http://localhost:1313/"
+languageCode = "pl"
+title = "Maciej Płocki"
+theme = ""
+
+[pagination]
+pagerSize = 10
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/ze4lot"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://linkedin.com/in/ze4lot"
+
+[[menu.main]]
+identifier = "about"
+name = "O mnie"
+url = "#about"
+weight = 1
+
+[[menu.main]]
+identifier = "projects"
+name = "Projekty"
+url = "#projects"
+weight = 2
+
+[[menu.main]]
+identifier = "kontakt"
+name = "Kontakt"
+url = "#kontakt"
+weight = 3
