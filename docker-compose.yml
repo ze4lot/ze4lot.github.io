@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  hugo:
+    image: hugomods/hugo:latest
+    container_name: cv
+    command: sh -c "npm install && hugo server --bind 0.0.0.0 --buildDrafts --buildFuture --disableFastRender"
+    volumes:
+      - ".:/src"
+    ports:
+      - "1313:1313"

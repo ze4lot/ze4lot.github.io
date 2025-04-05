@@ -1,0 +1,14 @@
+.vscode/
+.idea/
+
+resources/*
+node_modules/*
+public/*
+
+package-lock.json
+hugo_stats.json
+
+.DS_Store
+Thumbs.db
+*.bak
+*~
