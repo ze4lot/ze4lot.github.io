@@ -13,59 +13,103 @@ section:
 buttons:
 - name: All
   filter: "all"
-- name: Basic
-  filter: "basic"
-- name: Language
-  filter: "language"
-- name: Container
-  filter: "container"
+- name: Core Technologies
+  filter: "technologies"
+- name: Databases
+  filter: "dbs"
+- name: Tools
+  filter: "tools"
 - name: Others
   filter: "others"
 
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-- name: Kubernetes
-  logo: /images/sections/skills/kubernetes.png
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-  categories: ["container"]
-  url: "https://kubernetes.io/"
+- name: PHP
+  logo: /images/sections/skills/php.png
+  summary: "My go-to language for building robust and maintainable systems with a focus on clean architecture, scalability and performance."
+  categories: ["technologies"]
+  url: "https://www.php.net/"
 
-- name: Go Development
-  logo: /images/sections/skills/go.png
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  categories: ["basic", "language"]
-  url: "https://golang.org/"
+- name: Laravel
+  logo: /images/sections/skills/laravel.png
+  summary: "Expert-level experience with Laravel, gained through years of building and maintaining production-grade applications."
+  categories: [ "technologies" ]
+  url: "https://laravel.com/"
 
-- name: Cloud Computing
-  logo: /images/sections/skills/cloud.png
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
-  categories: ["others"]
+- name: Symfony
+  logo: /images/sections/skills/symfony.png
+  summary: "Appreciate Symfony’s architecture and conventions. I’m past the basics, confident with the core, and steadily growing into the advanced features."
+  categories: [ "technologies" ]
+  url: "https://symfony.com/"
+
+- name: JavaScript
+  logo: /images/sections/skills/js.png
+  summary: "Intermediate knowledge of JavaScript. I use it primarily for frontend enhancements, scripting, and tooling."
+  categories: ["technologies"]
+  url: "https://tc39.es/ecma262/"
+
+- name: jQuery
+  logo: /images/sections/skills/jquery.png
+  summary: "Comfortable working with jQuery when needed – especially in legacy stacks or for rapid interface tweaks. Not my go-to, but always ready when it fits."
+  categories: ["technologies"]
+  url: "https://jquery.com/"
+
+- name: Redis
+  logo: /images/sections/skills/redis.png
+  summary: "Leveraging Redis for in-memory caching and queue handling to optimize app responsiveness and task offloading."
+  categories: [ "technologies" ]
+  url: "https://redis.io/"
+
+- name: MySQL
+  logo: /images/sections/skills/mysql.svg
+  summary: "Expert-level proficiency with MySQL for designing relational schemas, optimizing queries, and managing large-scale data."
+  categories: [ "dbs" ]
+  url: "https://www.mysql.com/"
+
+- name: PostgreSQL
+  logo: /images/sections/skills/elephant.png
+  summary: "Advanced experience using PostgreSQL for bigger projects, including querying and working with JSON and performance tuning."
+  categories: [ "dbs" ]
+  url: "https://www.postgresql.org/"
+
+- name: MongoDB
+  logo: /images/sections/skills/mongo.png
+  summary: "Beginner-level familiarity with MongoDB. Used for small-scale projects and prototyping, with basic understanding of documents."
+  categories: [ "dbs" ]
+  url: "https://www.mongodb.com/"
 
 - name: Docker
   logo: /images/sections/skills/docker.svg
-  summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
-  categories: ["container"]
+  summary: "Proficient in Docker for containerizing applications and creating reproducible development environments."
+  categories: ["tools"]
   url: "https://www.docker.com/"
-
-- name: Prometheus
-  logo: /images/sections/skills/prometheus.png
-  summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
-  categories: ["basic"]
-  url: "https://prometheus.io/"
-
-- name: Linux
-  logo: /images/sections/skills/linux.png
-  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
-  categories: ["others"]
 
 - name: Git
   logo: /images/sections/skills/git.png
   summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
-  categories: ["basic"]
+  categories: ["tools"]
   url: "https://git-scm.com/"
 
-- name: C++
-  logo: /images/sections/skills/c++.png
-  summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
-  categories: ["basic", "language"]
+- name: Prompt Engineering
+  logo: /images/sections/skills/openai.webp
+  summary: "Advanced skills in working with ChatGPT and other LLMs. Able to research, debug, generate, refactor, and brainstorm faster than ever before."
+  categories: ["tools"]
+  url: "https://chatgpt.com/"
+
+- name: Atlassian stack
+  logo: /images/sections/skills/atlassian.webp
+  summary: "Experienced in working with the Atlassian stack, mainly Jira for issue tracking and project management."
+  categories: ["others"]
+  url: "https://www.atlassian.com/software/jira"
+
+- name: Microsoft Office
+  logo: /images/sections/skills/office.png
+  summary: "Confident in working with Excel, Word, and PowerPoint as part of daily technical and organizational workflows."
+  categories: ["others"]
+  url: "https://www.office.com/"
+
+- name: Linux
+  logo: /images/sections/skills/linux.png
+  summary: "Primary environment for both development and deployment. Experienced with Bash scripting and server configuration tasks."
+  categories: ["others"]
