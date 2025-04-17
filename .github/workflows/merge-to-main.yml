@@ -16,7 +16,7 @@ jobs:
     - name: Setup Hugo
       uses: peaceiris/actions-hugo@v3.0.0
       with:
-        hugo-version: 'latest'
+        hugo-version: '0.145.0'
         extended: true
 
     - name: Update Hugo Modules
@@ -39,6 +39,6 @@ jobs:
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v4.0.0
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.PERSONAL_TOKEN }}
         publish_branch: gh-pages
         publish_dir: ./public
