@@ -35,6 +35,36 @@ experiences:
           - Docker
 
   - company:
+      name: Nord Partner (part of PIB Group)
+      url: "https://nportal.nordpartner.pl/"
+      location: "POLAND | Torun"
+      # logo: /images/sections/experiences/nord-partner.jpg
+      overview: Nord Partner is a major insurance brokerage and financial services organization operating within the broader Nord Group and serving as an important part of PIB Group. The company supports clients with insurance policies and financial products through both legacy internal systems and modern customer-facing digital solutions.
+    positions:
+      - designation: Senior Software Engineer | Solution Architect | Lead Developer
+        start: Jan 2024
+        end: Present
+        projects:
+          - Led the architecture and development of NPortal2, a customer service platform for Nord clients using insurance and financial products.
+          - Designed integrations with external systems to support business-critical data flows and operational processes.
+          - Created and improved development and testing environments to accelerate delivery and stabilize team workflows.
+        responsibilities:
+          - Maintaining and supporting legacy applications critical to daily business operations.
+          - Designing system integrations and technical architecture for new and existing services.
+          - Working closely with business stakeholders to translate product and domain requirements into practical technical solutions.
+          - Organizing backlog priorities and driving timely delivery of tasks across planned sprints.
+        technologies:
+          - PHP 8.4
+          - Laravel 13
+          - Filament 5
+          - JavaScript
+          - Vite
+          - Tailwind CSS 4
+          - Redis
+          - Laravel Horizon
+          - Laravel Reverb
+          - Docker
+  - company:
       name: Onwelo Sp. z o.o.
       url: "https://onwelo.com/"
       location: "POLAND | Kraków, Warszawa"
@@ -274,3 +304,4 @@ experiences:
           - jQuery
           - MySQL
           - CSS
+
