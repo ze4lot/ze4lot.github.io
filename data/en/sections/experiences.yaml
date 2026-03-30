@@ -6,53 +6,51 @@ section:
   weight: 3
   showOnNavbar: true
   # Can optionally hide the title in sections
-  # hideTitle: true 
+  # hideTitle: true
 
 # Your experiences
 experiences:
   - company:
-      name: Freelance & Customer support
+      name: Freelance & Consulting
       url: "https://ze4lot.github.io/"
       location: "Worldwide"
-      # logo: /images/sections/experiences/freelance.jpg
-      overview: Providing end-to-end IT solutions with a focus on application development, architecture design and business consulting. Combining technical proficiency with strong business acumen to deliver value-driven solutions. Open to freelance and contract-based collaborations worldwide.
+      overview: Providing end-to-end technical support for custom software initiatives, from architecture and implementation to consulting and delivery support. Working directly with clients to align technical solutions with real business needs.
     positions:
       - designation: Freelance Consultant & Lead Developer
         start: 2010
         responsibilities:
-          - Design and development of custom web applications and IT architectures
-          - Maintenance and optimization of existing systems and services
-          - Technical consulting for startups and businesses
-          - Project leadership and client support management
+          - Designing and delivering custom web applications and backend architectures
+          - Maintaining, refactoring, and optimizing existing systems
+          - Supporting clients in technical decision-making and solution planning
+          - Leading delivery on smaller projects from discovery to implementation
         technologies:
           - PHP
           - Laravel
           - Symfony
           - JavaScript
           - MySQL
-          - Postgres
+          - PostgreSQL
           - Redis
           - Docker
 
   - company:
       name: Nord Partner (part of PIB Group)
-      url: "https://nportal.nordpartner.pl/"
-      location: "POLAND | Torun"
-      # logo: /images/sections/experiences/nord-partner.jpg
-      overview: Nord Partner is a major insurance brokerage and financial services organization operating within the broader Nord Group and serving as an important part of PIB Group. The company supports clients with insurance policies and financial products through both legacy internal systems and modern customer-facing digital solutions.
+      url: "https://nordpartner.pl/"
+      location: "POLAND | Toruń"
+      overview: Major insurance brokerage and financial services organization operating in a domain that combines legacy systems, complex business processes, and customer-facing digital products. Work in this environment requires architectural thinking, reliable integrations, and strong coordination with business stakeholders.
     positions:
       - designation: Senior Software Engineer | Solution Architect | Lead Developer
         start: Jan 2024
         end: Present
         projects:
-          - Led the architecture and development of NPortal2, a customer service platform for Nord clients using insurance and financial products.
-          - Designed integrations with external systems to support business-critical data flows and operational processes.
-          - Created and improved development and testing environments to accelerate delivery and stabilize team workflows.
+          - Leading the architecture and end-to-end delivery of NPortal2, a customer-facing platform for insurance and financial products
+          - Designing integrations and data flows for business-critical services and operational processes
+          - Improving development and testing environments to stabilize workflows and accelerate delivery
         responsibilities:
-          - Maintaining and supporting legacy applications critical to daily business operations.
-          - Designing system integrations and technical architecture for new and existing services.
-          - Working closely with business stakeholders to translate product and domain requirements into practical technical solutions.
-          - Organizing backlog priorities and driving timely delivery of tasks across planned sprints.
+          - Shaping solution architecture for new services and strategic platform changes
+          - Maintaining and modernizing legacy applications essential to daily operations
+          - Translating business and domain requirements into practical technical designs
+          - Coordinating technical direction, priorities, and implementation across planned work
         technologies:
           - PHP 8.4
           - Laravel 13
@@ -64,28 +62,28 @@ experiences:
           - Laravel Horizon
           - Laravel Reverb
           - Docker
+
   - company:
       name: Onwelo Sp. z o.o.
       url: "https://onwelo.com/"
       location: "POLAND | Kraków, Warszawa"
-      # logo: /images/sections/experiences/onwelo.svg
-      overview: Onwelo provides IT services in software development, business analysis, cloud solutions, data analytics, and automation. The company supports clients in finance, insurance, telecommunications, and healthcare sectors, delivering systems aligned with real business needs.
+      overview: IT services company delivering software, business analysis, and consulting across multiple sectors. The role combined technical assessment, business process support, and architecture-oriented consulting.
     positions:
       - designation: Technical Coordinator
         start: Apr 2024
         end: Jan 2025
         projects:
-          - Performed a comprehensive security audit of a legacy insurance application written in PHP 5.6, identified critical vulnerabilities, and implemented key security enhancements.
-          - Provided business process consulting and technical support for the development of a new erotic social media platform, including modeling of core workflows and system requirements.
+          - Conducted a security audit of a legacy insurance system built in PHP 5.6 and delivered key security improvements
+          - Supported process modeling and technical planning for a new social media product
         responsibilities:
-          - Conducting technical audits and assessments of legacy applications.
-          - Supporting business process modeling and optimization for new digital platforms.
-          - Providing consulting services in the eCommerce domain, focusing on system architecture and process efficiency.
-          - Leading small-scale programming tasks and technical validations.
+          - Reviewing legacy systems from technical and risk perspectives
+          - Supporting workflow modeling and solution planning for new initiatives
+          - Providing architecture and process-focused consulting for digital products
+          - Coordinating smaller technical tasks, validations, and implementation support
         technologies:
           - PHP 5.6/8.2
           - JavaScript
-          - Postgres
+          - PostgreSQL
           - Nginx
           - Docker
 
@@ -93,20 +91,19 @@ experiences:
       name: Fashion Trends Group
       url: "https://ftggroup.com/"
       location: "POLAND | Kraków, Skawina"
-      # logo: /images/sections/experiences/fashion-trends.jpg
-      overview: Fashion Trends Group is a retail company specializing in the mass distribution of streetwear clothing, supported by its own in-house IT department responsible for developing and maintaining internal business systems. The company launched the premium streetwear brand PRM.com and was later acquired by Answear.com as part of a strategic expansion.
+      overview: Retail and distribution company with an internal IT department responsible for core business systems. The role combined technical leadership, legacy modernization, and close collaboration with business units.
     positions:
       - designation: Team Leader & Senior Software Developer
         start: Apr 2022
         end: Mar 2023
         projects:
-          - Directed a team of developers in daily operations and technical skill development.
-          - Worked closely with business units to deliver software aligned with operational needs.
-          - Actively contributed to refactoring legacy systems and integrating new solutions to improve system reliability.
+          - Led a development team in daily execution and technical growth
+          - Worked directly with business units to align software delivery with operational needs
+          - Improved reliability of internal systems through refactoring and integration work
         responsibilities:
-          - Leading a team of software developers, mentoring and supporting their technical growth.
-          - Collaborating with multiple internal departments to align software development with business objectives.
-          - Developing and refactoring core applications, focusing on system performance, scalability, and maintainability.
+          - Leading developers, mentoring the team, and improving day-to-day delivery quality
+          - Translating business expectations into practical development work
+          - Refactoring and extending core systems with focus on stability and maintainability
         technologies:
           - PHP 8.x
           - Laravel 9
@@ -119,18 +116,17 @@ experiences:
       name: Quad/Graphics Inc
       url: "https://www.quad.com/"
       location: "USA | Texas"
-      # logo: /images/sections/experiences/quad.jpg
-      overview: Quad is a leading marketing solutions and printing company, offering integrated services including content production, data-driven marketing, media delivery, and print manufacturing across the United States and internationally.
+      overview: Large marketing and print organization operating at enterprise scale. Worked on stabilizing and delivering a legacy project that required ownership, refactoring discipline, and cross-functional collaboration.
     positions:
       - designation: Senior Software Developer
         start: Oct 2020
         end: Mar 2022
         projects:
-          - Took over a legacy project initially developed offshore, performed extensive refactoring, stabilized core functionalities, and successfully delivered the project to production.
+          - Took over an inherited offshore-built legacy project, stabilized it, refactored critical areas, and brought it to production readiness
         responsibilities:
-          - Refactoring and completing an inherited legacy project to meet internal quality standards and business requirements.
-          - Collaborating with cross-functional teams to align technical development with business objectives.
-          - Implementing system improvements, ensuring scalability, stability, and maintainability.
+          - Recovering and completing an inherited project under quality and delivery pressure
+          - Refactoring legacy code to improve maintainability and operational stability
+          - Cooperating with broader teams to align implementation with business requirements
         technologies:
           - PHP 7.4/8.0
           - Laravel 7.x/8.x
@@ -143,22 +139,21 @@ experiences:
       name: KISS digital
       url: "https://kissdigital.com/"
       location: "POLAND | Kraków"
-      # logo: /images/sections/experiences/kiss-digital.jpg
-      overview: KISS digital is a Polish software house specializing in web and mobile application development, offering end-to-end solutions including UX/UI design, backend development, and custom software projects for startups and established brands.
+      overview: Software house delivering web and mobile products for startups and established brands. This role strongly developed my architecture, product thinking, and leadership skills across multiple project types.
     positions:
       - designation: Senior Software Developer & Team Leader
         start: Apr 2016
         end: May 2020
         projects:
-          - Led the full design and development of "Olimp Premium Club", covering business process modeling, backend architecture, API development, and parts of the mobile application – a major interdisciplinary success.
-          - Supervised and co-designed the PLM (Product Lifecycle Management) system for the Haddad brand, ensuring seamless integration with business operations.
-          - Delivered multiple smaller projects including marketing websites and e-commerce platforms for various clients.
-          - Mentored junior developers and introduced new technologies to improve team performance and code quality.
+          - Led the design and development of Olimp Premium Club, covering business process modeling, backend architecture, API design, and selected mobile application work
+          - Co-designed and supervised development of a PLM system for the Haddad brand
+          - Delivered multiple web platforms, e-commerce systems, and marketing-oriented products
+          - Mentored junior developers and introduced better technical standards and tooling
         responsibilities:
-          - Designing software architectures and leading backend development for web and mobile projects.
-          - Mentoring team members and introducing modern technologies and best practices into the development process.
-          - Working closely with business stakeholders to translate requirements into functional and scalable systems.
-          - Overseeing the development of marketing websites, e-commerce platforms, and custom business applications.
+          - Designing architectures and leading backend implementation across projects
+          - Supporting team growth through mentoring and technical guidance
+          - Working with stakeholders to turn business requirements into scalable solutions
+          - Overseeing delivery quality across custom applications and digital products
         technologies:
           - PHP 5.6/7.x
           - Laravel 5.x/6.x
@@ -176,21 +171,20 @@ experiences:
       name: Centrum Nowej Technologii
       url: "http://www.nowetechnologie.pl/"
       location: "POLAND | Kraków"
-      # logo: /images/sections/experiences/cnt.jpg
-      overview: Centrum Nowej Technologii is a Kraków-based software company specializing in the development of e-commerce platforms, custom web applications, and marketing websites for small and medium-sized businesses.
+      overview: Software company building e-commerce platforms, web applications, and websites for SMEs. My role combined hands-on development with technical ownership and product modernization.
     positions:
       - designation: CTO & Programmer
         start: Apr 2013
         end: Jun 2015
         projects:
-          - Led the redevelopment of "Profit Shop", the company's flagship e-commerce platform, by separating frontend and backend layers to streamline onboarding of new clients and enable template-based customization.
-          - Integrated modern technologies to improve development speed and system maintainability.
-          - Delivered standalone marketing websites for various clients, ensuring modern design and optimal performance.
+          - Led redevelopment of the Profit Shop platform by separating frontend and backend concerns to improve reuse, onboarding, and customization
+          - Introduced newer technologies to improve maintainability and development speed
+          - Delivered standalone websites and smaller commercial solutions for clients
         responsibilities:
-          - Leading technological development and modernization of the company's core e-commerce platform.
-          - Refactoring the legacy system to separate frontend and backend layers for faster deployment and customization.
-          - Introducing new technologies and frameworks to accelerate project delivery and improve software quality.
-          - Delivering independent marketing websites tailored to specific client needs.
+          - Driving technical direction for the company’s core product
+          - Modernizing architecture to support faster deployment and easier customization
+          - Introducing technology changes that improved delivery efficiency
+          - Delivering tailored web solutions for commercial clients
         technologies:
           - PHP 5.4
           - Kohana 3.x
@@ -206,18 +200,17 @@ experiences:
       name: AKRA POLSKA
       url: "https://akra.net/"
       location: "POLAND | Kraków"
-      # logo: /images/sections/experiences/akra-polska.jpg
-      overview: AKRA POLSKA is an interactive agency delivering web applications, content management systems, and marketing platforms for a variety of clients in Poland and across Europe.
+      overview: Interactive agency delivering web applications and marketing platforms for clients in Poland and abroad.
     positions:
       - designation: PHP Developer
         start: Dec 2012
         end: Apr 2013
         projects:
-          - Took over an incomplete photo-stock application built with CakePHP 1.x, successfully migrated it to CakePHP 2.x, added missing features, and delivered the final product ready for launch.
+          - Took over an unfinished photo-stock platform, migrated it from CakePHP 1.x to 2.x, completed missing work, and delivered it for launch
         responsibilities:
-          - Taking over and completing a partially developed web application based on CakePHP.
-          - Migrating the project codebase from CakePHP 1.x to CakePHP 2.x to improve stability and maintainability.
-          - Implementing new features and finalizing project delivery according to client requirements.
+          - Recovering and completing a partially developed application
+          - Migrating the codebase to a more stable foundation
+          - Implementing missing functionality required for final delivery
         technologies:
           - PHP 5.4
           - CakePHP 1.x/2.x
@@ -231,22 +224,21 @@ experiences:
       name: EURA7
       url: "https://www.eura7.com/"
       location: "POLAND | Kraków"
-      # logo: /images/sections/experiences/eura7.jpg
-      overview: EURA7 is a Kraków-based interactive agency focused on developing marketing websites, web applications, and multimedia projects for clients across various industries.
+      overview: Digital agency focused on websites, web applications, and multimedia projects for clients across different industries.
     positions:
       - designation: PHP Developer
         start: Oct 2011
         end: Apr 2013
         projects:
-          - Created marketing websites for various brands, ensuring responsive design and brand consistency.
-          - Fixed bugs and implemented new features in existing web applications based on client requirements.
+          - Built marketing websites and delivered ongoing improvements for client-facing applications
+          - Implemented fixes and features across web projects with varied business needs
         responsibilities:
-          - Developing custom marketing websites based on client requirements.
-          - Maintaining and extending existing web applications and portals.
-          - Implementing front-end functionalities and multimedia integrations using Action Script and JavaScript.
+          - Developing custom websites and extending existing web applications
+          - Implementing frontend and multimedia-related functionality
+          - Supporting client delivery through hands-on coding work
         technologies:
           - PHP 5.4
-          - Zend Framwework 1.12
+          - Zend Framework 1.12
           - HTML 5
           - Action Script (Flash)
           - JavaScript
@@ -259,25 +251,24 @@ experiences:
       name: MKI.PL
       url: "https://www.facebook.com/mkipl"
       location: "POLAND | Kraków"
-      # logo: /images/sections/experiences/mkipl.jpg
-      overview: MKI.PL is a web development agency from Kraków focused on building websites, e-commerce solutions, and custom applications tailored to the needs of small and medium-sized businesses.
+      overview: Small web development agency focused on websites, e-commerce, and custom business solutions.
     positions:
       - designation: Junior PHP Developer
         start: Jun 2010
         end: Aug 2012
         projects:
-          - Created and maintained websites for small business clients.
-          - Improved coding skills through active collaboration with experienced team members and participation in internal projects.
+          - Delivered websites and smaller web solutions for business clients
+          - Built practical programming foundations through collaboration with more experienced developers
         responsibilities:
-          - Developing and maintaining websites and small web applications.
-          - Learning best practices in programming and software development under the guidance of senior developers.
-          - Assisting in minor feature implementations and bug fixing tasks.
+          - Developing and maintaining websites and small applications
+          - Learning professional development practices in real commercial work
+          - Supporting implementation of small features and fixes
         technologies:
           - PHP 5.3
           - Symfony 1.x
           - Yii 1.x
           - Doctrine 1.x
-          - Postgres
+          - PostgreSQL
           - Apache2
           - CSS
 
@@ -285,23 +276,20 @@ experiences:
       name: INDEXO
       url: "https://www.facebook.com/indexo/"
       location: "POLAND | Kraków"
-      # logo: /images/sections/experiences/indexo.jpg
-      overview: INDEXO is a Kraków-based digital agency helping businesses establish their online presence through website development, e-commerce projects, and tailored web solutions.
+      overview: Digital agency helping clients build an online presence through websites and tailored web solutions.
     positions:
       - designation: Trainee Coder
         start: Mar 2010
         end: May 2010
         projects:
-          - Participated in the development of initial website projects, learning software development fundamentals.
-          - Worked closely with senior developers to acquire best practices in PHP programming and web development.
+          - Supported initial website projects and learned core software development fundamentals
         responsibilities:
-          - Assisting in the development of simple websites under senior developer supervision.
-          - Gaining practical programming skills through real-world project assignments.
-          - Supporting minor coding tasks and bug fixing activities.
+          - Assisting senior developers in simple implementation tasks
+          - Building practical programming skills through real-world assignments
+          - Supporting minor bug fixes and coding work
         technologies:
           - PHP 5.2
           - Zend Framework 1
           - jQuery
           - MySQL
           - CSS
-

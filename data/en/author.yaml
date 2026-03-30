@@ -4,6 +4,7 @@ nickname: "Maciek"
 # greeting message before your name. it will default to "Hi! I am" if not provided
 greeting: "Hi, I am"
 image: "images/author/maciek.png"
+
 # give your some contact information. they will be used in the footer
 contactInfo:
   email: "maciek@ze4lot.pl"
@@ -13,6 +14,6 @@ contactInfo:
 
 # some summary about what you do
 summary:
-  - I am a Developer
-  - I am a Team Leader
-  - I am a Technical Coordinator
+  - I design scalable backend systems
+  - I lead technical delivery and architecture
+  - I turn business needs into working software

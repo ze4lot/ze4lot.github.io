@@ -8,18 +8,25 @@ section:
   template: sections/about.html
 
 # your designation
-designation: "Software Engineer :: Team Leader :: Technical coordinator"
+designation: "Backend Systems · Architecture · Technical Leadership"
+
 # your company information
 #company:
 #  name: MACIEJ PŁOCKI ZE4LOT
 #  url: "https://www.example.com"
 
 # your resume. this file path should be relative to you "static" directory
-# Dreprecated. Use resourceLinks instead.
+# Deprecated. Use resourceLinks instead.
 # resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'I’m a software developer with a strong backend focus, experienced in leading teams and coordinating technical projects. I build scalable web applications and guide development processes from concept to deployment. Outside of tech, I recharge through mountain biking and downhill racing – disciplines that reflect my focus, speed, and drive.'
+summary: 'Backend developer and solution architect with 15+ years of experience building and evolving complex web applications.
+
+I focus on backend-heavy systems where standard CRUD is not enough: integrations, legacy modernization, and business-driven architectures.
+
+I work at the intersection of engineering and business: designing solutions, making technical decisions, and driving delivery from concept to production.
+
+I value clarity, control, and systems that scale - not just in traffic, but in complexity.'
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -36,40 +43,12 @@ socialLinks:
   icon: "fab fa-discord"
   url: "https://discordapp.com/users/240910922653237248"
 
-#- name: Github
-#  icon: "fab fa-github"
-#  url: "https://www.github.com/ze4lot"
-
-#- name: Stackoverflow
-#  icon: "fab fa-stack-overflow"
-#  url: "#"
-
-#- name: Twitter
-#  icon: "fab fa-twitter"
-#  url: "#"
-
-#- name: Facebook
-#  icon: "fab fa-facebook"
-#  url: "#"
-
-#- name: Mastadon
-#  icon: "fab fa-mastodon"
-#  url: "#"
-#  rel: "me noopener"
-
-#- name: ResearchGate
-#  icon: "fab fa-researchgate"
-#  url: "https://www.researchgate.net/profile/john-doe"
-
 # You can put custom buttons to link your relevant resources.
 # For example, you can put link for your resume.
 resourceLinks:
 - title: "My Resume"
   url: "files/CV_Maciej_Płocki.pdf"
-
-# Show your badges
-# You can show your verifiable certificates from https://www.credly.com.
-# You can also show a circular bar indicating the level of expertise on a certain skill
+  
 badges:
 #- type: certification
 #  name: Certified Kubernetes Security Specialist
@@ -87,33 +66,33 @@ badges:
 #  badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
 
 - type: soft-skill-indicator
-  name: Leadership
-  percentage: 90
+  name: Technical Leadership
+  percentage: 100
   color: pink
 
 - type: soft-skill-indicator
-  name: Critical Thinking
-  percentage: 90
+  name: System Design
+  percentage: 100
   color: yellow
 
 - type: soft-skill-indicator
   name: Problem Solving
-  percentage: 95
+  percentage: 100
   color: orange
 
 - type: soft-skill-indicator
   name: Communication
-  percentage: 90
+  percentage: 100
   color: sky
 
 - type: soft-skill-indicator
   name: Decision Making
-  percentage: 95
+  percentage: 100
   color: green
 
 - type: soft-skill-indicator
-  name: PHP
-  percentage: 90
+  name: Backend Engineering
+  percentage: 100
   color: blue
 
 # you can also provide color code instead of the color name

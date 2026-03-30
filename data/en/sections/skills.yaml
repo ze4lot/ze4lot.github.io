@@ -16,103 +16,84 @@ background:
 buttons:
 - name: All
   filter: "all"
-- name: Core Technologies
-  filter: "technologies"
+- name: Backend
+  filter: "backend"
 - name: Databases
   filter: "dbs"
+- name: Infrastructure
+  filter: "infra"
 - name: Tools
   filter: "tools"
-- name: Others
-  filter: "others"
 
 # Your Skills.
-# Give a summary of you each skill in the summary section.
 skills:
 - name: PHP
   logo: /images/sections/skills/php.png
-  summary: "My go-to language for building robust and maintainable systems with a focus on clean architecture, scalability and performance."
-  categories: ["technologies"]
+  summary: "Core language for building scalable backend systems, maintainable codebases, and architecture-driven applications."
+  categories: ["backend"]
   url: "https://www.php.net/"
 
 - name: Laravel
   logo: /images/sections/skills/laravel.png
-  summary: "Expert-level experience with Laravel, gained through years of building and maintaining production-grade applications."
-  categories: [ "technologies" ]
+  summary: "Deep production experience with Laravel, often used as a strong delivery framework for custom business systems, integrations, and backend-heavy platforms."
+  categories: ["backend"]
   url: "https://laravel.com/"
 
 - name: Symfony
   logo: /images/sections/skills/symfony.png
-  summary: "Appreciate Symfony’s architecture and conventions. I’m past the basics, confident with the core, and steadily growing into the advanced features."
-  categories: [ "technologies" ]
+  summary: "Strong understanding of Symfony concepts, conventions, and ecosystem. Comfortable working with structured, maintainable applications built around solid architectural principles."
+  categories: ["backend"]
   url: "https://symfony.com/"
 
 - name: JavaScript
   logo: /images/sections/skills/js.png
-  summary: "Intermediate knowledge of JavaScript. I use it primarily for frontend enhancements, scripting, and tooling."
-  categories: ["technologies"]
+  summary: "Practical working knowledge used for product delivery, frontend support, tooling, and integration with modern web application workflows."
+  categories: ["backend"]
   url: "https://tc39.es/ecma262/"
-
-- name: jQuery
-  logo: /images/sections/skills/jquery.png
-  summary: "Comfortable working with jQuery when needed – especially in legacy stacks or for rapid interface tweaks. Not my go-to, but always ready when it fits."
-  categories: ["technologies"]
-  url: "https://jquery.com/"
 
 - name: Redis
   logo: /images/sections/skills/redis.png
-  summary: "Leveraging Redis for in-memory caching and queue handling to optimize app responsiveness and task offloading."
-  categories: [ "technologies" ]
+  summary: "Used for caching, queues, and performance optimization in systems where responsiveness and asynchronous processing matter."
+  categories: ["infra"]
   url: "https://redis.io/"
 
 - name: MySQL
   logo: /images/sections/skills/mysql.svg
-  summary: "Expert-level proficiency with MySQL for designing relational schemas, optimizing queries, and managing large-scale data."
-  categories: [ "dbs" ]
+  summary: "Strong experience in relational schema design, query optimization, indexing, and maintaining performance in production systems."
+  categories: ["dbs"]
   url: "https://www.mysql.com/"
 
 - name: PostgreSQL
   logo: /images/sections/skills/elephant.png
-  summary: "Advanced experience using PostgreSQL for bigger projects, including querying and working with JSON and performance tuning."
-  categories: [ "dbs" ]
+  summary: "Advanced experience with PostgreSQL in larger applications, including complex querying, JSON-based workflows, and performance-oriented data access."
+  categories: ["dbs"]
   url: "https://www.postgresql.org/"
-
-- name: MongoDB
-  logo: /images/sections/skills/mongo.png
-  summary: "Beginner-level familiarity with MongoDB. Used for small-scale projects and prototyping, with basic understanding of documents."
-  categories: [ "dbs" ]
-  url: "https://www.mongodb.com/"
 
 - name: Docker
   logo: /images/sections/skills/docker.svg
-  summary: "Proficient in Docker for containerizing applications and creating reproducible development environments."
-  categories: ["tools"]
+  summary: "Used to build reproducible local and production-like environments, streamline onboarding, and stabilize development workflows."
+  categories: ["infra"]
   url: "https://www.docker.com/"
 
 - name: Git
   logo: /images/sections/skills/git.png
-  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
+  summary: "Experienced with git-based collaboration, delivery workflows, and day-to-day work across GitHub and GitLab environments."
   categories: ["tools"]
   url: "https://git-scm.com/"
 
-- name: Prompt Engineering
+- name: AI-assisted Development
   logo: /images/sections/skills/openai.webp
-  summary: "Advanced skills in working with ChatGPT and other LLMs. Able to research, debug, generate, refactor, and brainstorm faster than ever before."
+  summary: "Using modern AI tools as part of the development workflow — for debugging, refactoring, architecture exploration and accelerating delivery."
   categories: ["tools"]
   url: "https://chatgpt.com/"
 
-- name: Atlassian stack
+- name: Atlassian Stack
   logo: /images/sections/skills/atlassian.webp
-  summary: "Experienced in working with the Atlassian stack, mainly Jira for issue tracking and project management."
-  categories: ["others"]
+  summary: "Daily experience with Jira and related tooling for backlog management, delivery coordination, and cross-team communication."
+  categories: ["tools"]
   url: "https://www.atlassian.com/software/jira"
-
-- name: Microsoft Office
-  logo: /images/sections/skills/office.png
-  summary: "Confident in working with Excel, Word, and PowerPoint as part of daily technical and organizational workflows."
-  categories: ["others"]
-  url: "https://www.office.com/"
 
 - name: Linux
   logo: /images/sections/skills/linux.png
-  summary: "Primary environment for both development and deployment. Experienced with Bash scripting and server configuration tasks."
-  categories: ["others"]
+  summary: "Primary environment for development and deployment work, including shell usage, server-level tasks, and infrastructure troubleshooting."
+  categories: ["infra"]
