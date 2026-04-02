@@ -1,6 +1,6 @@
 # section information
 section:
-  name: Domains
+  name: Business Domains
   id: domains
   enable: true
   weight: 4
