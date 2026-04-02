@@ -1,0 +1,29 @@
+# section information
+section:
+  name: Domains
+  id: domains
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  template: sections/domains.html
+
+items:
+  - title: Insurance / InsurTech
+    icon: "fas fa-shield-alt"
+    description: >
+      Worked with complex contracts, claims flows, policy structures, and legacy insurance data that required domain-aware system design.
+
+  - title: Internal Business Systems
+    icon: "fas fa-building"
+    description: >
+      Designed and improved custom platforms supporting internal operations, reporting, workflows, and business-critical processes.
+
+  - title: Retail & Distribution
+    icon: "fas fa-shopping-cart"
+    description: >
+      Built and maintained systems related to e-commerce, logistics, product flows, and operational sales support.
+
+  - title: Marketing & Print Systems
+    icon: "fas fa-print"
+    description: >
+      Worked on campaign, publishing, and print-related systems where process clarity, automation, and delivery coordination mattered.

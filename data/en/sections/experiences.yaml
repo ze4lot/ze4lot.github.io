@@ -3,10 +3,8 @@ section:
   name: Experiences
   id: experiences
   enable: true
-  weight: 3
+  weight: 6
   showOnNavbar: true
-  # Can optionally hide the title in sections
-  # hideTitle: true
 
 # Your experiences
 experiences:
@@ -14,15 +12,22 @@ experiences:
       name: Freelance & Consulting
       url: "https://ze4lot.github.io/"
       location: "Worldwide"
-      overview: Providing end-to-end technical support for custom software initiatives, from architecture and implementation to consulting and delivery support. Working directly with clients to align technical solutions with real business needs.
+      overview: >
+        Providing end-to-end technical support for complex software initiatives - from architecture and system design
+        to implementation, refactoring, and delivery. Working directly with clients to turn unclear requirements into
+        structured, scalable solutions that actually work in production.
     positions:
       - designation: Freelance Consultant & Lead Developer
         start: 2010
         responsibilities:
-          - Designing and delivering custom web applications and backend architectures
-          - Maintaining, refactoring, and optimizing existing systems
-          - Supporting clients in technical decision-making and solution planning
-          - Leading delivery on smaller projects from discovery to implementation
+          - Designing and delivering backend architectures for custom applications and complex business systems
+          - Taking ownership of system structure, maintainability, and long-term technical direction
+          - Refactoring and stabilizing legacy systems with hidden complexity and unclear logic
+          - Translating business needs into clear technical solutions and actionable architecture decisions
+          - Supporting clients in technical decision-making, risk evaluation, and solution planning
+          - Leading delivery of smaller projects end-to-end - from discovery to implementation
+          - Improving system clarity and reducing technical debt to enable further development
+          - Working across multiple stacks and environments depending on project needs
         technologies:
           - PHP
           - Laravel
@@ -37,20 +42,23 @@ experiences:
       name: Nord Partner (part of PIB Group)
       url: "https://nordpartner.pl/"
       location: "POLAND | Toruń"
-      overview: Major insurance brokerage and financial services organization operating in a domain that combines legacy systems, complex business processes, and customer-facing digital products. Work in this environment requires architectural thinking, reliable integrations, and strong coordination with business stakeholders.
     positions:
-      - designation: Senior Software Engineer | Solution Architect | Lead Developer
+      - designation: Lead backend developer and system architect
         start: Jan 2024
         end: Present
         projects:
-          - Leading the architecture and end-to-end delivery of NPortal2, a customer-facing platform for insurance and financial products
-          - Designing integrations and data flows for business-critical services and operational processes
-          - Improving development and testing environments to stabilize workflows and accelerate delivery
+          - Led architectural refactoring of a customer portal for insurance brokers built on multiple integrated systems
+          - Designed integration layer handling inconsistent external and internal data sources
+          - Reworked the way data moves through the system, introducing a consistent structure across previously disconnected components
         responsibilities:
-          - Shaping solution architecture for new services and strategic platform changes
-          - Maintaining and modernizing legacy applications essential to daily operations
-          - Translating business and domain requirements into practical technical designs
-          - Coordinating technical direction, priorities, and implementation across planned work
+          - Defining system architecture and integration strategy across multiple data sources
+          - Establishing clear domain boundaries and improving consistency across the platform
+          - Translating complex business requirements into structured system design and integration patterns
+          - Refactoring core parts of the system to improve maintainability and predictability
+          - Identifying and resolving inconsistencies in domain logic and data handling
+          - Supporting technical decision-making and aligning implementation with long-term architecture
+          - Collaborating with stakeholders to ensure alignment between business needs and technical solutions
+          - Reducing system complexity and enabling further development without increasing risk
         technologies:
           - PHP 8.4
           - Laravel 13

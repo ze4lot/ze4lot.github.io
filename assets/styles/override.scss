@@ -11,3 +11,256 @@
 .company-heading {
   margin-bottom: 0.5em;
 }
+
+.capabilities-section {
+  h1 {
+    margin-bottom: 1.75rem;
+  }
+
+  .row {
+    --bs-gutter-y: 1.5rem;
+  }
+
+  .capability-card {
+    height: 100%;
+    padding: 28px 30px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 1rem;
+    background: rgba(16, 22, 32, 0.92);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+    transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+  }
+
+  .capability-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(110, 168, 254, 0.24);
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.24);
+  }
+
+  .capability-layout {
+    display: grid;
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+  }
+
+  .capability-icon-col {
+    width: 56px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .capability-card-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.8rem;
+    background: rgba(110, 168, 254, 0.1);
+    border: 1px solid rgba(110, 168, 254, 0.16);
+    color: #8fb6ff;
+    font-size: 1rem;
+  }
+
+  .capability-content {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    min-width: 0;
+  }
+
+  .capability-card-icon-image img {
+    width: 1.2rem;
+    height: 1.2rem;
+    object-fit: contain;
+  }
+
+  .capability-card-title {
+    margin: 0;
+    color: #f4f7fd;
+    font-size: 1.08rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  .capability-card-text {
+    color: rgba(229, 236, 247, 0.82);
+    font-size: 0.96rem;
+    line-height: 1.75;
+  }
+
+  .capability-card-text p:last-child {
+    margin-bottom: 0;
+  }
+
+  .capability-summary {
+    max-width: none;
+  }
+
+  @media (max-width: 575.98px) {
+    .capability-layout {
+      grid-template-columns: 48px minmax(0, 1fr);
+      gap: 14px;
+    }
+
+    .capability-icon-col {
+      width: 48px;
+    }
+  }
+}
+
+.domains-section {
+  h1 {
+    margin-bottom: 1.75rem;
+  }
+}
+
+.experiences-section {
+  h1 {
+    margin-bottom: 1.75rem;
+  }
+}
+
+.impact-section {
+  .impact-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .impact-list-item {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 24px;
+    align-items: start;
+    padding: 22px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .impact-list-item:last-child {
+    border-bottom: 0;
+  }
+
+  .impact-badge-col {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .impact-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.42rem 0.78rem;
+    border-radius: 999px;
+    background: rgba(93, 188, 255, 0.08);
+    border: 1px solid rgba(93, 188, 255, 0.16);
+    color: #8fd3ff;
+    font-size: 0.82rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    flex-shrink: 0;
+    width: fit-content;
+  }
+
+  .impact-body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 0;
+  }
+
+  .impact-title {
+    margin: 0;
+    color: #eef4ff;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  .impact-description {
+    margin: 0;
+    color: rgba(223, 232, 246, 0.78);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    opacity: 0.92;
+  }
+
+  .impact-description p:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (max-width: 768px) {
+    .impact-list-item {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+  }
+}
+
+.domains-section {
+  .row {
+    --bs-gutter-y: 0.95rem;
+  }
+
+  .domains-item {
+    display: flex;
+    gap: 0.95rem;
+    height: 100%;
+    padding: 0.95rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .domains-item-accent {
+    flex: 0 0 auto;
+  }
+
+  .domains-item-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 999px;
+    background: rgba(93, 188, 255, 0.08);
+    border: 1px solid rgba(93, 188, 255, 0.16);
+    color: #8fd3ff;
+    font-size: 0.88rem;
+  }
+
+  .domains-item-body {
+    min-width: 0;
+  }
+
+  .domains-item-title {
+    margin: 0 0 0.3rem;
+    color: #eef4ff;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.35;
+  }
+
+  .domains-item-text {
+    color: rgba(223, 232, 246, 0.78);
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .domains-item-text p:last-child {
+    margin-bottom: 0;
+  }
+
+  .col-lg-6:nth-last-child(-n + 2) .domains-item {
+    border-bottom-color: transparent;
+  }
+
+  @media (max-width: 991.98px) {
+    .col-12:last-child .domains-item {
+      border-bottom-color: transparent;
+    }
+  }
+}

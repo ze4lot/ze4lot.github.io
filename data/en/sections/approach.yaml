@@ -1,0 +1,24 @@
+# section information
+section:
+  name: Architecture Approach
+  id: approach
+  enable: false
+  weight: 5
+  showOnNavbar: true
+  template: sections/approach.html
+
+items:
+  - title: Business-first design
+    description: Systems designed around real business needs, not technical trends
+
+  - title: Legacy-first modernization
+    description: Improving existing systems instead of rewriting everything
+
+  - title: Integration over duplication
+    description: Connecting systems instead of creating redundant logic
+
+  - title: Pragmatic architecture
+    description: Balancing ideal design with real-world constraints
+
+  - title: AI where it adds value
+    description: Using AI to accelerate analysis and reduce delivery time

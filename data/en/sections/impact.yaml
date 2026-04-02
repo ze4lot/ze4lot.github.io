@@ -1,0 +1,39 @@
+# section information
+section:
+  name: Impact
+  id: impact
+  enable: false
+  weight: 3
+  showOnNavbar: true
+  template: sections/impact.html
+
+items:
+  - badge: "Clarity"
+    title: Reduced system ambiguity
+    description: >
+      Made complex and undocumented logic easier to understand, discuss, and safely extend across teams.
+
+  - badge: "Maintainability"
+    title: Improved long-term maintainability
+    description: >
+      Introduced clearer structures and decision boundaries that made systems easier to evolve without creating more chaos.
+
+  - badge: "Alignment"
+    title: Connected business and engineering
+    description: >
+      Helped translate domain needs into technical direction so product, business, and development could move with less friction.
+
+  - badge: "Delivery"
+    title: Increased delivery effectiveness
+    description: >
+      Reduced decision noise and implementation uncertainty, allowing teams to work faster and with better architectural consistency.
+
+  - badge: "Risk"
+    title: Lowered technical and architectural risk
+    description: >
+      Identified structural weaknesses early and reduced the chance of costly mistakes during growth, change, or integration work.
+
+  - badge: "Scalability"
+    title: Created room for sustainable growth
+    description: >
+      Designed systems and boundaries that support scaling over time instead of accumulating fragile short-term fixes.

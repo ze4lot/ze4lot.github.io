@@ -1,0 +1,32 @@
+{{ $sectionID := replace (lower .section.name) " " "-" }}
+{{ if .section.id }}
+{{ $sectionID = .section.id }}
+{{ end }}
+
+<div class="container-fluid anchor pb-5 domains-section" id="{{ $sectionID }}">
+  {{ if not (.section.hideTitle) }}
+  <h1 class="text-center"><span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+  {{ else }}
+  <h1 class="text-center" style="display: none"><span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+  {{ end }}
+
+  <div class="container">
+    <div class="row g-3 g-lg-4">
+      {{ range .items }}
+      <div class="col-12 col-lg-6">
+        <div class="domains-item">
+          <div class="domains-item-accent">
+            {{ if .icon }}
+            <span class="domains-item-icon" aria-hidden="true"><i class="{{ .icon }}"></i></span>
+            {{ end }}
+          </div>
+          <div class="domains-item-body">
+            <h5 class="domains-item-title">{{ .title }}</h5>
+            <div class="domains-item-text">{{ .description | markdownify }}</div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

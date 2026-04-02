@@ -1,0 +1,28 @@
+{{ $sectionID := replace (lower .section.name) " " "-" }}
+{{ if .section.id }}
+{{ $sectionID = .section.id }}
+{{ end }}
+
+<div class="container-fluid anchor pb-5 impact-section" id="{{ $sectionID }}">
+  {{ if not (.section.hideTitle) }}
+  <h1 class="text-center"><span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+  {{ else }}
+  <h1 class="text-center" style="display: none"><span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+  {{ end }}
+
+  <div class="container">
+    <ul class="impact-list">
+      {{ range .items }}
+      <li class="impact-list-item">
+        <div class="impact-badge-col">
+          <span class="impact-badge">{{ .badge }}</span>
+        </div>
+        <div class="impact-body">
+          <h6 class="impact-title">{{ .title }}</h6>
+          <div class="impact-description">{{ .description | markdownify }}</div>
+        </div>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>

@@ -20,13 +20,14 @@ designation: "Backend Systems · Architecture · Technical Leadership"
 # resume: "files/resume.pdf"
 
 # a summary about you
-summary: 'Backend developer and solution architect with 15+ years of experience building and evolving complex web applications.
+summary: >
+  I design and evolve complex business systems with a strong focus on structure, clarity, and long-term maintainability.
 
-I focus on backend-heavy systems where standard CRUD is not enough: integrations, legacy modernization, and business-driven architectures.
+  I work with systems that involve multiple integrations, data flows, and domain dependencies, making sure they remain consistent and understandable as they grow.
 
-I work at the intersection of engineering and business: designing solutions, making technical decisions, and driving delivery from concept to production.
+  I translate business needs into domain models, system architecture, and integration strategies that are realistic to implement and stable in production.
 
-I value clarity, control, and systems that scale - not just in traffic, but in complexity.'
+  My focus is on pragmatic solutions - reducing unnecessary complexity, improving predictability, and creating systems that teams can confidently build on.
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -48,7 +49,7 @@ socialLinks:
 resourceLinks:
 - title: "My Resume"
   url: "files/CV_Maciej_Płocki.pdf"
-  
+
 badges:
 #- type: certification
 #  name: Certified Kubernetes Security Specialist
@@ -94,9 +95,3 @@ badges:
   name: Backend Engineering
   percentage: 100
   color: blue
-
-# you can also provide color code instead of the color name
-# - type: soft-skill-indicator
-#   name: Example 1
-#   percentage: 75
-#   color: "#00adb5"

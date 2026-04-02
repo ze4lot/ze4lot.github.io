@@ -1,99 +1,42 @@
 # section information
 section:
-  name: Skills
+  name: Capabilities
   id: skills
   enable: true
   weight: 2
   showOnNavbar: true
-  filter: true
-  # Can optionally hide the title in sections
-  # hideTitle: true
+  filter: false
 
 background:
   color: "#111827"
 
-# filter buttons
-buttons:
-- name: All
-  filter: "all"
-- name: Backend
-  filter: "backend"
-- name: Databases
-  filter: "dbs"
-- name: Infrastructure
-  filter: "infra"
-- name: Tools
-  filter: "tools"
-
-# Your Skills.
 skills:
-- name: PHP
-  logo: /images/sections/skills/php.png
-  summary: "Core language for building scalable backend systems, maintainable codebases, and architecture-driven applications."
-  categories: ["backend"]
-  url: "https://www.php.net/"
+- name: Legacy Modernization
+  icon: "fas fa-layer-group"
+  summary: >
+    I turn difficult legacy systems into clearer and more maintainable platforms, reducing hidden complexity without breaking what already works.
 
-- name: Laravel
-  logo: /images/sections/skills/laravel.png
-  summary: "Deep production experience with Laravel, often used as a strong delivery framework for custom business systems, integrations, and backend-heavy platforms."
-  categories: ["backend"]
-  url: "https://laravel.com/"
+- name: Integration Architecture
+  icon: "fas fa-diagram-project"
+  summary: >
+    I design reliable integration flows between internal services and external systems, with strong attention to data consistency, boundaries, and long-term stability.
 
-- name: Symfony
-  logo: /images/sections/skills/symfony.png
-  summary: "Strong understanding of Symfony concepts, conventions, and ecosystem. Comfortable working with structured, maintainable applications built around solid architectural principles."
-  categories: ["backend"]
-  url: "https://symfony.com/"
+- name: Domain Clarity
+  icon: "fas fa-sitemap"
+  summary: >
+    I translate messy business rules into explicit domain structures, helping teams understand what the system actually does and where responsibilities belong.
 
-- name: JavaScript
-  logo: /images/sections/skills/js.png
-  summary: "Practical working knowledge used for product delivery, frontend support, tooling, and integration with modern web application workflows."
-  categories: ["backend"]
-  url: "https://tc39.es/ecma262/"
+- name: Technical Leadership
+  icon: "fas fa-gears"
+  summary: >
+    I support engineering decisions with architectural thinking, helping teams move faster without losing structure, maintainability, or delivery focus.
 
-- name: Redis
-  logo: /images/sections/skills/redis.png
-  summary: "Used for caching, queues, and performance optimization in systems where responsiveness and asynchronous processing matter."
-  categories: ["infra"]
-  url: "https://redis.io/"
+- name: Business-to-Technology Translation
+  icon: "fas fa-compass"
+  summary: >
+    I work between stakeholders and engineering, turning product and domain needs into technical direction that is realistic, scalable, and easier to execute.
 
-- name: MySQL
-  logo: /images/sections/skills/mysql.svg
-  summary: "Strong experience in relational schema design, query optimization, indexing, and maintaining performance in production systems."
-  categories: ["dbs"]
-  url: "https://www.mysql.com/"
-
-- name: PostgreSQL
-  logo: /images/sections/skills/elephant.png
-  summary: "Advanced experience with PostgreSQL in larger applications, including complex querying, JSON-based workflows, and performance-oriented data access."
-  categories: ["dbs"]
-  url: "https://www.postgresql.org/"
-
-- name: Docker
-  logo: /images/sections/skills/docker.svg
-  summary: "Used to build reproducible local and production-like environments, streamline onboarding, and stabilize development workflows."
-  categories: ["infra"]
-  url: "https://www.docker.com/"
-
-- name: Git
-  logo: /images/sections/skills/git.png
-  summary: "Experienced with git-based collaboration, delivery workflows, and day-to-day work across GitHub and GitLab environments."
-  categories: ["tools"]
-  url: "https://git-scm.com/"
-
-- name: AI-assisted Development
-  logo: /images/sections/skills/openai.webp
-  summary: "Using modern AI tools as part of the development workflow — for debugging, refactoring, architecture exploration and accelerating delivery."
-  categories: ["tools"]
-  url: "https://chatgpt.com/"
-
-- name: Atlassian Stack
-  logo: /images/sections/skills/atlassian.webp
-  summary: "Daily experience with Jira and related tooling for backlog management, delivery coordination, and cross-team communication."
-  categories: ["tools"]
-  url: "https://www.atlassian.com/software/jira"
-
-- name: Linux
-  logo: /images/sections/skills/linux.png
-  summary: "Primary environment for development and deployment work, including shell usage, server-level tasks, and infrastructure troubleshooting."
-  categories: ["infra"]
+- name: AI-accelerated Engineering
+  icon: "fas fa-microchip"
+  summary: >
+    I use AI to speed up analysis, refactoring, documentation, and technical exploration - as leverage for better delivery, not as a shortcut for weak decisions.

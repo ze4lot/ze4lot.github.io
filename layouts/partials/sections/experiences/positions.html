@@ -25,8 +25,9 @@
         <p class="text-muted">
             <i class="fa-solid fa-location-dot"></i> {{ .company.location }}
         </p>
-        <!-- Add company overview -->
+        {{ if .company.overview }}
         <p>{{ .company.overview | markdownify }}</p>
+        {{ end }}
     </div>
     <!-- Add the positions information -->
     <div class="positions">
@@ -35,6 +36,26 @@
             <h5 class="designation">{{ $position.designation }}</h5>
             <p class="text-muted">{{ $position.start }} - {{if $position.end }} {{ $position.end }} {{else}} {{ i18n "present" }} {{end}}</p>
         </div>
+        {{ if $position.context }}
+        <h6 class="text-heading">Context</h6>
+        <p>{{ $position.context | markdownify }}</p>
+        {{ end }}
+        {{ if $position.challenge }}
+        <h6 class="text-heading">Challenge</h6>
+        <p>{{ $position.challenge | markdownify }}</p>
+        {{ end }}
+        {{ if $position.role }}
+        <h6 class="text-heading">Role</h6>
+        <p>{{ $position.role | markdownify }}</p>
+        {{ end }}
+        {{ if $position.solution }}
+        <h6 class="text-heading">Solution</h6>
+        <p>{{ $position.solution | markdownify }}</p>
+        {{ end }}
+        {{ if $position.outcome }}
+        <h6 class="text-heading">Outcome</h6>
+        <p>{{ $position.outcome | markdownify }}</p>
+        {{ end }}
         <!-- Add projects handled at this position -->
         {{ if $position.projects }}
         <!-- <h6 class="text-heading">{{ i18n "projects" }}</h6> -->

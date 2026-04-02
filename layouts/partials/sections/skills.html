@@ -1,0 +1,44 @@
+{{ $sectionID := replace (lower .section.name) " " "-" }}
+{{ if .section.id }}
+{{ $sectionID = .section.id }}
+{{ end }}
+
+<div class="container-fluid anchor pb-5 capabilities-section" id="{{ $sectionID }}">
+  {{ if not (.section.hideTitle) }}
+  <h1 class="text-center"><span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+  {{ else }}
+  <h1 class="text-center" style="display: none"><span id="{{ $sectionID }}"></span>{{ .section.name }}</h1>
+  {{ end }}
+
+  <div class="container">
+    <div class="row g-4">
+      {{ range .skills }}
+      <div class="col-12 col-lg-6">
+        <div class="capability-card">
+          <div class="capability-layout">
+            <div class="capability-icon-col">
+              {{ if .icon }}
+              <span class="capability-card-icon capability-icon" aria-hidden="true"><i class="{{ .icon }}"></i></span>
+              {{ else if .logo }}
+              {{ $logoImage := resources.Get .logo }}
+              {{ if $logoImage }}
+              {{ if ne $logoImage.MediaType.SubType "svg" }}
+              {{ $logoImage = $logoImage.Fit "24x24" }}
+              {{ end }}
+              <span class="capability-card-icon capability-card-icon-image capability-icon">
+                <img src="{{ $logoImage.RelPermalink }}" alt="{{ .name }}" />
+              </span>
+              {{ end }}
+              {{ end }}
+            </div>
+            <div class="capability-content">
+              <h5 class="capability-card-title capability-title">{{ .name }}</h5>
+              <div class="capability-card-text capability-summary">{{ .summary | markdownify }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

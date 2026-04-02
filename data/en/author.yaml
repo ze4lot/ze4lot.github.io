@@ -12,8 +12,14 @@ contactInfo:
   github: ze4lot
   linkedin: ze4lot
 
-# some summary about what you do
-summary:
-  - I design scalable backend systems
-  - I lead technical delivery and architecture
-  - I turn business needs into working software
+designation: "Technical System Architect :: Solution Architect"
+
+summary: >
+  I turn complexity into scalable systems.
+
+subtitle:
+  - I design and modernize complex systems
+  - I structure legacy and eliminate chaos
+  - I design integrations across systems
+  - I translate business into architecture
+  - I improve scalability and remove bottlenecks
