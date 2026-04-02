@@ -1,42 +1,97 @@
 # section information
 section:
-  name: Capabilities
+  name: Skills
   id: skills
   enable: true
-  weight: 2
+  weight: 5
   showOnNavbar: true
-  filter: false
+  filter: true
 
 background:
   color: "#111827"
 
+# filter buttons
+buttons:
+- name: All
+  filter: "all"
+- name: Backend
+  filter: "backend"
+- name: Databases
+  filter: "dbs"
+- name: Infrastructure
+  filter: "infra"
+- name: Tools
+  filter: "tools"
+
 skills:
-- name: Legacy Modernization
-  icon: "fas fa-layer-group"
+- name: PHP
+  logo: /images/sections/skills/php.png
   summary: >
-    I turn difficult legacy systems into clearer and more maintainable platforms, reducing hidden complexity without breaking what already works.
+    Core language used to design and evolve high-load backend systems, with focus on long-term maintainability and architectural clarity.
+  categories: ["backend"]
 
-- name: Integration Architecture
-  icon: "fas fa-diagram-project"
+- name: Laravel
+  logo: /images/sections/skills/laravel.png
   summary: >
-    I design reliable integration flows between internal services and external systems, with strong attention to data consistency, boundaries, and long-term stability.
+    Primary delivery framework for complex business platforms - used pragmatically as infrastructure layer, not as application core.
+  categories: ["backend"]
 
-- name: Domain Clarity
-  icon: "fas fa-sitemap"
+- name: Symfony
+  logo: /images/sections/skills/symfony.png
   summary: >
-    I translate messy business rules into explicit domain structures, helping teams understand what the system actually does and where responsibilities belong.
+    Applied where structure, explicitness, and long-term stability are critical - especially in more demanding or legacy-constrained environments.
+  categories: ["backend"]
 
-- name: Technical Leadership
-  icon: "fas fa-gears"
+- name: JavaScript
+  logo: /images/sections/skills/js.png
   summary: >
-    I support engineering decisions with architectural thinking, helping teams move faster without losing structure, maintainability, or delivery focus.
+    Used as a supporting layer for product delivery, internal tooling, and integration with modern frontend stacks.
+  categories: ["backend"]
 
-- name: Business-to-Technology Translation
-  icon: "fas fa-compass"
+- name: Redis
+  logo: /images/sections/skills/redis.png
   summary: >
-    I work between stakeholders and engineering, turning product and domain needs into technical direction that is realistic, scalable, and easier to execute.
+    Leveraged for performance-critical paths - caching, queues, and reducing system load under real traffic.
+  categories: ["infra"]
 
-- name: AI-accelerated Engineering
-  icon: "fas fa-microchip"
+- name: MySQL
+  logo: /images/sections/skills/mysql.svg
   summary: >
-    I use AI to speed up analysis, refactoring, documentation, and technical exploration - as leverage for better delivery, not as a shortcut for weak decisions.
+    Extensive experience with relational modeling, indexing strategies, and query optimization in production-scale systems.
+  categories: ["dbs"]
+
+- name: PostgreSQL
+  logo: /images/sections/skills/elephant.png
+  summary: >
+    Used in more demanding scenarios requiring advanced querying, data integrity, and complex data structures.
+  categories: ["dbs"]
+
+- name: Docker
+  logo: /images/sections/skills/docker.svg
+  summary: >
+    Foundation for reproducible environments and production parity - eliminating "works on my machine" class of issues.
+  categories: ["infra"]
+
+- name: Git
+  logo: /images/sections/skills/git.png
+  summary: >
+    Daily driver for structured collaboration, clean history management, and controlled delivery processes.
+  categories: ["tools"]
+
+- name: AI-assisted Development
+  logo: /images/sections/skills/openai.webp
+  summary: >
+    Actively integrated into development workflow - used for acceleration, exploration, and reducing low-value manual work.
+  categories: ["tools"]
+
+- name: Atlassian Stack
+  logo: /images/sections/skills/atlassian.webp
+  summary: >
+    Used for managing delivery in structured environments - supporting coordination, planning, and visibility across teams.
+  categories: ["tools"]
+
+- name: Linux
+  logo: /images/sections/skills/linux.png
+  summary: >
+    Primary working environment for development and infrastructure-level operations.
+  categories: ["infra"]
