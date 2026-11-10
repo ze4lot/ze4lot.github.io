@@ -126,28 +126,20 @@ PHP · Laravel · Symfony · MySQL · JavaScript · Vue.js · WebSockets · Jira
 
 | Field | Details |
 |---|---|
-| Period | **04.2013 – 06.2015** |
+| Period | April 2013 – June 2015 |
 | Position | CTO & Programmer |
-| Sector | E-commerce / custom software |
-| Location | Kraków, Poland |
+| Industry | E-commerce / Software Development |
 | Website | [nowetechnologie.pl](http://www.nowetechnologie.pl/) |
 
-### Selected work
+### Key Responsibilities & Achievements
 
-- Led redevelopment of the **Profit Shop** e-commerce platform.
-- Separated frontend and backend concerns to support reuse, onboarding, and customization.
-- Introduced technologies and architectural changes aimed at easier maintenance and faster delivery.
-- Developed websites and tailored commercial applications.
-
-### Responsibilities
-
-- Directed the technical development of the company's core product.
-- Modernized the platform architecture to make deployments and customizations easier.
-- Combined architecture decisions with hands-on programming and project delivery.
+- **E-commerce Platform Architecture:** Redesigned the architecture of Profit Shop, a reusable e-commerce platform, separating the shared application core from the frontend presentation layer.
+- **Delivery Optimization:** Introduced configurable storefront templates, simplifying visual customization and significantly reducing the time required to launch new online stores and upgrade existing implementations.
+- **Technical Leadership & Development:** Combined hands-on software development with technical decision-making, contributing to the evolution of the company's core product and delivering custom software projects for external clients.
 
 ### Technologies
 
-PHP 5.4 · Kohana 3.x · Laravel 4.x · HTML5 · JavaScript · jQuery · MySQL · Apache · CSS3 / LESS / SASS.
+PHP · Kohana · Laravel · MySQL · JavaScript · HTML · CSS / SASS
 
 ---
 

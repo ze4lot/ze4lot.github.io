@@ -393,26 +393,45 @@ Additional confirmed domain technology: WebSockets, Jira, Scrum.
 
 | Field | Details |
 |---|---|
-| Period | **04.2013 – 06.2015** |
+| Period | April 2013 – June 2015 |
 | Position | CTO & Programmer |
-| Sector | E-commerce / custom software |
+| Industry | E-commerce / custom software / software house |
 | Location | Kraków, Poland |
 | Website | [nowetechnologie.pl](http://www.nowetechnologie.pl/) |
 
-### Selected work
+### Role and context
 
-- Led redevelopment of the **Profit Shop** e-commerce platform.
+- Worked as a hands-on programmer who regularly took initiative beyond routine implementation, similar to his later experience at KISS digital.
+- Held the title **CTO & Programmer**, but no direct report structure, executive budget ownership, or formal people-management remit has been established; do not infer those from the title.
+- Combined development of the company's own product, **Profit Shop**, with typical external custom-software projects delivered by a software house.
+- Contributed to technical decisions and architectural improvements, while actively programming.
+
+### Profit Shop — reusable e-commerce platform
+
+- **Profit Shop** was a product for launching online stores for multiple client businesses.
+- Over time, client-specific adaptation and existing-store maintenance/upgrades were becoming increasingly difficult as the shared product and customized presentation layer grew more complex.
+- Maciej proposed separating the shared business/application **core** from store-specific presentation and design.
+- The resulting architecture divided a shared **backend** from a **frontend layer** composed of templates and styles (including CSS).
+- The frontend was made **configurable/parameterized**; adjustments to colors, fonts and other visual elements became much easier and less invasive.
+- The aim was to avoid repeated extensive modifications of the shared platform for every new storefront.
+- The redesign was **implemented and adopted in ordinary delivery**, rather than remaining a proof of concept.
+- User reports it **dramatically reduced the time** required both for setting up new customer stores and upgrading existing deployments. No numerical measurements or percentages available; final CV should use a qualitative claim.
+- This was separation of concerns and configurability within an e-commerce platform; do **not** characterize it as microservices, headless commerce, or an entirely new standalone frontend application without evidence.
+
+### Additional custom projects
+
+- Beyond Profit Shop, built and contributed to various conventional software-house client projects, including websites and tailored commercial applications.
+- No individual smaller client projects were selected for the final CV because the platform architecture and delivery outcome are the strongest differentiators.
+
+### Legacy portfolio wording
+
+- Led redevelopment of the Profit Shop e-commerce platform.
 - Separated frontend and backend concerns to support reuse, onboarding, and customization.
 - Introduced technologies and architectural changes aimed at easier maintenance and faster delivery.
 - Developed websites and tailored commercial applications.
-
-### Responsibilities
-
-- Directed the technical development of the company's core product.
-- Modernized the platform architecture to make deployments and customizations easier.
 - Combined architecture decisions with hands-on programming and project delivery.
 
-### Technologies
+### Technologies recorded in portfolio
 
 PHP 5.4 · Kohana 3.x · Laravel 4.x · HTML5 · JavaScript · jQuery · MySQL · Apache · CSS3 / LESS / SASS.
 
