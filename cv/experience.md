@@ -51,24 +51,21 @@ PHP · Laravel · FilamentPHP · Redis · Docker · JavaScript · CI/CD
 
 ## ONWELO
 
-| Field | Details |
-|---|---|
-| Period | April 2024 – January 2025 |
-| Position | Technical Coordinator |
-| Industry | IT Consulting / Insurance / E-commerce |
-| Website | [onwelo.com](https://onwelo.com/) |
+**Technical Coordinator | April 2024 – January 2025**  
+IT Consulting / Insurance / E-commerce  
+[onwelo.com](https://onwelo.com/)
 
 ### Key Responsibilities & Achievements
 
-- **Business Process Design:** Collaborated with business stakeholders and a solution architect to model end-to-end e-commerce processes, covering customer purchasing journeys, order management, back-office operations, and warehouse workflows for a new digital platform.
-- **Legacy Modernization:** Led backend modernization of an undocumented legacy PHP insurance system, upgrading the PHP runtime and resolving compatibility issues through dependency upgrades, replacements, and selective rewrites.
-- **Security & Engineering:** Remediated security vulnerabilities, fixed application defects, documented existing functionality, and handled selected infrastructure changes while collaborating closely with a frontend developer.
-- **Delivery & Validation:** Prepared and delivered the updated application, which successfully passed independent security assessments and penetration testing conducted by an external specialist company.
+- **Business Process Design:** Collaborated with business stakeholders and a solution architect to design end-to-end e-commerce processes, including purchasing journeys, order management, back-office operations, and warehouse workflows.
+
+- **Legacy Modernization:** Led the technical modernization of an undocumented PHP insurance application, upgrading the runtime, resolving compatibility issues, replacing dependencies, and improving code quality.
+
+- **Security & Delivery:** Remediated security vulnerabilities, resolved application defects, and coordinated technical improvements. Delivered an updated application that successfully passed independent security assessments and penetration testing.
 
 ### Technologies
 
 PHP · PostgreSQL · Nginx · Docker
-
 ---
 
 ## Fashion Trends Group
