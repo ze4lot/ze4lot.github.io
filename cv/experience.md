@@ -28,27 +28,21 @@ PHP · Symfony · PostgreSQL · Redis · RabbitMQ · Docker · Nginx · GitHub A
 
 ## Nord Partner (part of PIB Group)
 
-| Field | Details |
-|---|---|
-| Period | **March 2025 – May 2026** |
-| Position | Senior Engineer / Architect |
-| Industry | Insurance & Brokerage |
-| Website | [nordpartner.pl](https://nordpartner.pl/) |
+**Senior Engineer / Architect | March 2025 – May 2026**  
+Insurance & Brokerage  
+[nordpartner.pl](https://nordpartner.pl/)
 
-### Project Overview
-
-Technical ownership of two interconnected initiatives: maintaining and stabilizing a complex, undocumented legacy insurance brokerage system and architecting its modern replacement.
-
-The new platform was designed to operate on existing legacy data while remaining independent of its underlying structure, enabling a planned transition to an external data provider.
+Responsible for stabilizing a business-critical legacy insurance brokerage system while designing and developing its modern replacement.
 
 ### Key Responsibilities & Achievements
 
-- **Legacy Modernization:** Reverse-engineered undocumented business logic and database structures, resolved data inconsistencies, and stabilized business-critical functionality.
-- **Software Architecture:** Designed and implemented the replacement platform using the Repository Pattern and data access adapters to decouple business processes from legacy data sources.
-- **Event-Driven Design:** Introduced event-driven workflows for external API integrations, data synchronization, migration, and import processes, focusing on performance and maintainability.
-- **Technology Strategy:** Adopted FilamentPHP to significantly reduce custom frontend development and accelerate delivery of business functionality.
-- **Engineering & Delivery:** Established automated CI/CD pipelines, integrated code quality tools, and introduced AI-assisted development practices.
-- **Technical Ownership:** Independently owned architectural decisions and hands-on implementation, balancing business requirements, technical constraints, and long-term maintainability.
+- **Legacy Modernization:** Reverse-engineered undocumented business logic and database structures, resolved data inconsistencies, and stabilized critical business workflows.
+
+- **Software Architecture:** Designed and implemented a replacement platform using repository abstractions and data adapters, separating business logic from legacy data sources and preparing for future integrations.
+
+- **Integrations & Technology Strategy:** Introduced event-driven integration and data synchronization workflows. Adopted FilamentPHP to accelerate business application development and reduce custom frontend complexity.
+
+- **Technical Ownership & Delivery:** Owned architectural decisions and hands-on backend development. Established CI/CD workflows, code quality practices, and AI-assisted engineering processes.
 
 ### Technologies
 
