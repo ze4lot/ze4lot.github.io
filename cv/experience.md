@@ -186,20 +186,17 @@ PHP · Zend Framework · MySQL · JavaScript · jQuery · Flash / ActionScript
 
 | Field | Details |
 |---|---|
-| Period | **06.2010 – 08.2012** |
+| Period | June 2010 – August 2012 |
 | Position | Junior PHP Developer |
-| Sector | Web development / e-commerce |
-| Location | Kraków, Poland |
+| Industry | Web Development / E-commerce |
 
-### Selected work and responsibilities
+### Key Responsibilities & Achievements
 
-- Built websites, e-commerce components, and small business applications.
-- Maintained existing projects and delivered new features and bug fixes.
-- Developed commercial programming practices while collaborating with more experienced developers.
+- Developed and maintained websites, e-commerce solutions, and small business applications, gaining commercial experience in PHP development and backend frameworks.
 
 ### Technologies
 
-PHP 5.3 · Symfony 1.x · Yii 1.x · Doctrine 1.x · PostgreSQL · Apache · CSS.
+PHP · Symfony · Yii · Doctrine · PostgreSQL
 
 ---
 
