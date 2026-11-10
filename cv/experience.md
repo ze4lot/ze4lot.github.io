@@ -200,26 +200,6 @@ PHP · Symfony · Yii · Doctrine · PostgreSQL
 
 ---
 
-## INDEXO
-
-| Field | Details |
-|---|---|
-| Period | **03.2010 – 05.2010** |
-| Position | Trainee Coder |
-| Sector | Digital agency |
-| Location | Kraków, Poland |
-
-### Selected work and responsibilities
-
-- Supported website implementation and minor application changes.
-- Assisted senior developers with bug fixes and early commercial coding tasks.
-
-### Technologies
-
-PHP 5.2 · Zend Framework 1 · jQuery · MySQL · CSS.
-
----
-
 ## Freelance & Consulting
 
 | Field | Details |
