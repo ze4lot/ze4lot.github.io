@@ -1,5 +1,38 @@
 # Professional experience
 
+## Bikeparks.pl
+
+| Field | Details |
+|---|---|
+| Period | 2026 – Present |
+| Position | Founder & Software Architect |
+| Industry | Sports Technology / Digital Platforms |
+| Website | [bikeparks.pl](https://bikeparks.pl/) |
+
+### Project Overview
+
+Founded and developed a digital platform connecting cyclists, cycling infrastructure operators, and service providers. Responsible for product strategy, software architecture, engineering processes, and technical operations.
+
+### Key Responsibilities & Achievements
+
+- **Product Ownership & Strategy:** Founded an independent digital business, defining its product vision, roadmap, business requirements, and technical direction. Developed a public platform for cycling infrastructure discovery while building relationships with prospective business partners.
+
+- **Software Architecture:** Designed and directed the development of a modular Symfony-based platform, including domain modeling, data persistence, business workflows, external integrations, and scalable application architecture.
+
+- **AI-Native Software Development Lifecycle:** Independently designed and implemented an end-to-end SDLC built around AI coding agents, covering requirements management, architecture, implementation, code review, automated testing, documentation, and controlled delivery.
+
+- **Documentation & DSL-First Engineering:** Established a specification-driven development approach with documented business rules, technical contracts, architectural decisions, and traceable implementation requirements. Combined structured agent delegation with interactive engineering for exploratory tasks.
+
+- **Engineering Quality & Release Management:** Established automated quality gates, integration and E2E testing, performance benchmarking, and agent-assisted code reviews. Retained human control over merge approvals and production releases, delivering changes through controlled, batched deployments.
+
+- **Infrastructure & Technical Operations:** Designed and managed containerized development and production environments, including application services, databases, messaging infrastructure, reverse proxies, CI/CD workflows, deployment procedures, and operational monitoring.
+
+### Technologies
+
+PHP · Symfony · PostgreSQL · Redis · RabbitMQ · Docker · Nginx · GitHub Actions · AI Coding Agents · LLMs
+
+---
+
 ## Nord Partner (part of PIB Group)
 
 | Field | Details |

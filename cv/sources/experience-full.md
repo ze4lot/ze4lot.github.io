@@ -2,6 +2,76 @@
 
 Comprehensive work-history facts, context, and previous portfolio wording. This file is supporting material; the copy used for the CV is in `../experience.md`.
 
+## Bikeparks.pl
+
+| Field | Details |
+|---|---|
+| Period | 2026 – Present |
+| Position | Founder & Software Architect |
+| Industry | Sports Technology / Digital Platforms |
+| Website | [bikeparks.pl](https://bikeparks.pl/) |
+
+### Business purpose and ownership
+
+- Founded and directs a public, commercially oriented digital platform for cyclists and cycling infrastructure.
+- Intends to connect multiple sides of the market: cyclists, bikepark and trail operators, organizations, instructors, event organizers, and other service providers.
+- Owns product vision, business strategy, roadmap, requirements, architecture, quality and operations.
+- Works on establishing contacts and exploring relationships with **prospective partners**; some have expressed **potential interest**, but there is no confirmation of signed partnerships, paying customers or established revenue.
+- The product is publicly available; business capabilities and monetization opportunities continue evolving.
+- After employment at Nord ended in 2026, Bikeparks became the user's full-time professional focus. Avoid suggesting a precise founding month or commercial go-live date without separate verification.
+
+### Product scope and roadmap boundaries
+
+- Public cycling infrastructure discovery platform with catalog of bikeparks, places, trails/tracks and organizations.
+- Operates user-facing web views and production infrastructure. Geographic and catalog data is developed incrementally, including fixtures/imports and data verification.
+- Organization profiles and relevant discovery functionality are part of the product.
+- Work on an operational status / availability model, read services and Explore integration has been underway in 2026; as of this CV discussion, certain changes are still on feature/integration branches and not deployed.
+- Potential future commercial ecosystem: services and partnerships, booking/reservations, instructors and other operator-related features; do not represent planned functionality as already operating in production.
+
+### Hands-on work and actual authorship
+
+- Maciej does **not directly write Bikeparks application code** at present. AI coding agents handle implementation.
+- Personally designs solutions, decides architecture and technical constraints, plans/refines work, reviews output and controls release decisions.
+- Maintains sufficient understanding of the primary Bikeparks codebase and engineering environment to continue directing its development without AI tools.
+- Separate intelligence-related subsystems have evolved with substantial agent autonomy; the user does not claim thorough personal knowledge of their present internal implementation. Do not overstate detailed authorship of these components.
+- Uses AI as a delegated engineering workforce, not merely as code completion.
+
+### Designed and implemented AI-native SDLC
+
+- Created and established the full software development lifecycle around AI agents, with requirements, scope definition, architecture, implementation delegation, GitHub issues/branches/pull requests, peer/agent review, testing, documentation, acceptance and release processes.
+- **Documentation/DSL-first** is the default for larger, complex changes: requirements, domain rules and important decisions are specified before delegation to implementers.
+- Technical contracts, behavior and design rationale are recorded in maintained documentation, so code and decisions have an intelligible history and can be independently inspected.
+- Documentation is updated as systems evolve and should function as an engineering artifact, not an afterthought.
+- Some small/exploratory tasks start with intentionally lighter documentation. In these cases, Maciej works more interactively with agents to determine design and implementation rather than delegating an ambiguous prompt without supervision.
+- The SDLC includes quality gates with automated checks, integration and end-to-end tests, performance testing/benchmarking, and agent code reviews.
+- AI agents can prepare, implement, test and review pull requests independently, but **merge approvals and production-release decisions belong to Maciej**.
+- Deployments are performed periodically as **controlled batches** of integrated changes rather than immediately after every individual PR; integration cadence differs from production release cadence.
+- This balances specification-driven delegation with human-governed development and shipping; avoid claiming all changes are always fully pre-specified or that agents have unconstrained production permissions.
+
+### Software architecture and technical operations
+
+- Architected/moderates development of a modular Symfony/PHP platform with PostgreSQL persistence, Redis, RabbitMQ and containerized services.
+- Domain modeling, business rules, integration boundaries, query/read models, data ingestion, performance and reliability are core architectural responsibilities.
+- Operates development and production environments using Docker Compose, reverse proxies, PHP-FPM, database and messaging services.
+- Oversees CI/CD, test automation, release procedures, database migrations and deployment quality controls.
+- Public production runs on dedicated VPS infrastructure. Avoid inventing uptime, traffic or revenue metrics.
+
+### Positioning for the final CV
+
+- Position the role in **Professional Experience**, first in chronological order, not as hobby/side project.
+- Use **Founder & Software Architect** as approved role rather than Founder & CEO or solo Senior Developer.
+- Strongest differentiator is the **AI-native SDLC designed and governed by a software architect**, not personal authorship of generated source code.
+- Distinguish implemented production functionality, ongoing engineering work and future roadmap items.
+- User explicitly approved the English six-bullet version in `cv/experience.md`.
+
+### Technologies and methods
+
+PHP · Symfony · PostgreSQL · Redis · RabbitMQ · Docker · Nginx · GitHub Actions · AI Coding Agents · LLMs.
+
+GitHub Issues / PRs · documentation and DSL-first requirements · domain modeling · automated testing · E2E · benchmarking · batched production releases.
+
+---
+
 ## Nord Partner (part of PIB Group)
 
 | Field | Details |
