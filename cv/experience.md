@@ -163,12 +163,9 @@ PHP · CakePHP · MySQL · JavaScript · jQuery
 
 ## EURA7
 
-| Field | Details |
-|---|---|
-| Period | October 2011 – April 2013 |
-| Position | PHP Developer |
-| Industry | Digital Agency |
-| Website | [eura7.com](https://www.eura7.com/) |
+**PHP Developer | October 2011 – April 2013**  
+Digital Agency  
+[eura7.com](https://www.eura7.com/)
 
 ### Key Responsibilities & Achievements
 
@@ -177,7 +174,6 @@ PHP · CakePHP · MySQL · JavaScript · jQuery
 ### Technologies
 
 PHP · Zend Framework · MySQL · JavaScript · jQuery · Flash / ActionScript
-
 ---
 
 ## MKI.PL
