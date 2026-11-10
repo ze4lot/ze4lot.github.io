@@ -4,32 +4,29 @@
 
 | Field | Details |
 |---|---|
-| Period | **01.2024 – 2026** |
-| Position | Lead Backend Developer / System Architect |
-| Sector | Insurance / brokerage |
-| Location | Toruń, Poland |
+| Period | **January 2024 – May 2026** |
+| Position | Senior Engineer / Architect |
+| Industry | Insurance & Brokerage |
 | Website | [nordpartner.pl](https://nordpartner.pl/) |
 
-### Selected work
+### Project Overview
 
-- Led architectural refactoring of a customer portal for insurance brokers built on multiple integrated systems.
-- Designed an integration layer to handle inconsistent internal and external data.
-- Reworked data flows to introduce a clearer, more consistent structure across previously disconnected components.
+Technical ownership of two interconnected initiatives: maintaining and stabilizing a complex, undocumented legacy insurance brokerage system and architecting its modern replacement.
 
-### Responsibilities
+The new platform was designed to operate on existing legacy data while remaining independent of its underlying structure, enabling a planned transition to an external data provider.
 
-- Defined system architecture and integration strategy across multiple data sources.
-- Introduced clearer domain boundaries and improved consistency across the platform.
-- Translated insurance-sector business requirements into system designs and integration patterns.
-- Refactored core functionality to improve maintainability and predictability.
-- Investigated inconsistent domain logic and data-handling behavior.
-- Supported technical decision-making and aligned implementations with long-term architecture.
-- Cooperated with stakeholders on business and technology trade-offs.
+### Key Responsibilities & Achievements
+
+- **Legacy Modernization:** Reverse-engineered undocumented business logic and database structures, resolved data inconsistencies, and stabilized business-critical functionality.
+- **Software Architecture:** Designed and implemented the replacement platform using the Repository Pattern and data access adapters to decouple business processes from legacy data sources.
+- **Event-Driven Design:** Introduced event-driven workflows for external API integrations, data synchronization, migration, and import processes, focusing on performance and maintainability.
+- **Technology Strategy:** Adopted FilamentPHP to significantly reduce custom frontend development and accelerate delivery of business functionality.
+- **Engineering & Delivery:** Established automated CI/CD pipelines, integrated code quality tools, and introduced AI-assisted development practices.
+- **Technical Ownership:** Independently owned architectural decisions and hands-on implementation, balancing business requirements, technical constraints, and long-term maintainability.
 
 ### Technologies
 
-PHP 8.4 · Laravel 13 · Filament 5 · JavaScript · Vite · Tailwind CSS 4 · Redis · Laravel Horizon · Laravel Reverb · Docker.
-
+PHP · Laravel · FilamentPHP · Redis · Docker · JavaScript · CI/CD
 ---
 
 ## ONWELO
