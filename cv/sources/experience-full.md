@@ -306,30 +306,86 @@ Application recovery · Laravel modernization · modular refactoring · model re
 
 | Field | Details |
 |---|---|
-| Period | **04.2016 – 05.2020** |
+| Period | April 2016 – May 2020 |
 | Position | Senior Software Developer & Team Leader |
-| Sector | Software house |
+| Industry | Software house / custom software / digital products |
 | Location | Kraków, Poland |
 | Website | [kissdigital.com](https://kissdigital.com/) |
 
-### Selected projects
+### General context and career development
 
-| Project | Involvement |
-|---|---|
-| **Olimp Premium Club** | Designed business processes and backend architecture; worked on API design and selected mobile application tasks. |
-| **Haddad PLM** | Co-designed and supervised development of a product lifecycle management system. |
-| **Other commercial projects** | Delivered web applications, e-commerce platforms, and marketing-oriented products. |
+- Joined as a software developer at a conventional software house and worked on **approximately a dozen or more client projects**, ranging from small commercial tasks to multi-component business applications.
+- Became a respected, **informal senior engineer and technical leader**, earning trust through experience, initiative, sound judgement, and willingness to take responsibility beyond assigned coding tasks.
+- Was frequently assigned complex, ambiguous or architecture-heavy projects instead of routine implementation tasks.
+- Comfortable communicating directly with clients, proposing solutions, explaining technical tradeoffs and pushing back when needed.
+- His influence and leadership were based on technical credibility and relationships rather than formal organizational authority or a dedicated people-management remit.
+- Helped other developers tackle difficult technical problems and participated in architectural decisions.
 
-### Responsibilities
+### Olimp Premium Club — mobile loyalty platform
 
-- Designed software architectures and led backend implementation across projects.
-- Led and mentored developers; promoted technical standards and improved tooling.
-- Worked with stakeholders to translate business needs into actionable software requirements.
-- Supervised engineering quality across custom applications and digital products.
+**Business need**
 
-### Technologies
+- Client wanted a mobile loyalty program in which customers earned points from product purchases and redeemed them for products/rewards available in the mobile application.
+- Maciej was the primary technical owner of the solution, involved from business concept onward.
+- Proposed functional and technical approaches; materially shaped the mobile application's workflows and API-facing behavior.
+- **Independently designed and implemented the entire backend** and defined API contracts for the mobile app.
+- Architecture covered loyalty points, customer actions, scanned codes and reward redemption.
+
+**Strategy-based fraud detection**
+
+- Designed and implemented an additional fraud-detection subsystem to identify misuse of loyalty mechanics in real time or during user actions.
+- Detector used several programmed strategies/patterns, including:
+  - Mass or suspiciously broad product scanning.
+  - Attempts to reuse already-consumed codes.
+  - Excessive scanning frequency.
+- Detection and verification rules determined whether an operation could proceed or needed additional proof, e.g. a receipt image.
+- This was a **rule-based strategy engine**, not machine learning; avoid implying it was AI.
+
+**Receipt image recognition and manual verification**
+
+- Mobile app submitted a photograph of a purchase receipt.
+- Backend integrated a third-party image-to-text / receipt-reading service through a simple API.
+- The system interpreted the returned information sufficiently to decide whether the receipt appeared acceptable or required review by a human moderator.
+- Maciej implemented the integration and backend verification workflow; **did not invent or implement OCR technology**.
+- The provider was later discovered to have relied on human transcription behind its API rather than genuine automated OCR. The client-facing feature is accurately described as external receipt recognition/verification, not proprietary OCR implementation.
+- Do not claim perfect automatic recognition or identify provider personnel by nationality.
+
+### Haddad — Product Lifecycle Management (PLM)
+
+**Business purpose**
+
+- An application functioning as a virtual apparel-design studio, integrating activities distributed across the lifecycle of new clothing products.
+- Supported material selection and ordering, product/detailed apparel design, application of brand identification (e.g. Nike and Converse), and handoffs among departments and users.
+- Work progressed toward factory orders and production; final product documentation included costing and campaign associations.
+- Similar in business domain to a PIM, but centered on apparel product development and design workflows rather than simple catalog enrichment.
+
+**Team and technical solution**
+
+- Delivered with a **two-developer core team**: Maciej owned backend development, another engineer owned frontend development.
+- Application was frontend-heavy and relied on a deliberately focused backend for persistent shared state and synchronization.
+- Backend preserved users' work and allowed the next person or department to continue from the appropriate project state/view.
+- Supported **real-time collaborative editing** with live state updates aided by **WebSockets**.
+- Maciej designed and developed the backend and worked directly with the frontend developer to define data contracts and state behavior.
+- Avoid asserting specific concurrency algorithms, conflict resolution, event sourcing or CRDT/OT technologies: these were not established.
+
+### Other client work
+
+- Built or contributed to numerous smaller web applications, e-commerce solutions, promotional/digital campaigns and other commercial client projects.
+- Specific small campaign names intentionally omitted from final CV; the focus is diversity and continuity of delivery across multiple clients rather than enumerating every engagement.
+
+### Company-level technical leadership and Agile introduction
+
+- Actively contributed to adopting **Scrum and Jira** at a time when both were new to the company.
+- Explained to colleagues how to write useful **user stories** and **technical tasks**, including how the two differ.
+- Supported the introduction of more structured requirements and development workflows.
+- Worked comfortably with clients, defended necessary technical decisions and supported colleagues on complicated topics.
+- Informal role: **do not invent direct reporting lines, hiring/firing authority, performance management responsibility, or formal engineering-management title**.
+
+### Technologies recorded in the original portfolio
 
 PHP 5.6 / 7.x · Laravel 5.x / 6.x · Symfony 4.x · Vue.js 2.x · JavaScript · jQuery · HTML5 · MySQL · Apache · Nginx · CSS3 / SASS.
+
+Additional confirmed domain technology: WebSockets, Jira, Scrum.
 
 ---
 

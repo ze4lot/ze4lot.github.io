@@ -102,30 +102,23 @@ PHP · Laravel · MongoDB · Docker · Nginx · Azure
 
 | Field | Details |
 |---|---|
-| Period | **04.2016 – 05.2020** |
+| Period | April 2016 – May 2020 |
 | Position | Senior Software Developer & Team Leader |
-| Sector | Software house |
-| Location | Kraków, Poland |
+| Industry | Software Development / Digital Products |
 | Website | [kissdigital.com](https://kissdigital.com/) |
 
-### Selected projects
+### Key Responsibilities & Achievements
 
-| Project | Involvement |
-|---|---|
-| **Olimp Premium Club** | Designed business processes and backend architecture; worked on API design and selected mobile application tasks. |
-| **Haddad PLM** | Co-designed and supervised development of a product lifecycle management system. |
-| **Other commercial projects** | Delivered web applications, e-commerce platforms, and marketing-oriented products. |
-
-### Responsibilities
-
-- Designed software architectures and led backend implementation across projects.
-- Led and mentored developers; promoted technical standards and improved tooling.
-- Worked with stakeholders to translate business needs into actionable software requirements.
-- Supervised engineering quality across custom applications and digital products.
+- **Solution Architecture — Olimp Premium Club:** Independently designed and implemented the backend of a mobile loyalty platform, including loyalty points, reward redemption, and API contracts. Contributed to product design and mobile application workflows, translating business requirements into technical solutions.
+- **Fraud Prevention & Verification:** Designed a strategy-based fraud detection engine identifying suspicious scanning patterns, duplicate code usage, and excessive activity. Integrated external receipt recognition and verification services, with conditional escalation to manual review.
+- **Real-time Collaboration — Haddad PLM:** Designed and developed the backend of a product lifecycle management platform for apparel design and production workflows. Implemented persistent shared state and WebSocket-based synchronization supporting real-time collaborative editing.
+- **Additional Client Projects:** Delivered numerous smaller commercial projects, including web applications, e-commerce solutions, and digital campaigns for various clients.
+- **Technical Leadership:** Became an informal technical leader through hands-on expertise, ownership of complex projects, and direct client collaboration. Supported other developers, helped resolve technical challenges, and took responsibility for architectural decisions.
+- **Agile Transformation:** Actively contributed to introducing Scrum and Jira across the company, helping establish development workflows and teaching teams how to structure user stories, tasks, and requirements.
 
 ### Technologies
 
-PHP 5.6 / 7.x · Laravel 5.x / 6.x · Symfony 4.x · Vue.js 2.x · JavaScript · jQuery · HTML5 · MySQL · Apache · Nginx · CSS3 / SASS.
+PHP · Laravel · Symfony · MySQL · JavaScript · Vue.js · WebSockets · Jira
 
 ---
 
