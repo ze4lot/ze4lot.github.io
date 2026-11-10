@@ -89,27 +89,23 @@ PHP · Laravel · MySQL · Redis · Docker · Jira · ERP
 
 ## Quad/Graphics
 
-| Field | Details |
-|---|---|
-| Period | October 2020 – March 2022 |
-| Position | Senior Software Developer |
-| Industry | Enterprise Marketing / Retail |
-| Website | [quad.com](https://www.quad.com/) |
+**Senior Software Developer | October 2020 – March 2022**  
+Enterprise Marketing / Retail  
+[quad.com](https://www.quad.com/)
 
-### Project Overview
-
-Enterprise platform for managing promotional flyer production for major US retailers, supporting regional content variations, Excel-based data processing, visual editing, and approval workflows.
+Contributed to an enterprise platform supporting promotional flyer production for major US retailers, including regional content variations and Excel-based data processing.
 
 ### Key Responsibilities & Achievements
 
-- **Application Recovery:** Joined a senior engineering rescue team to recover a non-functional Laravel application delivered by an external vendor, restoring its operation and establishing a foundation for further development.
-- **Architecture & Refactoring:** Modernized the application architecture by restructuring the codebase into modules, refactoring data models, introducing abstractions, and reducing technical debt.
-- **Product Delivery:** Contributed to a rapid production launch and subsequent feature development within a self-organizing engineering team, continuously improving functionality through feedback from business stakeholders and a downstream data validation team.
+- **Application Recovery:** Joined a self-organizing team of senior engineers to recover a non-functional Laravel application delivered by an external vendor.
+
+- **Architecture & Modernization:** Upgraded Laravel, refactored complex controllers and data models, and introduced modular architecture and reusable abstractions to improve maintainability.
+
+- **Product Delivery:** Helped bring the application into production under tight deadlines, followed by ongoing feature development, stabilization, and improvements based on operational feedback.
 
 ### Technologies
 
 PHP · Laravel · MongoDB · Docker · Nginx · Azure
-
 ---
 
 ## KISS digital
