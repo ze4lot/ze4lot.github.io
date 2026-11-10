@@ -470,19 +470,20 @@ PHP 5.4 · CakePHP 1.x / 2.x · HTML5 · jQuery · MySQL · Apache · CSS / LESS
 
 | Field | Details |
 |---|---|
-| Period | **10.2011 – 04.2013** |
+| Period | October 2011 – April 2013 |
 | Position | PHP Developer |
-| Sector | Digital / interactive agency |
+| Industry | Digital / interactive agency |
 | Location | Kraków, Poland |
 | Website | [eura7.com](https://www.eura7.com/) |
 
-### Selected work and responsibilities
+### Experience
 
-- Developed marketing websites and maintained existing client-facing applications.
-- Delivered features, bug fixes, and changes for projects with different business needs.
-- Implemented frontend and multimedia-related functionality alongside backend work.
+- Worked primarily on conventional implementation and maintenance of marketing websites, interactive solutions and commercial web applications.
+- Delivered frontend and backend features, fixes and client-requested changes in multiple agency projects.
+- The user recalls this period as principally routine hands-on development rather than architecture, ownership or technical leadership.
+- No particular large project or notable business outcome was identified; final CV intentionally uses a single concise bullet.
 
-### Technologies
+### Technologies recorded in the original portfolio
 
 PHP 5.4 · Zend Framework 1.12 · HTML5 · ActionScript / Flash · JavaScript · jQuery · MySQL · Apache · CSS / LESS.
 
