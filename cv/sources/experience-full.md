@@ -251,26 +251,54 @@ Jira · Scrum-inspired planning · sprints · daily meetings · release calendar
 
 | Field | Details |
 |---|---|
-| Period | **10.2020 – 03.2022** |
+| Period | October 2020 – March 2022 |
 | Position | Senior Software Developer |
-| Sector | Marketing / print systems |
-| Location | Texas, USA |
+| Industry | Enterprise Marketing / Print / Retail |
+| Location | Texas, USA (as listed in the original portfolio) |
 | Website | [quad.com](https://www.quad.com/) |
 
-### Selected work
+### Business context
 
-- Took over a legacy project initially developed by an offshore team.
-- Stabilized and refactored critical parts of the application and helped bring the project to production readiness.
+- The application supported creating, managing, previewing and approving promotional flyers for large US retail chains.
+- Flyers could have **regional variants (“zones”)**: the assortment and promotional content could differ by geographical area while sharing the same overall campaign.
+- The workflow accepted **Excel imports** containing product and promotional data. Users could review and edit imported data in a dedicated interface with a flyer preview.
+- The application allowed managing zone-specific changes and approvals, then exported the processed data back to **Excel** for the downstream production department.
+- **MongoDB** was used as a local application database.
 
-### Responsibilities
+### Project recovery
 
-- Assumed ownership of an inherited, incomplete project under delivery pressure.
-- Refactored legacy implementation to improve maintainability and operational stability.
-- Worked with a wider team to align code changes and technical decisions with business requirements.
+- The original application was outsourced to an external vendor, but the delivered version could not initially be run successfully; once running, substantial functionality was broken.
+- The inherited Laravel code contained poor separation of concerns, extremely large controller methods with extensive inline arrays and other maintainability issues.
+- Quad/Graphics set up a **new senior-only engineering recovery team based in Poland** to salvage and deliver the product.
+- The engineers operated as a **self-organizing technical team**, supported by a project manager and with unusually direct access to high-level business stakeholders.
+- Avoid attributing unverified dishonest intent to the previous vendor; the supported technical claim is that the code was non-functional and poorly structured.
 
-### Technologies
+### Maciej's direct technical contribution
+
+- Took responsibility for substantial **application architecture recovery**.
+- Updated the Laravel application and its environment as necessary to get the product running.
+- Cleaned up the inherited codebase and reorganized it into modules.
+- Refactored application models and introduced abstractions to reduce coupling and improve maintainability.
+- This foundational work helped the team move beyond basic recovery into building and fixing business functionality.
+- After stabilization, actively implemented new features alongside the other senior developers.
+- Work was selected and shared informally within the autonomous team, drawing on individual interests and strengths; there was no claim of formal team leadership.
+
+### Production launch and ongoing delivery
+
+- The senior team reached a **production launch quickly**, despite known product limitations and defects.
+- A separate **downstream validation team** reviewed exported Excel files before those files were used by the next department.
+- When that team detected issues, it corrected the files for ongoing operations and reported problems back to engineering.
+- Engineering used this feedback loop to fix defects and improve the application incrementally after deployment.
+- This was a pragmatic phased delivery under pressure, with manual verification as a safeguard; do not describe the launch as defect-free.
+- Business stakeholders were available to engineering directly for rapid clarification and prioritization.
+
+### Technologies from existing portfolio
 
 PHP 7.4 / 8.0 · Laravel 7.x / 8.x · MongoDB 4.4 · Docker · Nginx · Microsoft Azure.
+
+### Summary of contributions
+
+Application recovery · Laravel modernization · modular refactoring · model refactoring · abstractions · enterprise Excel workflows · regional content management · senior engineering collaboration · production delivery.
 
 ---
 

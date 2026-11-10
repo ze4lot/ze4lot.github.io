@@ -77,26 +77,24 @@ PHP · Laravel · MySQL · Redis · Docker · Jira
 
 | Field | Details |
 |---|---|
-| Period | **10.2020 – 03.2022** |
+| Period | October 2020 – March 2022 |
 | Position | Senior Software Developer |
-| Sector | Marketing / print systems |
-| Location | Texas, USA |
+| Industry | Enterprise Marketing / Retail |
 | Website | [quad.com](https://www.quad.com/) |
 
-### Selected work
+### Project Overview
 
-- Took over a legacy project initially developed by an offshore team.
-- Stabilized and refactored critical parts of the application and helped bring the project to production readiness.
+Enterprise platform for managing promotional flyer production for major US retailers, supporting regional content variations, Excel-based data processing, visual editing, and approval workflows.
 
-### Responsibilities
+### Key Responsibilities & Achievements
 
-- Assumed ownership of an inherited, incomplete project under delivery pressure.
-- Refactored legacy implementation to improve maintainability and operational stability.
-- Worked with a wider team to align code changes and technical decisions with business requirements.
+- **Application Recovery:** Joined a senior engineering rescue team to recover a non-functional Laravel application delivered by an external vendor, restoring its operation and establishing a foundation for further development.
+- **Architecture & Refactoring:** Modernized the application architecture by restructuring the codebase into modules, refactoring data models, introducing abstractions, and reducing technical debt.
+- **Product Delivery:** Contributed to a rapid production launch and subsequent feature development within a self-organizing engineering team, continuously improving functionality through feedback from business stakeholders and a downstream data validation team.
 
 ### Technologies
 
-PHP 7.4 / 8.0 · Laravel 7.x / 8.x · MongoDB 4.4 · Docker · Nginx · Microsoft Azure.
+PHP · Laravel · MongoDB · Docker · Nginx · Azure
 
 ---
 
