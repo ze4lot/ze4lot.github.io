@@ -441,24 +441,26 @@ PHP 5.4 · Kohana 3.x · Laravel 4.x · HTML5 · JavaScript · jQuery · MySQL �
 
 | Field | Details |
 |---|---|
-| Period | **12.2012 – 04.2013** |
+| Period | December 2012 – April 2013 |
 | Position | PHP Developer |
-| Sector | Interactive agency |
+| Industry | Interactive agency / software development / digital media |
 | Location | Kraków, Poland |
 | Website | [akra.net](https://akra.net/) |
 
-### Selected work
+### Project context
 
-- Took over an unfinished stock-photo platform.
-- Migrated the application from CakePHP 1.x to CakePHP 2.x.
-- Implemented missing functionality and completed the work needed for launch.
+- Took over an unfinished **stock photography platform**.
+- Migrated the inherited application from **CakePHP 1.x to CakePHP 2.x**.
+- Implemented missing functionality and fixed existing problems to prepare the product for launch.
+- Worked on backend functionality, modernization and production-delivery preparation.
 
-### Responsibilities
+### Recollection and verification limits
 
-- Recovered an incomplete legacy project and stabilized its technical foundation.
-- Worked on migration, backend features, and production delivery.
+- No reliable recollection of why the project had been left incomplete or why this assignment was undertaken.
+- The original portfolio reports work needed for launch, but there is **no explicit confirmation that the application ultimately went live**.
+- No additional system architecture or project outcomes were supplied. Keep the final CV concise.
 
-### Technologies
+### Technologies from original portfolio
 
 PHP 5.4 · CakePHP 1.x / 2.x · HTML5 · jQuery · MySQL · Apache · CSS / LESS.
 

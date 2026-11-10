@@ -147,26 +147,19 @@ PHP · Kohana · Laravel · MySQL · JavaScript · HTML · CSS / SASS
 
 | Field | Details |
 |---|---|
-| Period | **12.2012 – 04.2013** |
+| Period | December 2012 – April 2013 |
 | Position | PHP Developer |
-| Sector | Interactive agency |
-| Location | Kraków, Poland |
+| Industry | Software Development / Digital Media |
 | Website | [akra.net](https://akra.net/) |
 
-### Selected work
+### Key Responsibilities & Achievements
 
-- Took over an unfinished stock-photo platform.
-- Migrated the application from CakePHP 1.x to CakePHP 2.x.
-- Implemented missing functionality and completed the work needed for launch.
-
-### Responsibilities
-
-- Recovered an incomplete legacy project and stabilized its technical foundation.
-- Worked on migration, backend features, and production delivery.
+- **Legacy Modernization:** Migrated an unfinished stock photography platform from CakePHP 1.x to CakePHP 2.x, improving its technical foundation.
+- **Application Development:** Implemented missing functionality, fixed existing issues, and prepared the application for launch.
 
 ### Technologies
 
-PHP 5.4 · CakePHP 1.x / 2.x · HTML5 · jQuery · MySQL · Apache · CSS / LESS.
+PHP · CakePHP · MySQL · JavaScript · jQuery
 
 ---
 
