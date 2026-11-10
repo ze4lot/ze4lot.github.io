@@ -197,28 +197,3 @@ PHP · Zend Framework · MySQL · JavaScript · jQuery · Flash / ActionScript
 ### Technologies
 
 PHP · Symfony · Yii · Doctrine · PostgreSQL
-
----
-
-## Freelance & Consulting
-
-| Field | Details |
-|---|---|
-| Period | **2010 – present** |
-| Position | Freelance Consultant & Lead Developer |
-| Sector | Cross-industry software consulting |
-| Website | [Portfolio](https://ze4lot.github.io/) |
-
-### Scope of work
-
-- Designed backend architectures for custom applications and business systems.
-- Provided technical direction and guidance on maintainability and system evolution.
-- Refactored and stabilized legacy applications.
-- Translated business requirements into technical plans and design decisions.
-- Supported clients in evaluating technical risk, solution options, and architecture.
-- Led smaller projects end to end, from analysis through implementation.
-- Worked across different stacks depending on project requirements.
-
-### Technologies
-
-PHP · Laravel · Symfony · JavaScript · MySQL · PostgreSQL · Redis · Docker.
