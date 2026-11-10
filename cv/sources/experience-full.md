@@ -76,7 +76,7 @@ GitHub Issues / PRs · documentation and DSL-first requirements · domain modeli
 
 | Field | Details |
 |---|---|
-| Period | Early 2025 – May 2026 |
+| Period | March 2025 – May 2026 |
 | Role (current CV) | Senior Engineer / Architect |
 | Role (older portfolio) | Lead Backend Developer / System Architect |
 | Industry | Insurance & Brokerage |
@@ -165,7 +165,7 @@ PHP 8.4 · Laravel 13 · Filament 5 · JavaScript · Vite · Tailwind CSS 4 · R
 
 ### Factual reconciliation
 
-- Earlier portfolio: **Jan 2024 – Present**; older screenshot: **Jan 2025 – Current**. The originally drafted **Jan 2024 – May 2026** start was corrected by the user: ONWELO ended in **January 2025**, and direct cooperation with Nord began **approximately one month later (likely February 2025)**. Exact start month is **not verified**. The current CV deliberately uses **Early 2025 – May 2026** to avoid false precision. Confirm using the first Nord contract or invoice before a final date-specific version.
+- Earlier portfolio: **Jan 2024 – Present**; older screenshot: **Jan 2025 – Current**. The first draft incorrectly used **Jan 2024 – May 2026**. ONWELO ended in **January 2025**. The user subsequently chose **March 2025 – May 2026** as the date range to use for direct cooperation with Nord; the exact start month has not been independently verified against contract or invoices.
 - Current accepted position: **Senior Engineer / Architect**. Older portfolio position: **Lead Backend Developer / System Architect**.
 - No team size, hard performance figure, delivery KPI, or guaranteed completion of the data-provider migration was supplied.
 
