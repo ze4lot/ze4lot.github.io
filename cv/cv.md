@@ -4,11 +4,11 @@
 
 ## Professional Summary
 
-Software Architect and technical leader with 16+ years of commercial software development experience, specializing in PHP, backend architecture, enterprise integrations, and modernization of complex legacy systems.
+Software Architect and Technical Leader with over 16 years of experience in software development, backend architecture, and complex business systems.
 
-Experienced in technical decision-making, mentoring developers, working directly with business stakeholders, and improving engineering processes. Combines a strong hands-on development background with architectural ownership and technical leadership.
+Combines a strong hands-on engineering background with experience in leading development teams, mentoring engineers, and improving software delivery processes. Skilled in architectural decision-making, legacy modernization, stakeholder collaboration, and building effective engineering environments.
 
-Currently building Bikeparks.pl as a founder and software architect, having designed and implemented a documentation-first, AI-native software development lifecycle with agent-driven implementation, automated quality assurance, and human-controlled production releases.
+Currently developing Bikeparks.pl as a founder and software architect, having designed and implemented a documentation-first, AI-native software development lifecycle combining autonomous coding agents with human architectural oversight, quality assurance, and controlled production delivery.
 
 ## Core Competencies
 
