@@ -37,7 +37,7 @@ PHP · Symfony · PostgreSQL · Redis · RabbitMQ · Docker · Nginx · GitHub A
 
 | Field | Details |
 |---|---|
-| Period | **January 2024 – May 2026** |
+| Period | **Early 2025 – May 2026** |
 | Position | Senior Engineer / Architect |
 | Industry | Insurance & Brokerage |
 | Website | [nordpartner.pl](https://nordpartner.pl/) |
