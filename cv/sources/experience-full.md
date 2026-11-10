@@ -109,27 +109,68 @@ PHP 8.4 · Laravel 13 · Filament 5 · JavaScript · Vite · Tailwind CSS 4 · R
 
 | Field | Details |
 |---|---|
-| Period | **04.2024 – 01.2025** |
+| Period | April 2024 – January 2025 |
 | Position | Technical Coordinator |
-| Sector | IT services / consulting |
+| Sectors | IT Consulting / Insurance / E-commerce |
 | Locations | Kraków, Warszawa, Poland |
 | Website | [onwelo.com](https://onwelo.com/) |
 
-### Selected work
+### Project 1 — Nord Partner: Legacy PHP modernization and security
 
-- Conducted a technical and security audit of a legacy insurance system using PHP 5.6 and delivered targeted security improvements.
-- Supported technical planning and process modeling for a new social media product.
+**Client and context**
 
-### Responsibilities
+- Nord Partner commissioned ONWELO to perform a security audit, fix defects, and release an updated version of its existing insurance application.
+- The system was a largely undocumented legacy PHP application with technical debt and defects.
+- This assignment was where Maciej met Paweł from Nord Partner, with whom he later worked directly on legacy maintenance and development of its successor platform.
+- PHP was substantially outdated. The starting version may have been around 5.2, with modernization reportedly reaching 7.4 and later 8.x; **exact migration versions remain unconfirmed**.
 
-- Assessed legacy applications with respect to technical design and risk.
-- Supported workflow modeling and architecture-oriented planning.
-- Coordinated smaller technical tasks, implementation support, and validations.
-- Consulted on business processes and design choices for digital products.
+**Technical ownership and collaboration**
 
-### Technologies
+- Maciej owned the backend work and some server/infrastructure tasks.
+- A second developer was responsible for frontend changes; they cooperated closely.
+- The work encompassed understanding the legacy implementation, auditing security, fixing problems, modernizing the runtime and dependencies, preparing documentation, and releasing the updated application.
+
+**Legacy upgrade strategy**
+
+- Upgraded the PHP runtime, requiring compatibility work across the application.
+- Updated dependencies where newer, compatible releases existed.
+- Replaced libraries and dependencies that could not reasonably be upgraded.
+- Rewrote portions of code or functionality where dependencies could not be preserved.
+- Fixed application defects alongside the modernization.
+- Prepared documentation for previously undocumented areas of the system.
+- Handled some required server configuration/infrastructure changes.
+
+**Delivery and independent verification**
+
+- Prepared and delivered an updated release.
+- The project concluded successfully: the updated application passed demanding security and penetration tests conducted by an independent specialized external company.
+- This result should not be described as the user's personal performance of those external penetration tests; the external company did them.
+
+### Project 2 — Social platform: E-commerce process modeling
+
+**Project context**
+
+- A different unit of ONWELO was working on a large social-media platform with adult-oriented educational content and webinars.
+- A related e-commerce capability was planned for the platform.
+- Maciej was invited to contribute because of his e-commerce domain and engineering experience.
+
+**Role and contribution**
+
+- Worked with business departments and another architect to analyze and design business processes for the planned e-commerce component.
+- Modeled the end-to-end customer purchasing journey.
+- Covered order handling, after-purchase service, back-office operations, and warehouse/logistics workflows.
+- The contribution was process analysis and design, **not programming or implementation**.
+- No final implementation or successful deployment of the e-commerce subsystem has been established.
+
+### Technical stack recorded in the older portfolio
 
 PHP 5.6 / 8.2 · JavaScript · PostgreSQL · Nginx · Docker.
+
+### Positioning retained for the CV
+
+- Business process design and cross-functional collaboration first.
+- Hands-on backend modernization and selective infrastructure responsibility.
+- Security remediation and independently validated release as an outcome.
 
 ---
 

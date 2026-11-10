@@ -33,27 +33,21 @@ PHP · Laravel · FilamentPHP · Redis · Docker · JavaScript · CI/CD
 
 | Field | Details |
 |---|---|
-| Period | **04.2024 – 01.2025** |
+| Period | April 2024 – January 2025 |
 | Position | Technical Coordinator |
-| Sector | IT services / consulting |
-| Locations | Kraków, Warszawa, Poland |
+| Industry | IT Consulting / Insurance / E-commerce |
 | Website | [onwelo.com](https://onwelo.com/) |
 
-### Selected work
+### Key Responsibilities & Achievements
 
-- Conducted a technical and security audit of a legacy insurance system using PHP 5.6 and delivered targeted security improvements.
-- Supported technical planning and process modeling for a new social media product.
-
-### Responsibilities
-
-- Assessed legacy applications with respect to technical design and risk.
-- Supported workflow modeling and architecture-oriented planning.
-- Coordinated smaller technical tasks, implementation support, and validations.
-- Consulted on business processes and design choices for digital products.
+- **Business Process Design:** Collaborated with business stakeholders and a solution architect to model end-to-end e-commerce processes, covering customer purchasing journeys, order management, back-office operations, and warehouse workflows for a new digital platform.
+- **Legacy Modernization:** Led backend modernization of an undocumented legacy PHP insurance system, upgrading the PHP runtime and resolving compatibility issues through dependency upgrades, replacements, and selective rewrites.
+- **Security & Engineering:** Remediated security vulnerabilities, fixed application defects, documented existing functionality, and handled selected infrastructure changes while collaborating closely with a frontend developer.
+- **Delivery & Validation:** Prepared and delivered the updated application, which successfully passed independent security assessments and penetration testing conducted by an external specialist company.
 
 ### Technologies
 
-PHP 5.6 / 8.2 · JavaScript · PostgreSQL · Nginx · Docker.
+PHP · PostgreSQL · Nginx · Docker
 
 ---
 
