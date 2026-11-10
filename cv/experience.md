@@ -131,23 +131,19 @@ PHP · Laravel · Symfony · MySQL · JavaScript · Vue.js · WebSockets · Jira
 
 ## Centrum Nowej Technologii
 
-| Field | Details |
-|---|---|
-| Period | April 2013 – June 2015 |
-| Position | CTO & Programmer |
-| Industry | E-commerce / Software Development |
-| Website | [nowetechnologie.pl](http://www.nowetechnologie.pl/) |
+**CTO & Programmer | April 2013 – June 2015**  
+E-commerce / Software Development  
+[nowetechnologie.pl](http://www.nowetechnologie.pl/)
 
 ### Key Responsibilities & Achievements
 
-- **E-commerce Platform Architecture:** Redesigned the architecture of Profit Shop, a reusable e-commerce platform, separating the shared application core from the frontend presentation layer.
-- **Delivery Optimization:** Introduced configurable storefront templates, simplifying visual customization and significantly reducing the time required to launch new online stores and upgrade existing implementations.
-- **Technical Leadership & Development:** Combined hands-on software development with technical decision-making, contributing to the evolution of the company's core product and delivering custom software projects for external clients.
+- **E-commerce Architecture:** Redesigned the architecture of Profit Shop, a reusable e-commerce platform, separating the application core from frontend presentation and introducing configurable storefront templates.
+
+- **Technical Leadership & Delivery:** Combined hands-on development with technical decision-making, significantly reducing store launch and upgrade complexity while delivering custom software solutions for external clients.
 
 ### Technologies
 
 PHP · Kohana · Laravel · MySQL · JavaScript · HTML · CSS / SASS
-
 ---
 
 ## AKRA Polska
