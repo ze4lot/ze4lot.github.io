@@ -174,20 +174,3 @@ Digital Agency
 ### Technologies
 
 PHP · Zend Framework · MySQL · JavaScript · jQuery · Flash / ActionScript
----
-
-## MKI.PL
-
-| Field | Details |
-|---|---|
-| Period | June 2010 – August 2012 |
-| Position | Junior PHP Developer |
-| Industry | Web Development / E-commerce |
-
-### Key Responsibilities & Achievements
-
-- Developed and maintained websites, e-commerce solutions, and small business applications, gaining commercial experience in PHP development and backend frameworks.
-
-### Technologies
-
-PHP · Symfony · Yii · Doctrine · PostgreSQL
