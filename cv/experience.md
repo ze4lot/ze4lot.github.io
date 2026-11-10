@@ -2,34 +2,27 @@
 
 ## Bikeparks.pl
 
-| Field | Details |
-|---|---|
-| Period | 2026 – Present |
-| Position | Founder & Software Architect |
-| Industry | Sports Technology / Digital Platforms |
-| Website | [bikeparks.pl](https://bikeparks.pl/) |
+**Founder & Software Architect | 2026 – Present**  
+Sports Technology / Digital Platforms  
+[bikeparks.pl](https://bikeparks.pl/)
 
-### Project Overview
-
-Founded and developed a digital platform connecting cyclists, cycling infrastructure operators, and service providers. Responsible for product strategy, software architecture, engineering processes, and technical operations.
+Founded and developed a digital platform for discovering cycling infrastructure and connecting cyclists with facility operators and service providers.
 
 ### Key Responsibilities & Achievements
 
-- **Product Ownership & Strategy:** Founded an independent digital business, defining its product vision, roadmap, business requirements, and technical direction. Developed a public platform for cycling infrastructure discovery while building relationships with prospective business partners.
+- **Product & Technical Leadership:** Defined product vision, business strategy, roadmap, and technical direction. Led the development and production launch of a cycling infrastructure discovery platform.
 
-- **Software Architecture:** Designed and directed the development of a modular Symfony-based platform, including domain modeling, data persistence, business workflows, external integrations, and scalable application architecture.
+- **Software Architecture:** Architected and directed the development of a modular Symfony-based application, including domain modeling, data persistence, integrations, and business workflows.
 
-- **AI-Native Software Development Lifecycle:** Independently designed and implemented an end-to-end SDLC built around AI coding agents, covering requirements management, architecture, implementation, code review, automated testing, documentation, and controlled delivery.
+- **AI-Native SDLC:** Designed and implemented an end-to-end software development lifecycle built around AI coding agents, covering requirements, architecture, implementation, code review, testing, and delivery.
 
-- **Documentation & DSL-First Engineering:** Established a specification-driven development approach with documented business rules, technical contracts, architectural decisions, and traceable implementation requirements. Combined structured agent delegation with interactive engineering for exploratory tasks.
+- **Documentation-First Engineering:** Established specification- and DSL-driven development practices, ensuring documented business rules, technical decisions, and implementation traceability.
 
-- **Engineering Quality & Release Management:** Established automated quality gates, integration and E2E testing, performance benchmarking, and agent-assisted code reviews. Retained human control over merge approvals and production releases, delivering changes through controlled, batched deployments.
-
-- **Infrastructure & Technical Operations:** Designed and managed containerized development and production environments, including application services, databases, messaging infrastructure, reverse proxies, CI/CD workflows, deployment procedures, and operational monitoring.
+- **Engineering Quality & Operations:** Established automated quality gates, E2E testing, performance benchmarking, and containerized infrastructure. Maintained final authority over merge approvals and controlled, batched production releases.
 
 ### Technologies
 
-PHP · Symfony · PostgreSQL · Redis · RabbitMQ · Docker · Nginx · GitHub Actions · AI Coding Agents · LLMs
+PHP · Symfony · PostgreSQL · Redis · RabbitMQ · Docker · Nginx · GitHub Actions · AI Coding Agents
 
 ---
 
