@@ -55,28 +55,21 @@ PHP · PostgreSQL · Nginx · Docker
 
 | Field | Details |
 |---|---|
-| Period | **04.2022 – 03.2023** |
+| Period | April 2022 – March 2023 |
 | Position | Team Leader & Senior Software Developer |
-| Sector | Retail / distribution / internal IT |
-| Locations | Kraków, Skawina, Poland |
+| Industry | Fashion Retail / E-commerce |
 | Website | [ftggroup.com](https://ftggroup.com/) |
 
-### Selected work
+### Key Responsibilities & Achievements
 
-- Led a development team in day-to-day execution and technical growth.
-- Worked directly with business units to align software delivery with operational needs.
-- Improved the reliability of internal systems through refactoring and integration work.
-
-### Responsibilities
-
-- Provided technical leadership and mentoring to developers.
-- Coordinated implementation priorities in collaboration with business departments.
-- Refactored and extended core business systems with an emphasis on stability and maintainability.
-- Supported development standards and day-to-day delivery quality.
+- **Engineering Leadership:** Took technical leadership of a development team during the early stages of a new PIM platform, providing hands-on engineering, mentoring, task coordination, and technical guidance.
+- **Delivery & Process Improvement:** Introduced pragmatic Scrum practices, structured Jira workflows, sprint planning, daily meetings, and a release calendar. Established clear delivery boundaries with business stakeholders, reducing ad-hoc interruptions and organizational pressure on the IT department.
+- **Business Systems Development:** Led the development of a PIM platform extending the capabilities of an overloaded Comarch ERP, supporting product lifecycle management, cross-department data enrichment, pricing, product identification, and warehouse processes.
+- **Cross-functional Collaboration:** Worked closely with the Head of IT, project managers, designers, and business departments to translate operational requirements into prioritized development tasks while maintaining an existing customer service platform.
 
 ### Technologies
 
-PHP 8.x · Laravel 9 · MySQL · Redis · Nginx · Docker.
+PHP · Laravel · MySQL · Redis · Docker · Jira
 
 ---
 

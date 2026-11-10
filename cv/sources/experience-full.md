@@ -178,28 +178,72 @@ PHP 5.6 / 8.2 · JavaScript · PostgreSQL · Nginx · Docker.
 
 | Field | Details |
 |---|---|
-| Period | **04.2022 – 03.2023** |
+| Period | April 2022 – March 2023 |
 | Position | Team Leader & Senior Software Developer |
-| Sector | Retail / distribution / internal IT |
+| Industry | Fashion retail / e-commerce / internal business systems |
 | Locations | Kraków, Skawina, Poland |
 | Website | [ftggroup.com](https://ftggroup.com/) |
 
-### Selected work
+### Context — existing ERP and product operations
+
+- FTG operated a large street-fashion retail business.
+- A heavily loaded, difficult-to-extend **Comarch ERP** supported much of the organization. Its limitations restricted further digitalization and process automation.
+- An independent **PIM** platform was being built as a complementary system to take over business responsibilities that were difficult to implement or maintain within ERP.
+- Maciej joined **shortly after PIM development had started**, not at the initial project conception. The team needed experienced technical leadership and delivery organization.
+
+### PIM — business workflows and system boundaries
+
+- The product lifecycle started with selected input information retrieved from Comarch ERP.
+- Different business departments then worked on the product inside PIM, enriching details such as descriptions, technical attributes, and images.
+- PIM also covered product-related pricing, customer assignments, warehouses, labeling, identification, and operational data.
+- After product preparation was complete, processed product information was passed to ERP.
+- Separate information flows supported warehouse operations, including labeling, identification and scanner-based processes.
+- This was an **ERP-adjacent application**: it complemented and relieved Comarch rather than replacing the entire ERP.
+- The precise transport used between systems (API vs direct database vs file-based import/export) was not established.
+
+### Existing customer-service platform
+
+- Alongside the evolving PIM, Maciej maintained and developed an already-existing customer-service platform.
+
+### Hands-on technical leadership
+
+- Acted as a **hands-on technical lead** while continuing to program.
+- Provided experience, guidance, support and mentoring to a younger, motivated group of developers who lacked consistent senior engineering support.
+- Helped developers with technical decisions and day-to-day delivery rather than functioning as their formal HR manager.
+- Defined, refined and distributed work items, passed on requirements, assets, and feedback, and co-managed the backlog.
+- Cooperated closely with the Head of IT, project managers, and a designer, with additional collaboration with warehouse, accounting and service departments.
+- Discussed functionality with business stakeholders, represented the development team and helped deliver agreed functionality together.
+
+### Process and delivery turnaround
+
+- On arrival, the main challenge combined organizational chaos with insufficient technical guidance.
+- Jira was available, but the team did not have an effective way to use and organize it.
+- Introduced **pragmatic, team-adapted Scrum practices**, sprint cadence, daily meetings, planning, structured Jira work and a **release calendar**.
+- Established a clear schedule and intake process for business requests. Stakeholders could no longer continuously introduce ad-hoc tasks that derailed planned work.
+- This reduced interruptions and context switching, made delivery more predictable, helped the IT department regain control over its workload and **lowered stress/pressure on the IT team**.
+- Invested in team integration and improving trust and relationships, alongside technical mentorship.
+- Outcomes are qualitative; no numeric productivity, throughput or team-size metrics were provided.
+
+### Technologies recorded in the portfolio
+
+PHP 8.x · Laravel 9 · MySQL · Redis · Nginx · Docker.
+
+### Delivery tooling
+
+Jira · Scrum-inspired planning · sprints · daily meetings · release calendar.
+
+### Earlier portfolio wording (preserved for reference)
 
 - Led a development team in day-to-day execution and technical growth.
 - Worked directly with business units to align software delivery with operational needs.
-- Improved the reliability of internal systems through refactoring and integration work.
+- Improved reliability of internal systems through refactoring and integration work.
+- Mentored developers, aligned business expectations with implementation, and supported technical standards and delivery quality.
 
-### Responsibilities
+### Positioning boundaries
 
-- Provided technical leadership and mentoring to developers.
-- Coordinated implementation priorities in collaboration with business departments.
-- Refactored and extended core business systems with an emphasis on stability and maintainability.
-- Supported development standards and day-to-day delivery quality.
-
-### Technologies
-
-PHP 8.x · Laravel 9 · MySQL · Redis · Nginx · Docker.
+- Do not claim Maciej designed the entire PIM architecture from scratch: he joined shortly after the initial build began.
+- Do not claim he was the direct people manager responsible for hiring, performance appraisals or budgets.
+- The main impact was delivering senior technical guidance and predictable execution while remaining hands-on; avoid unverified quantitative impact.
 
 ---
 
