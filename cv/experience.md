@@ -70,24 +70,21 @@ PHP · PostgreSQL · Nginx · Docker
 
 ## Fashion Trends Group
 
-| Field | Details |
-|---|---|
-| Period | April 2022 – March 2023 |
-| Position | Team Leader & Senior Software Developer |
-| Industry | Fashion Retail / E-commerce |
-| Website | [ftggroup.com](https://ftggroup.com/) |
+**Team Leader & Senior Software Developer | April 2022 – March 2023**  
+Fashion Retail / E-commerce  
+[ftggroup.com](https://ftggroup.com/)
 
 ### Key Responsibilities & Achievements
 
-- **Engineering Leadership:** Took technical leadership of a development team during the early stages of a new PIM platform, providing hands-on engineering, mentoring, task coordination, and technical guidance.
-- **Delivery & Process Improvement:** Introduced pragmatic Scrum practices, structured Jira workflows, sprint planning, daily meetings, and a release calendar. Established clear delivery boundaries with business stakeholders, reducing ad-hoc interruptions and organizational pressure on the IT department.
-- **Business Systems Development:** Led the development of a PIM platform extending the capabilities of an overloaded Comarch ERP, supporting product lifecycle management, cross-department data enrichment, pricing, product identification, and warehouse processes.
-- **Cross-functional Collaboration:** Worked closely with the Head of IT, project managers, designers, and business departments to translate operational requirements into prioritized development tasks while maintaining an existing customer service platform.
+- **Engineering Leadership:** Led a software development team, combining hands-on engineering with mentoring, technical guidance, task coordination, and ownership of key technical decisions.
+
+- **Delivery & Process Improvement:** Introduced pragmatic Scrum practices, Jira workflows, sprint planning, and structured release management. Improved delivery predictability by reducing unplanned interruptions and establishing clear boundaries between business stakeholders and developers.
+
+- **Business Systems Development:** Led the development of a PIM platform extending existing ERP capabilities, supporting product data management, pricing, and warehouse processes. Collaborated with business departments and maintained an existing customer service application.
 
 ### Technologies
 
-PHP · Laravel · MySQL · Redis · Docker · Jira
-
+PHP · Laravel · MySQL · Redis · Docker · Jira · ERP
 ---
 
 ## Quad/Graphics
