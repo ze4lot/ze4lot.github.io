@@ -110,26 +110,23 @@ PHP · Laravel · MongoDB · Docker · Nginx · Azure
 
 ## KISS digital
 
-| Field | Details |
-|---|---|
-| Period | April 2016 – May 2020 |
-| Position | Senior Software Developer & Team Leader |
-| Industry | Software Development / Digital Products |
-| Website | [kissdigital.com](https://kissdigital.com/) |
+**Senior Software Developer & Team Leader | April 2016 – May 2020**  
+Software Development / Digital Products  
+[kissdigital.com](https://kissdigital.com/)
 
 ### Key Responsibilities & Achievements
 
-- **Solution Architecture — Olimp Premium Club:** Independently designed and implemented the backend of a mobile loyalty platform, including loyalty points, reward redemption, and API contracts. Contributed to product design and mobile application workflows, translating business requirements into technical solutions.
-- **Fraud Prevention & Verification:** Designed a strategy-based fraud detection engine identifying suspicious scanning patterns, duplicate code usage, and excessive activity. Integrated external receipt recognition and verification services, with conditional escalation to manual review.
-- **Real-time Collaboration — Haddad PLM:** Designed and developed the backend of a product lifecycle management platform for apparel design and production workflows. Implemented persistent shared state and WebSocket-based synchronization supporting real-time collaborative editing.
-- **Additional Client Projects:** Delivered numerous smaller commercial projects, including web applications, e-commerce solutions, and digital campaigns for various clients.
-- **Technical Leadership:** Became an informal technical leader through hands-on expertise, ownership of complex projects, and direct client collaboration. Supported other developers, helped resolve technical challenges, and took responsibility for architectural decisions.
-- **Agile Transformation:** Actively contributed to introducing Scrum and Jira across the company, helping establish development workflows and teaching teams how to structure user stories, tasks, and requirements.
+- **Backend Architecture — Olimp Premium Club:** Independently designed and developed the backend of a mobile loyalty platform, including points management, reward redemption, API contracts, and integrations. Contributed to product design and mobile application workflows.
+
+- **Fraud Detection & Verification:** Designed a strategy-based fraud detection system identifying suspicious activity and duplicate code usage. Integrated external receipt verification services with conditional escalation to manual review.
+
+- **Real-Time Collaboration — Haddad PLM:** Architected and developed the backend of an apparel product lifecycle management platform, implementing shared application state and WebSocket-based synchronization for collaborative design workflows.
+
+- **Technical Leadership & Process Improvement:** Took technical ownership of complex projects, mentored developers, and collaborated directly with clients. Helped introduce Scrum and Jira, establishing more structured requirements and development workflows.
 
 ### Technologies
 
 PHP · Laravel · Symfony · MySQL · JavaScript · Vue.js · WebSockets · Jira
-
 ---
 
 ## Centrum Nowej Technologii
