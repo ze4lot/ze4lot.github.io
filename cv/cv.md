@@ -81,15 +81,18 @@ IT Consulting / Insurance / E-commerce
 
 ### Key Responsibilities & Achievements
 
-- **Business Process Design:** Collaborated with business stakeholders and a solution architect to design end-to-end e-commerce processes, including purchasing journeys, order management, back-office operations, and warehouse workflows.
+- **Legacy Modernization:** Owned backend modernization within a self-organizing two-developer team. Upgraded PHP and dependencies, resolved compatibility issues, and remediated insecure code in an undocumented insurance application and its custom framework.
 
-- **Legacy Modernization:** Led the technical modernization of an undocumented PHP insurance application, upgrading the runtime, resolving compatibility issues, replacing dependencies, and improving code quality.
+- **Security Remediation & Verification:** Conducted an internal security audit with the frontend developer and implemented backend fixes. Addressed additional findings from independent penetration testing, with remediation subsequently verified by the external testers.
 
-- **Security & Delivery:** Remediated security vulnerabilities, resolved application defects, and coordinated technical improvements. Delivered an updated application that successfully passed independent security assessments and penetration testing.
+- **Production Delivery:** Co-built a new production environment, deployed the modernized application, and handed it over for continued operational use following independent verification of security fixes.
+
+- **E-commerce Domain Consulting:** Provided short-term advisory support to another team, working with its architect and business stakeholders on purchasing, order management, back-office, and logistics processes.
 
 ### Technologies
 
 PHP · PostgreSQL · Nginx · Docker
+
 ---
 
 ## Fashion Trends Group
