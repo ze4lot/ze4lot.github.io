@@ -1,5 +1,11 @@
 # LinkedIn — About
 
+## Headline
+
+Software Architect & Engineering Leader | Team Leadership | Software Delivery | AI-Native SDLC | Founder @ Bikeparks.pl
+
+## About
+
 I'm a Software Architect and Technical Leader with over 16 years of experience in software development, specializing in PHP, backend architecture, and complex business systems.
 
 Throughout my career, I've combined hands-on engineering with technical leadership and team management. I've designed software architectures, led development teams, mentored engineers, and taken responsibility for delivering complex technical projects.
