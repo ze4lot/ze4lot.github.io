@@ -88,8 +88,20 @@ GitHub Issues / PRs · documentation and DSL-first requirements · domain modeli
 - The IT colleague at Nord brought Maciej into the project to help rescue an unstable legacy system and build a new platform.
 - Two interconnected workstreams ran in parallel: **maintenance and repair of the existing system** and **architecture plus implementation of a replacement system**.
 - The existing platform was critical to brokers' day-to-day workflows and could not simply be abandoned before the replacement was available.
-- Source data came from a legacy database. The business planned to switch eventually to a central database supplied by an external provider.
-- This planned replacement of the data source was an architectural requirement from the outset, not an unexpected later change.
+- The former application was **broker-only**. A key objective of its replacement was introducing direct self-service access for insurance clients.
+- Nord was undergoing a **corporate merger** while a new, centralized data platform incorporating a **data lake** was being prepared.
+- The portal had to ship and operate against the **existing database** without waiting for the new centralized data platform, while remaining ready for a future data-source change.
+- This planned change of data source was an architectural requirement from the outset, not an unexpected later change.
+
+### Confirmed delivery and actual usage — clarified November 2026
+
+- Maciej was **the sole developer** on the new application, personally responsible for its architecture and implementation from scratch. He did not manage a software development team in this role.
+- The new application and **entire backend replaced the previous broker-only application**, while the existing database remained in service.
+- The replacement was **deployed to production and handed over to brokers and clients**, not merely designed or left as a prototype.
+- Brokers could browse policies and claims, generate reports and report claims; **clients gained login access and self-service management of their own policies and claims**, which the previous broker-only application did not offer.
+- **Approximate scale, based on Maciej's recollection rather than verified analytics:** more than 50 brokers, each associated with at least several clients. Avoid representing this as a proven active-user count or extrapolating a precise number of clients.
+- The application concerned high-value insurance policies and substantial corporate clients / complex insurance operations, as described by Maciej. **No verified policy values, revenue figures, claim volumes, throughput or financial KPIs** are available.
+- The underlying database was still the legacy database at handover; **there is no evidence that the future data lake switchover occurred**.
 
 ### Legacy maintenance and analysis
 
@@ -102,9 +114,10 @@ GitHub Issues / PRs · documentation and DSL-first requirements · domain modeli
 
 ### Replacement platform — architecture
 
-- Designed and implemented the new application, while preserving the ability to work against the old database during transition.
-- The central architectural decision was to separate business logic/processes from legacy data access using the **Repository Pattern** and adapters.
-- The data access abstraction was meant to enable changing the underlying source to the future external, centralized provider without forcing business process code to depend directly on the legacy schema.
+- **Designed and implemented the replacement application and backend from scratch** while retaining the existing database for the production launch.
+- Used the **Repository Pattern** to separate application/business-logic layers from source-specific data access.
+- The data-access boundary was designed so the application could later connect to the new centralized data platform developed during the corporate merger without coupling business processes directly to the old database schema.
+- This was a deliberate trade-off: release a functioning production replacement before the shared data platform was ready, without making future data migration require an application rewrite. The later switchover itself is **not confirmed**.
 - Made other architectural and implementation decisions pragmatically to fit business expectations and reduce long-term maintenance complexity.
 - Applied **event-driven workflows** selectively to integration and data-processing activities — external API integrations, data fetchers, synchronizers, migrators, and importers — with optimization and maintainability in mind.
 - The specifics of queues and asynchronous guarantees have not been established; don't automatically describe the system as queue-driven or fully asynchronous.
@@ -124,8 +137,8 @@ GitHub Issues / PRs · documentation and DSL-first requirements · domain modeli
 ### Collaboration and responsibility boundaries
 
 - Nord's internal IT colleague primarily coordinated the project and represented technical work to the business, gathering feedback and facilitating contact.
-- Maciej was responsible for architectural design and technical implementation.
-- Do **not** present this role as full project ownership, project management, or people management; business-facing coordination was handled by the colleague.
+- Maciej was **the only developer** and responsible for the system's architecture, backend, hands-on implementation and technical delivery through production.
+- Do **not** confuse sole technical ownership with overall project management or people management: business-facing coordination was primarily handled by the colleague.
 
 ### Full technical stack as listed in the portfolio
 
@@ -167,7 +180,9 @@ PHP 8.4 · Laravel 13 · Filament 5 · JavaScript · Vite · Tailwind CSS 4 · R
 
 - Earlier portfolio: **Jan 2024 – Present**; older screenshot: **Jan 2025 – Current**. The first draft incorrectly used **Jan 2024 – May 2026**. ONWELO ended in **January 2025**. The user subsequently chose **March 2025 – May 2026** as the date range to use for direct cooperation with Nord; the exact start month has not been independently verified against contract or invoices.
 - Current accepted position: **Senior Engineer / Architect**. Older portfolio position: **Lead Backend Developer / System Architect**.
-- No team size, hard performance figure, delivery KPI, or guaranteed completion of the data-provider migration was supplied.
+- The user subsequently clarified that he was the **only programmer**, that the replacement **went live** and superseded the old broker-only application, and that the same database was retained.
+- User estimates **50+ brokers, with at least several clients each**; this is an unverified recollection, not a measured user metric. He describes substantial corporate insurance business, without verified numeric policy values or volumes.
+- No hard performance figure, delivery KPI, or confirmed completion of the future centralized data-source migration was supplied.
 
 ---
 
