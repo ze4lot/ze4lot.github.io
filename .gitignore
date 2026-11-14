@@ -13,3 +13,7 @@ hugo_stats.json
 Thumbs.db
 *.bak
 *~
+
+# Local CV output (independent of Hugo).
+/cv/generated.html
+/cv/review/
