@@ -1,0 +1,131 @@
+/* One reading order for screen, print and text extraction. No remote assets.
+   Ubuntu Sans: Copyright Canonical Ltd, Ubuntu Font Licence 1.0 (fonts/LICENCE.txt).
+   Unmodified static fonts, embedded by Pandoc for consistent metrics and PDF text. */
+@font-face {
+  font-family: "CV Sans";
+  src: url("fonts/UbuntuSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: "CV Sans";
+  src: url("fonts/UbuntuSans-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+
+:root {
+  color-scheme: light;
+  --ink: #202e3c;
+  --accent: #226568;
+  --rule: #ccd9db;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  background: #edf0f2;
+  color: var(--ink);
+  font-family: "CV Sans", Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+body { margin: 0; }
+
+.cv {
+  max-width: 210mm;
+  margin: 32px auto;
+  padding: 16mm 18mm 18mm;
+  background: white;
+  border-top: 4px solid var(--accent);
+  box-shadow: 0 8px 36px #202e3c12;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.2;
+  break-after: avoid;
+  break-inside: avoid;
+}
+
+h1 {
+  margin: 0 0 10px;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+/* The first paragraph is the existing professional headline. */
+.level1 > p:first-of-type {
+  margin: 0 0 28px;
+  color: var(--accent);
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+h2 {
+  margin: 26px 0 12px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid var(--rule);
+  color: var(--accent);
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+h3 { margin: 18px 0 7px; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 17px; }
+.role-metadata { margin-bottom: 8px; }
+.technologies { margin-top: 7px; color: #405965; }
+.technologies strong { font-weight: 400; color: var(--accent); }
+h4 { margin: 13px 0 6px; font-size: 13px; }
+p { margin: 0 0 10px; orphans: 3; widows: 3; }
+strong { font-weight: 700; }
+ul, ol { margin: 7px 0 12px; padding-left: 19px; }
+li { margin-bottom: 6px; }
+li > p { margin-bottom: 6px; }
+hr { margin: 18px 0; border: 0; border-top: 1px solid var(--rule); }
+a { color: var(--accent); text-underline-offset: 3px; overflow-wrap: anywhere; }
+a:hover { color: var(--ink); }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+img { max-width: 100%; }
+
+@media screen {
+  .technologies strong { display: block; }
+}
+
+@media screen and (max-width: 650px) {
+  .cv { margin: 0; padding: 28px 22px; box-shadow: none; }
+  h1 { font-size: 32px; }
+}
+
+@page { size: A4; margin: 12mm 14mm; }
+
+@media print {
+  html { background: white; font-size: 10.5pt; line-height: 1.28; }
+  .cv {
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+  }
+  h1 { font-size: 25pt; }
+  .level1 > p:first-of-type { margin-bottom: 9pt; font-size: 11pt; }
+  h2 { margin: 10pt 0 5pt; padding-bottom: 4pt; font-size: 10.5pt; }
+  h3 { margin: 8pt 0 3pt; padding-top: 6pt; font-size: 11.5pt; }
+  h4 { margin: 6pt 0 3pt; font-size: 10.5pt; }
+  p { margin-bottom: 3pt; orphans: 2; widows: 2; }
+  ul, ol { margin: 3pt 0 4pt; }
+  li { margin-bottom: 2pt; }
+  li > p { margin-bottom: 2pt; }
+  /* Only the company heading and short role metadata stay together.
+     Lists and roles remain free to continue across pages. */
+  .role-metadata { margin-bottom: 3pt; break-inside: avoid; break-after: avoid; }
+  .role-metadata p { margin: 0; }
+  .technologies { margin: 3pt 0 0; break-inside: avoid; }
+  .technologies p { margin: 0; }
+  a { text-decoration: none; }
+}

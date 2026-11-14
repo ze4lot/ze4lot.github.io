@@ -13,3 +13,10 @@ hugo_stats.json
 Thumbs.db
 *.bak
 *~
+
+# Local CV output (independent of Hugo).
+/cv/generated.html
+/cv/review/
+/.venv-cv/
+/cv/generated.pdf
+/cv/__pycache__/
