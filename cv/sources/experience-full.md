@@ -254,45 +254,58 @@ PHP 5.6 / 8.2 · JavaScript · PostgreSQL · Nginx · Docker.
 | Locations | Kraków, Skawina, Poland |
 | Website | [ftggroup.com](https://ftggroup.com/) |
 
+### Organizational scope and people leadership — clarified November 2026
+
+- Led **four software developers and one tester** within an IT department of approximately **15 people**, reporting to the **Head of IT**.
+- Participated in **recruitment and employee evaluations**, assigned responsibilities and work, and partly coordinated leave. **Did not control salaries** or the department's overall budget.
+- Took architectural decisions with substantial autonomy, discussing them with the team rather than imposing them unilaterally.
+- Had significant influence on priorities, subject to urgent operational needs and business escalations.
+- Worked continuously with production, logistics, HR, warehouse, customer service and other business functions.
+- Combined formal team leadership with hands-on engineering, technical coordination, mentoring and software delivery ownership.
+
 ### Context — existing ERP and product operations
 
 - FTG operated a large street-fashion retail business.
 - A heavily loaded, difficult-to-extend **Comarch ERP** supported much of the organization. Its limitations restricted further digitalization and process automation.
-- An independent **PIM** platform was being built as a complementary system to take over business responsibilities that were difficult to implement or maintain within ERP.
-- Maciej joined **shortly after PIM development had started**, not at the initial project conception. The team needed experienced technical leadership and delivery organization.
+- An independent **PIM / product operations platform** was being built to take over product enrichment and sales-preparation responsibilities that were difficult to handle within ERP.
+- Maciej joined **shortly after PIM development had started**, not at the project's conception.
+- He joined a **capable, motivated team** that needed additional experience in software engineering processes, maintenance practices, architectural guidance and technical coordination. Do not frame this as rescuing an incompetent team.
+- The existing codebase needed **modest refactoring and refinement**, not a complete rewrite. Most subsequent work involved delivering new modules for business departments and automating operational processes.
 
-### PIM — business workflows and system boundaries
+### PIM — business workflow and system boundaries
 
-- The product lifecycle started with selected input information retrieved from Comarch ERP.
-- Different business departments then worked on the product inside PIM, enriching details such as descriptions, technical attributes, and images.
-- PIM also covered product-related pricing, customer assignments, warehouses, labeling, identification, and operational data.
-- After product preparation was complete, processed product information was passed to ERP.
-- Separate information flows supported warehouse operations, including labeling, identification and scanner-based processes.
-- This was an **ERP-adjacent application**: it complemented and relieved Comarch rather than replacing the entire ERP.
-- The precise transport used between systems (API vs direct database vs file-based import/export) was not established.
+- **Goods receipt remained in ERP.** Product records were then imported into the team's independent system.
+- Staff worked on those products outside ERP: descriptions, features and technical parameters, taxonomy/categories, variants, media and product prices.
+- After preparation, products could be **published automatically through separate channels**: the online store, marketplaces, and B2B offers with calculated price lists.
+- The key architectural contribution was **decoupling product information and commercial preparation from ERP**, not replacing the entire ERP.
+- Previous source notes also describe customer assignments, warehouses, labeling, identification and operational data, plus information flows back to ERP and scanner/warehouse processes. Preserve these as earlier contextual notes rather than conflating them with the newly clarified product publishing flow.
+- Exact integration transports (API, database or files) and the precise scope of any PIM-to-ERP return flow have not been reconfirmed.
 
-### Existing customer-service platform
+### Pricing — configurable B2B/B2C business rules
 
-- Alongside the evolving PIM, Maciej maintained and developed an already-existing customer-service platform.
+- Delivered a pricing module for **B2B and B2C price lists** using configurable business rules.
+- **Business users configured pricing rules themselves**, without needing developers for routine rule changes.
+- The system raised alerts for potentially **unprofitable prices** and included safeguards against excessively low prices.
+- Supported intentional exceptions, such as **clearance sales**, in which authorized business choices could override normal low-price safeguards.
+- The implementation was reported as a **successful delivery**: other departments actively collaborated, provided feedback and participated in testing.
+- Do not invent savings, revenue uplift, adoption percentages or other quantitative KPI; no such data was supplied.
 
-### Hands-on technical leadership
+### Architecture, mentoring and cross-functional delivery
 
-- Acted as a **hands-on technical lead** while continuing to program.
-- Provided experience, guidance, support and mentoring to a younger, motivated group of developers who lacked consistent senior engineering support.
-- Helped developers with technical decisions and day-to-day delivery rather than functioning as their formal HR manager.
-- Defined, refined and distributed work items, passed on requirements, assets, and feedback, and co-managed the backlog.
-- Cooperated closely with the Head of IT, project managers, and a designer, with additional collaboration with warehouse, accounting and service departments.
-- Discussed functionality with business stakeholders, represented the development team and helped deliver agreed functionality together.
+- Worked as a hands-on team leader and technical coordinator while continuing to develop software.
+- Introduced or strengthened the team's approach to **modular monolith architecture** while evolving the existing application; architectural decisions were discussed with developers.
+- Built new business-oriented modules addressing automation, optimization, communication, management, production and service needs.
+- Converted needs from business departments into workable changes and coordinated feedback and testing with stakeholders.
+- Also maintained and developed an already-existing customer-service platform.
 
-### Process and delivery turnaround
+### Process and delivery improvements
 
-- On arrival, the main challenge combined organizational chaos with insufficient technical guidance.
-- Jira was available, but the team did not have an effective way to use and organize it.
-- Introduced **pragmatic, team-adapted Scrum practices**, sprint cadence, daily meetings, planning, structured Jira work and a **release calendar**.
-- Established a clear schedule and intake process for business requests. Stakeholders could no longer continuously introduce ad-hoc tasks that derailed planned work.
-- This reduced interruptions and context switching, made delivery more predictable, helped the IT department regain control over its workload and **lowered stress/pressure on the IT team**.
-- Invested in team integration and improving trust and relationships, alongside technical mentorship.
-- Outcomes are qualitative; no numeric productivity, throughput or team-size metrics were provided.
+- Stabilized **how and when the team designed solutions, made commitments, delivered releases, maintained systems and reacted to incidents or requests**.
+- Refined how Jira was used and introduced pragmatic, team-adapted Scrum practices, sprint planning, daily meetings, structured work intake and a **release calendar**.
+- Established clearer scheduling and expectations for incoming business requests, reducing unplanned interruptions and context switching.
+- Helped the team and stakeholders work with more predictable delivery practices and less ad-hoc pressure.
+- Invested in team trust, relationships and technical growth.
+- These outcomes are **qualitative**; do not infer numeric productivity improvements.
 
 ### Technologies recorded in the portfolio
 
@@ -312,9 +325,11 @@ Jira · Scrum-inspired planning · sprints · daily meetings · release calendar
 ### Positioning boundaries
 
 - Do not claim Maciej designed the entire PIM architecture from scratch: he joined shortly after the initial build began.
-- Do not claim he was the direct people manager responsible for hiring, performance appraisals or budgets.
-- The main impact was delivering senior technical guidance and predictable execution while remaining hands-on; avoid unverified quantitative impact.
-
+- **Earlier notes stating that he had no hiring or appraisal responsibility are superseded by his November 2026 clarification.** He participated in recruitment and evaluation, but did not set pay.
+- Do not exaggerate the initial condition of the team or application: the team was capable and the code needed selective improvement, not rescue or replacement.
+- Emphasize delivery leadership, team management, pragmatic architecture, independence from ERP and real cross-department business outcomes.
+- In the public CV, refer to the legacy system as **ERP**, without naming the vendor.
+- Avoid unverified quantitative impact or claiming that the entire ERP was replaced.
 ---
 
 ## Quad/Graphics
