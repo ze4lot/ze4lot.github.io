@@ -1,0 +1,4 @@
+# Playwright pins its matching Chromium revision.
+playwright==1.65.2
+PyMuPDF==1.28.2
+greenlet==3.5.6

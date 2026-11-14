@@ -1,104 +1,136 @@
 # CV: Markdown → HTML → PDF
 
-Generator jest niezależny od Hugo i publikowania portfolio. Jedynym źródłem
-tekstu gotowego CV jest zatwierdzony `cv/cv.md` z PR #12 (`dac6ae2`).
-Zawiera on już kontakt, doświadczenie i Languages. `experience.md` służy
-filtrowi do rozpoznania nagłówków firm; nie jest ponownie dołączany.
-Szablon, filtr i CSS nie zawierają kopii treści CV.
+Generator jest niezależny od Hugo i publikowania portfolio.
+**`cv/cv.md` jest jedynym źródłem treści i struktury gotowego CV.**
+`experience.md` pozostaje materiałem roboczym; generator i kontrole nie czytają
+tego pliku ani nie wymagają utrzymywania dwóch zgodnych kopii doświadczenia.
 
-## Uruchomienie
+## HTML
 
-Wymagania: GNU Make i [Pandoc](https://pandoc.org/installing.html) 3.x.
-Na Ubuntu/WSL: `sudo apt install make pandoc` (sprawdź wersję Pandoc).
-Z katalogu głównego repozytorium:
+Wymagania: GNU Make i [Pandoc](https://pandoc.org/installing.html) 3.x
+(zweryfikowano z 3.6.4). Z katalogu głównego repozytorium:
 
 ```sh
 make cv
+make cv-check
 ```
 
 Otwórz `cv/generated.html` w przeglądarce. To samodzielny HTML z osadzonym CSS
 oraz fontami Ubuntu Sans Regular/Bold 1.006. Nie wymaga serwera, JavaScriptu,
-zasobów sieciowych ani zależności npm. Fonty są dostarczone wraz z licencją
-w `cv/fonts/`; nie trzeba ich instalować w systemie. Użycie plików statycznych
-pozwala Chromium osadzić w PDF fonty TrueType, zamiast fontów Type 3.
+zasobów sieciowych, zależności npm ani narzędzi do eksportu PDF.
+Fonty wraz z licencją są w `cv/fonts/`; nie trzeba ich instalować w systemie.
 
 Po zmianie Markdown lub CSS ponownie wykonaj `make cv`.
 Własny Pandoc: `make cv PANDOC=/ścieżka/do/pandoc`.
-HTML i lokalny katalog podglądu `cv/review/` są ignorowane przez Git.
+HTML, PDF, środowisko Pythona i lokalne podglądy są ignorowane przez Git.
 
-## Wydruk / zapis jako PDF
+## Automatyczny eksport PDF
 
-1. Otwórz HTML, poczekaj na wyświetlenie fontu i wybierz drukowanie (`Ctrl+P`).
-2. Wybierz A4, orientację pionową i skalę 100%.
-3. Wyłącz nagłówki i stopki przeglądarki (adres, datę, tytuł).
-4. Pozostaw marginesy z CSS — 12 mm góra/dół, 14 mm lewo/prawo.
-   Nie ustawiaj własnych marginesów w oknie drukowania.
-5. Wybierz drukarkę lub „Zapisz jako PDF”. Tła nie są wymagane.
-
-Pełna obecna treść mieści się na **trzech stronach A4**, przy tekście minimum
-10,5 pt i interlinii 1,28. Długie opisy stanowisk i listy mogą przechodzić
-między stronami. Krótkie metadane pozostają przy nagłówku firmy i początku
-opisu; nagłówki nie pozostają osamotnione. Usunięto reguły `break-after: avoid`
-z końców list i opisów oraz separatorów, które tworzyły niepotrzebne łańcuchy
-blokad. Nie ma wymuszonej wysokości strony, skalowania tekstu ani ukrywania treści.
-Przed wysłaniem sprawdź podgląd wydruku w używanej przeglądarce.
-
-## Treść i układ
-
-Pliki Markdown nie są redagowane przez generator. Filtr Lua:
-
-- zagnieżdża firmy jako H3 w sekcji Professional Experience;
-- usuwa z HTML powtarzane tytuły „Key Responsibilities & Achievements”;
-- składa „Technologies” i pełną listę technologii jako metadane: na ekranie
-  etykieta zajmuje osobny wiersz, a w wydruku lista rozpoczyna się obok niej
-  i zawija w razie potrzeby;
-- kompaktuje branżę i stronę firmy do wspólnego wiersza;
-- odczytuje technologie poprzedzające `---` jako tekst, także gdy Pandoc
-  rozpoznał je jako nagłówek Setext;
-- obsługuje także poprzedni wariant źródła z samodzielnym linkiem
-  `[Professional experience](experience.md)`, bez utraty kolejnych sekcji.
-
-Zachowano jedną kolejność czytania: firma → stanowisko i okres → opis
-oraz osiągnięcia → technologie. Tekst i wszystkie adresy linków pozostają
-zgodne ze źródłem. Numer telefonu jest zwykłym tekstem, tak jak w Markdown.
-E-mail ma odnośnik `mailto:`, a LinkedIn, GitHub i portfolio pełne adresy HTTPS.
-HTML używa nagłówków, akapitów i list; PDF ma zaznaczalny tekst i klikalne linki.
-Nie testowano konkretnego komercyjnego parsera ATS.
-
-## Kontrola kompletności
-
-Opcjonalna kontrola wymaga dodatkowo Python 3 (tylko biblioteka standardowa):
+Dodatkowo potrzebne są Python 3.10+ z modułem `venv`, dostęp do pobrania pakietów
+podczas instalacji i biblioteki systemowe wymagane przez Chromium.
+Jednorazowo:
 
 ```sh
-make cv-check
+make cv-setup
 ```
 
-Kontrola niezależnie renderuje źródła przez Pandoc i porównuje cały tekst
-z wygenerowanym HTML, z wyjątkiem uzgodnionych powtórzonych nagłówków.
-Sprawdza obecność pełnego doświadczenia dokładnie raz, wszystkie `href`,
-poprawność adresu `mailto:`, unikalność identyfikatorów oraz osadzenie fontu.
-Test regresji sprawdza też starszy wariant z linkiem do doświadczenia,
-z zachowaniem kontaktu i końcowej sekcji Languages.
-Nie jest to automatyczny generator PDF.
+Tworzy to `.venv-cv/` i instaluje ustalone wersje Playwright 1.65.2, PyMuPDF
+1.28.2 i greenlet 3.5.6. Przeglądarka dobrana przez Playwright jest instalowana
+w `.venv-cv/browsers/`, niezależnie od wspólnego cache i przeglądarek użytkownika.
+Nie zmienia to zależności portfolio. W razie brakujących bibliotek systemowych
+zobacz [instalację Playwright](https://playwright.dev/python/docs/browsers#install-system-dependencies).
 
-## QA — 11 listopada 2026
+Następnie:
 
-Przyczyna wcześniejszego braku kontaktu/Languages: branch zawierał starsze
-źródło `7fd17c0`, sprzed zatwierdzonego PR #12. Źródła CV zsynchronizowano
-z `origin/main` (`dac6ae2`) bez ręcznych zmian zaakceptowanych treści.
+```sh
+make cv-pdf
+```
 
-Pandoc 3.6.4 i Chromium 156: sprawdzono desktop 1200 px, telefon 375 px
-oraz wszystkie trzy strony PDF. Treść HTML jest zgodna z oboma źródłami,
-bez duplikacji; tekst PDF odpowiada HTML. Minimum w PDF wynosi 10,5 pt.
-Nie ma przycięć ani poziomego przewijania. Wszystkie dziewięć par firma–stanowisko
-pozostaje na tej samej stronie. Wszystkie 13 linków w PDF odpowiada HTML.
+Polecenie odtwarza HTML, sprawdza jego zgodność ze źródłem, uruchamia Chromium
+bez dostępu do sieci, czeka na osadzone fonty i generuje **`cv/generated.pdf`**.
+Używa A4 i marginesów z CSS, skali 100%, bez nagłówków/stopek przeglądarki.
+PDF zawiera tekst, linki i znaczniki struktury dokumentu.
+**Poprzedni PDF jest zastępowany dopiero po przejściu kontroli jakości.**
+Nie nadpisuje plików w `static/files/`.
 
-Kontrola HTTP 12 linków WWW: dziesięć kończy się HTTP 200 (Nord Partner
-przekierowuje do `https://pib-broker.pl/`); LinkedIn odpowiada 999, FTG 403.
-Dostępności tych dwóch stron nie potwierdzono automatycznie. Nie zmieniano
-adresów zapisanych w zaakceptowanych źródłach. Sprawdzono składnię `mailto:`
-oraz zgodność z wyświetlanym adresem; nie wysyłano wiadomości.
+Po eksporcie powstają również:
 
-Lokalne artefakty do oceny: `review/cv-print.pdf`, `review/page-1.png`,
-`review/page-2.png`, `review/page-3.png`, `review/desktop.png`, `review/mobile.png`.
-Istniejący PDF w `static/files/` pozostaje bez zmian. Nie wykonywano publikacji.
+- `cv/review/page-1.png`, `page-2.png`, `page-3.png` — podgląd wszystkich stron;
+- `cv/review/pdf-qa.json` — wyniki kontroli, wersje renderera oraz SHA-256 źródła,
+  HTML i PDF.
+
+Powtarzalność dotyczy składu i ustawień; metadane czasu w PDF mogą się różnić.
+Aby sprawdzić zapisany PDF względem aktualnego Markdown, bez ponownego eksportu:
+
+```sh
+make cv-pdf-check
+```
+
+Zmienne `CV_VENV` i `CV_PYTHON` pozwalają wskazać inne środowisko Pythona.
+`make cv-setup` trzeba powtórzyć po zmianie `requirements-pdf.txt`.
+
+## Kontrole i testy
+
+`make cv-check` wymaga tylko Python 3 i Pandoc. Niezależnie renderuje źródło
+bez filtra układu i porównuje pełny tekst z HTML, z wyjątkiem uzgodnionych
+powtórzonych nagłówków osiągnięć. Sprawdza też wszystkie `href`, składnię
+`mailto:`, unikalność identyfikatorów i osadzenie fontu.
+
+Kontrola PDF, wykonywana przy każdym eksporcie, sprawdza:
+
+- dokładnie trzy niepuste strony A4 w pionie;
+- pełną zgodność tekstu i kolejności z HTML, także kontakt i Languages;
+- minimum 10,5 pt oraz brak tekstu poza stroną;
+- osadzenie fontów i brak fontów Type 3;
+- zgodność linków PDF z HTML;
+- obecność nagłówka firmy i stanowiska z okresem na tej samej stronie.
+
+Nie sprawdza dostępności stron WWW ani konkretnego komercyjnego parsera ATS.
+Kontrola automatyczna uzupełnia wizualny przegląd przed wysłaniem dokumentu.
+Liczba stron jest celowym warunkiem kontroli — rozbudowa treści wymagająca
+czwartej strony zatrzyma eksport i wymaga świadomej decyzji o składzie.
+
+Po `make cv-setup` uruchom testy regresji:
+
+```sh
+make cv-test
+```
+
+Obejmują one generowanie bez `experience.md`, nieznaną wcześniej firmę,
+zachowanie kontaktu i końcowych sekcji oraz wykrywanie uszkodzonej treści,
+linków, małego tekstu, złej liczby stron i osamotnionego nagłówka w PDF.
+
+## Konwencje Markdown i układ
+
+Generator nie zmienia Markdown. W sekcji `## Professional Experience`
+każda firma ma nagłówek `##`, a po nim akapit rozpoczynający się od
+`**Stanowisko | okres**`. Filtr `layout.lua` rozpoznaje tę strukturę bez listy
+nazw firm z zewnętrznego pliku. Kolejna sekcja `##` bez takiego akapitu
+(np. Languages) kończy doświadczenie.
+
+Filtr zagnieżdża firmy jako H3, usuwa powtarzane nagłówki
+„Key Responsibilities & Achievements” i składa technologie jako metadane.
+Na ekranie etykieta „Technologies” zajmuje osobny wiersz; w druku lista
+rozpoczyna się obok niej. Branża i strona firmy są w jednym wierszu.
+Obsługiwane są też technologie błędnie odczytane przez Markdown jako nagłówki
+Setext wskutek braku pustej linii przed `---`.
+
+Zachowano układ firma → stanowisko i okres → opis i osiągnięcia → technologie.
+Długie opisy i listy mogą przechodzić między stronami; krótkie metadane
+pozostają z nagłówkiem firmy i początkiem opisu. Nie ma ukrywania treści
+ani skalowania tekstu. Numer telefonu pozostaje tekstem zgodnie ze źródłem.
+
+## Ręczne drukowanie z przeglądarki
+
+Otwórz HTML, poczekaj na fonty i wybierz `Ctrl+P`: A4, pionowo, skala 100%,
+bez nagłówków i stopek. Pozostaw marginesy CSS — 12 mm góra/dół,
+14 mm lewo/prawo. Tła nie są wymagane.
+Do przygotowania dokumentu rekrutacyjnego zalecane jest `make cv-pdf`,
+które stosuje te ustawienia i uruchamia kontrolę wyniku.
+
+## Ostatnia weryfikacja — 14 listopada 2026
+
+Pandoc 3.6.4, Playwright 1.65.2 / Chromium 159.0.8154.6, PyMuPDF 1.28.2:
+trzy strony A4, minimum 10,5 pt, pełny tekst, 13 linków i dziewięć par
+firma–stanowisko. Testy regresji przeszły. Treść zaakceptowanych plików
+Markdown, CSS i istniejący PDF portfolio pozostały bez zmian.

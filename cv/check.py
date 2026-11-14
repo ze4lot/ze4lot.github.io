@@ -30,18 +30,15 @@ class Content(HTMLParser):
         return " ".join(" ".join(self.text).split())
 
 
-def render(markdown, filtered=False):
+def render(markdown, pandoc="pandoc"):
     args = [pandoc, "--from=markdown-smart", "--to=html5"]
-    if filtered:
-        args.append("--lua-filter=cv/include-experience.lua")
     return subprocess.check_output(args, input=markdown, text=True)
 
 
-def expected(markdown):
+def expected(markdown, pandoc="pandoc"):
     # Only the explicitly approved presentation omissions, independent of Lua.
-    markdown = markdown.replace("[Professional experience](experience.md)", experience)
     markdown = re.sub(r"(?m)^### Key Responsibilities & Achievements\s*$", "", markdown)
-    return Content(render(markdown))
+    return Content(render(markdown, pandoc))
 
 
 def compare(actual, reference):
@@ -66,23 +63,11 @@ if __name__ == "__main__":
     parser.add_argument("--pandoc", default="pandoc")
     pandoc = parser.parse_args().pandoc
     source = Path("cv/cv.md").read_text()
-    experience = re.sub(r"\A# [^\n]+\n", "", Path("cv/experience.md").read_text())
-    reference = expected(source)
-    assert reference.normalized().count(expected(experience).normalized()) == 1, "Experience source differs or is duplicated"
+    reference = expected(source, pandoc)
     html = Path("cv/generated.html").read_text()
     main = re.search(r'<main class="cv">(.*?)</main>', html, flags=re.S)
     assert main, "Missing CV main element"
     actual = Content(main[1])
     compare(actual, reference)
     assert "data:font/" in html or "data:application/" in html, "Font is not embedded"
-    print(f"PASS: complete content from both sources, no duplication, {len(actual.links)} exact hrefs")
-
-    # Regression: linked experience must not lose contact or trailing Languages.
-    legacy = re.sub(
-        r"(## Professional Experience\s*\n).*?(?=^## Languages\s*$)",
-        r"\1\n[Professional experience](experience.md)\n\n",
-        source, flags=re.M | re.S,
-    )
-    assert legacy != source, "Legacy fixture did not replace inline experience"
-    compare(Content(render(legacy, filtered=True)), reference)
-    print("PASS: legacy link expansion preserves contact and trailing Languages exactly once")
+    print(f"PASS: complete cv.md content, no duplication, {len(actual.links)} exact hrefs")
