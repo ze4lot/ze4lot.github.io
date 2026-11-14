@@ -57,21 +57,20 @@ PHP · Symfony · PostgreSQL · Redis · RabbitMQ · Docker · Nginx · GitHub A
 Insurance & Brokerage  
 [nordpartner.pl](https://nordpartner.pl/)
 
-Responsible for stabilizing a business-critical legacy insurance brokerage system while designing and developing its modern replacement.
-
 ### Key Responsibilities & Achievements
 
-- **Legacy Modernization:** Reverse-engineered undocumented business logic and database structures, resolved data inconsistencies, and stabilized critical business workflows.
+- **Production Delivery & Customer Self-Service:** As the sole developer, designed, implemented, and delivered a new insurance portal to production, replacing the broker-only application. Supported policy and claims access, reporting, and claims submission, while introducing direct customer self-service for policies and claims.
 
-- **Software Architecture:** Designed and implemented a replacement platform using repository abstractions and data adapters, separating business logic from legacy data sources and preparing for future integrations.
+- **Architecture & Migration Strategy:** During a corporate merger, separated business logic from data access so the portal could launch on the existing database without waiting for a planned centralized data platform. Designed the boundary to accommodate a future data-source change.
 
-- **Integrations & Technology Strategy:** Introduced event-driven integration and data synchronization workflows. Adopted FilamentPHP to accelerate business application development and reduce custom frontend complexity.
+- **Legacy Stabilization:** Reverse-engineered undocumented business rules and database structures, corrected data inconsistencies, and maintained critical broker workflows while developing the replacement.
 
-- **Technical Ownership & Delivery:** Owned architectural decisions and hands-on backend development. Established CI/CD workflows, code quality practices, and AI-assisted engineering processes.
+- **Integrations & Engineering Quality:** Implemented selected event-driven integrations and data synchronization workflows, established CI/CD with automated code quality checks, and selected FilamentPHP to reduce custom frontend work and focus implementation on business logic.
 
 ### Technologies
 
 PHP · Laravel · FilamentPHP · Redis · Docker · JavaScript · CI/CD
+
 ---
 
 ## ONWELO
