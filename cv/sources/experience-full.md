@@ -200,19 +200,20 @@ PHP 8.4 · Laravel 13 · Filament 5 · JavaScript · Vite · Tailwind CSS 4 · R
 | Locations | Kraków, Warszawa, Poland |
 | Website | [onwelo.com](https://onwelo.com/) |
 
-### Project 1 — Nord Partner: Legacy PHP modernization and security
+### Project 1 — Insurance client: Legacy PHP modernization and security
 
 **Client and context**
 
-- Nord Partner commissioned ONWELO to perform a security audit, fix defects, and release an updated version of its existing insurance application.
-- The system was a largely undocumented legacy PHP application with technical debt and defects.
-- This assignment was where Maciej met Paweł from Nord Partner, with whom he later worked directly on legacy maintenance and development of its successor platform.
+- An insurance-sector client engaged ONWELO to assess and improve the security of a production legacy application ahead of security requirements associated with a corporate merger.
+- The system was a largely undocumented legacy PHP application built on a **custom framework**, with insecure application code, technical debt and defects.
+- **Client identity is confidential for CV/portfolio purposes. Do not name the client or link this engagement to any later position.**
 - PHP was substantially outdated. The starting version may have been around 5.2, with modernization reportedly reaching 7.4 and later 8.x; **exact migration versions remain unconfirmed**.
 
 **Technical ownership and collaboration**
 
-- Maciej owned the backend work and some server/infrastructure tasks.
-- A second developer was responsible for frontend changes; they cooperated closely.
+- The delivery team consisted of **two developers**: Maciej responsible for backend and another developer responsible for frontend. They coordinated their technical work directly.
+- An ONWELO project manager acted as the liaison with the client; do not claim Maciej was the overall project manager.
+- Maciej owned backend security remediation and modernization, contributing also to server/infrastructure work.
 - The work encompassed understanding the legacy implementation, auditing security, fixing problems, modernizing the runtime and dependencies, preparing documentation, and releasing the updated application.
 
 **Legacy upgrade strategy**
@@ -225,11 +226,13 @@ PHP 8.4 · Laravel 13 · Filament 5 · JavaScript · Vite · Tailwind CSS 4 · R
 - Prepared documentation for previously undocumented areas of the system.
 - Handled some required server configuration/infrastructure changes.
 
-**Delivery and independent verification**
+**Security audit, remediation and production delivery — clarified November 2026**
 
-- Prepared and delivered an updated release.
-- The project concluded successfully: the updated application passed demanding security and penetration tests conducted by an independent specialized external company.
-- This result should not be described as the user's personal performance of those external penetration tests; the external company did them.
+- The developers first performed their **own internal security audit**, identified weaknesses in application code and the custom framework, and implemented initial fixes, including authentication, authorization, data-handling and dependency/runtime improvements.
+- An **independent external penetration test** then identified additional issues. The developers fixed those issues, and the external testers **verified the remediation**.
+- The team prepared a **new production environment**, deployed the remediated application and handed it back for continued production use.
+- This was an operational security modernization, not only a code upgrade or an audit report. Avoid claiming absolute or perpetual security of the system.
+- The external company performed the independent penetration tests; do not describe them as Maciej's own external testing.
 
 ### Project 2 — Social platform: E-commerce process modeling
 
@@ -239,13 +242,14 @@ PHP 8.4 · Laravel 13 · Filament 5 · JavaScript · Vite · Tailwind CSS 4 · R
 - A related e-commerce capability was planned for the platform.
 - Maciej was invited to contribute because of his e-commerce domain and engineering experience.
 
-**Role and contribution**
+**Role and contribution — clarified November 2026**
 
-- Worked with business departments and another architect to analyze and design business processes for the planned e-commerce component.
-- Modeled the end-to-end customer purchasing journey.
-- Covered order handling, after-purchase service, back-office operations, and warehouse/logistics workflows.
-- The contribution was process analysis and design, **not programming or implementation**.
-- No final implementation or successful deployment of the e-commerce subsystem has been established.
+- This was a **short, ad-hoc consultative contribution**, not a long-term project assignment or formal ownership of the e-commerce workstream.
+- Another project team asked Maciej to help because he was recognized as an **e-commerce domain expert** from his work elsewhere.
+- Provided domain knowledge and practical guidance on designing the planned e-commerce business processes, alongside that project's business participants and architect.
+- Discussed the purchasing journey, order handling, post-purchase service, back-office processes and warehouse/logistics workflows.
+- This was **domain/process consulting**, not implementation, sustained delivery leadership or ownership of the e-commerce architecture.
+- No final implementation or production deployment of the e-commerce component has been established.
 
 ### Technical stack recorded in the older portfolio
 
@@ -253,9 +257,10 @@ PHP 5.6 / 8.2 · JavaScript · PostgreSQL · Nginx · Docker.
 
 ### Positioning retained for the CV
 
-- Business process design and cross-functional collaboration first.
-- Hands-on backend modernization and selective infrastructure responsibility.
-- Security remediation and independently validated release as an outcome.
+- Prioritize **legacy security modernization, internal audit, remediation, externally verified penetration-test fixes and production deployment**.
+- Emphasize hands-on backend ownership within a two-person, self-organizing development team and preparation of a new production environment.
+- E-commerce domain expertise was **occasional advisory support** and should be secondary to the main security delivery.
+- Keep the insurance client's identity confidential in CV and public supporting materials.
 
 ---
 
