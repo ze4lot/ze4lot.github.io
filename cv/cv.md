@@ -101,11 +101,13 @@ Fashion Retail / E-commerce
 
 ### Key Responsibilities & Achievements
 
-- **Engineering Leadership:** Led a software development team, combining hands-on engineering with mentoring, technical guidance, task coordination, and ownership of key technical decisions.
+- **Engineering & People Leadership:** Managed four developers and one tester, participating in recruitment and employee evaluations. Combined hands-on development with mentoring, architectural decision-making, and responsibility for software development, delivery, and maintenance processes.
 
-- **Delivery & Process Improvement:** Introduced pragmatic Scrum practices, Jira workflows, sprint planning, and structured release management. Improved delivery predictability by reducing unplanned interruptions and establishing clear boundaries between business stakeholders and developers.
+- **Delivery & Business Collaboration:** Established structured work intake, sprint planning, and a release calendar, reducing unplanned interruptions and improving delivery predictability. Worked with business departments to define solutions, gather feedback, and jointly test releases.
 
-- **Business Systems Development:** Led the development of a PIM platform extending existing ERP capabilities, supporting product data management, pricing, and warehouse processes. Collaborated with business departments and maintained an existing customer service application.
+- **Architecture & Product Operations:** Guided the team in evolving the existing application as a modular monolith and led the development of a product management platform decoupled from ERP, enabling automated publishing to e-commerce and marketplaces, alongside B2B offers with calculated pricing.
+
+- **Configurable Pricing:** Delivered a configurable B2B/B2C pricing engine, enabling business users to independently manage pricing rules, profitability safeguards, and controlled exceptions for clearance sales.
 
 ### Technologies
 
