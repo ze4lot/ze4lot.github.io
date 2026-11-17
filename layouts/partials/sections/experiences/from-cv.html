@@ -1,0 +1,29 @@
+{{/* Share the CV source, including employer order, role, dates and complete copy. */}}
+{{ $source := os.ReadFile "cv/cv.md" | replaceRE "\r\n" "\n" }}
+{{ $sections := split $source "\n## Professional Experience\n" }}
+{{ if ne (len $sections) 2 }}
+  {{ errorf "cv/cv.md must contain one Professional Experience section" }}
+{{ end }}
+{{ $entries := slice }}
+{{ range after 1 (split (index $sections 1) "\n## ") }}
+  {{ $lines := split . "\n" }}
+  {{ $heading := index $lines 0 }}
+  {{ $body := strings.TrimSpace (delimit (after 1 $lines) "\n") }}
+  {{ $rolePattern := `^\*\*([^\n]+)\*\*` }}
+  {{ if findRE $rolePattern $body }}
+    {{ $role := replaceRE $rolePattern "$1" (index (findRE $rolePattern $body) 0) }}
+    {{ $body = replaceRE $rolePattern "" $body }}
+    {{/* Consent belongs to the document, outside the employer description. */}}
+    {{ $body = index (split $body "\n::: ") 0 }}
+    {{ $body = replaceRE `(?m)^---[ \t]*$` "" $body }}
+    {{/* Keep technologies a paragraph even when --- would make a Setext heading. */}}
+    {{ $body = strings.TrimSpace $body }}
+    {{ $entries = $entries | append (dict "heading" $heading "role" $role "body" $body) }}
+  {{ else }}
+    {{ break }}
+  {{ end }}
+{{ end }}
+{{ if not $entries }}
+  {{ errorf "No employer entries found in cv/cv.md" }}
+{{ end }}
+{{ return $entries }}

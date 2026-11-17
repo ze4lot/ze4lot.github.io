@@ -7,27 +7,7 @@ section:
   showOnNavbar: true
   template: sections/about.html
 
-# your designation
-designation: "Backend Systems · Architecture · Technical Leadership"
-
-# your company information
-#company:
-#  name: MACIEJ PŁOCKI ZE4LOT
-#  url: "https://www.example.com"
-
-# your resume. this file path should be relative to you "static" directory
-# Deprecated. Use resourceLinks instead.
-# resume: "files/resume.pdf"
-
-# a summary about you
-summary: >
-  I design and evolve complex business systems with a strong focus on structure, clarity, and long-term maintainability.
-
-  I work with systems that involve multiple integrations, data flows, and domain dependencies, making sure they remain consistent and understandable as they grow.
-
-  I translate business needs into domain models, system architecture, and integration strategies that are realistic to implement and stable in production.
-
-  My focus is on pragmatic solutions - reducing unnecessary complexity, improving predictability, and creating systems that teams can confidently build on.
+# Name, professional title and summary are read directly from cv/cv.md.
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
@@ -48,7 +28,7 @@ socialLinks:
 # For example, you can put link for your resume.
 resourceLinks:
 - title: "My Resume"
-  url: "files/CV_Maciej_Płocki.pdf"
+  url: "files/Maciej_Plocki_CV.pdf"
 
 badges:
 #- type: certification

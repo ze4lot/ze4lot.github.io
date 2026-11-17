@@ -13,8 +13,9 @@
     {{ end }}
 
     <div class="container timeline text-justify">
-        {{ $totalExperiences:= len .experiences }}
-        {{ range $index,$experience:= .experiences }}
+        {{ $experiences := partial "sections/experiences/from-cv.html" . }}
+        {{ $totalExperiences := len $experiences }}
+        {{ range $index,$experience := $experiences }}
         {{ if eq (mod $index 2) 0 }}
         <div class="row align-items-center  d-flex">
             {{ partial "sections/experiences/vertical-line.html" $index }}

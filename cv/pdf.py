@@ -101,7 +101,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check-only", action="store_true", help="Validate the saved PDF without overwriting it")
     args = parser.parse_args()
-    html, output, review = Path("cv/generated.html"), Path("cv/generated.pdf"), Path("cv/review")
+    html, output, review = Path("cv/generated.html"), Path("static/files/Maciej_Plocki_CV.pdf"), Path("cv/review")
     main_html = re.search(r'<main class="cv">(.*?)</main>', html.read_text(), flags=re.S)
     require(main_html, "Missing CV main element")
     content = CVContent(main_html[1])

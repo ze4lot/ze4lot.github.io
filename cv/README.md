@@ -1,6 +1,8 @@
 # CV: Markdown → HTML → PDF
 
-Generator jest niezależny od Hugo i publikowania portfolio.
+Generator PDF jest niezależny od Hugo i publikowania portfolio.
+Sekcja Experience portfolio również czyta opisy pracodawców bezpośrednio
+z `cv/cv.md`; zmiana treści wymaga przebudowania strony oraz dokumentu.
 **`cv/cv.md` jest jedynym źródłem treści i struktury gotowego CV.**
 `experience.md` pozostaje materiałem roboczym; generator i kontrole nie czytają
 tego pliku ani nie wymagają utrzymywania dwóch zgodnych kopii doświadczenia.
@@ -23,7 +25,8 @@ Fonty wraz z licencją są w `cv/fonts/`; nie trzeba ich instalować w systemie.
 
 Po zmianie Markdown lub CSS ponownie wykonaj `make cv`.
 Własny Pandoc: `make cv PANDOC=/ścieżka/do/pandoc`.
-HTML, PDF, środowisko Pythona i lokalne podglądy są ignorowane przez Git.
+HTML, środowisko Pythona i lokalne podglądy są ignorowane przez Git.
+Wynikowy PDF jest plikiem portfolio i jest przeznaczony do zapisania w Git.
 
 ## Automatyczny eksport PDF
 
@@ -48,11 +51,13 @@ make cv-pdf
 ```
 
 Polecenie odtwarza HTML, sprawdza jego zgodność ze źródłem, uruchamia Chromium
-bez dostępu do sieci, czeka na osadzone fonty i generuje **`cv/generated.pdf`**.
+bez dostępu do sieci, czeka na osadzone fonty i generuje **`static/files/Maciej_Plocki_CV.pdf`**.
 Używa A4 i marginesów z CSS, skali 100%, bez nagłówków/stopek przeglądarki.
 PDF zawiera tekst, linki i znaczniki struktury dokumentu.
 **Poprzedni PDF jest zastępowany dopiero po przejściu podstawowej kontroli eksportu i kompletności treści.**
-Nie nadpisuje plików w `static/files/`.
+Każdy eksport zastępuje `static/files/Maciej_Plocki_CV.pdf`. Przycisk „My Resume”
+w sekcji About wskazuje `/files/Maciej_Plocki_CV.pdf`; Hugo publikuje go z katalogu
+`static/files/`. Nazwa i ścieżka wynikowego PDF są stałe.
 
 Po eksporcie powstają również:
 

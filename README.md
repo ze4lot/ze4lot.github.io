@@ -25,5 +25,15 @@ pushes to `gh-pages`. The `github-pages` environment must allow `main` (as it
 already does in this repository). PRs build only; they never deploy.
 
 Generator CV: `make cv` → `cv/generated.html`.
-Eksport PDF: `make cv-setup` (jednorazowo), potem `make cv-pdf`.
+Eksport PDF: `make cv-setup` (jednorazowo), potem `make cv-pdf`
+→ `static/files/Maciej_Plocki_CV.pdf` (przycisk „My Resume” w About).
 Wymagania i kontrola jakości: [cv/README.md](cv/README.md).
+
+Sekcja Experience w portfolio czyta bezpośrednio `Professional Experience`
+z `cv/cv.md`: te same firmy, stanowiska, okresy, branże, opisy, osiągnięcia
+i technologie, w tej samej kolejności. Nie utrzymujemy drugiej kopii treści
+w YAML. Po edycji CV przebuduj portfolio (`hugo --minify`) i PDF (`make cv-pdf`).
+Ustawienia sekcji pozostają w `data/en/sections/experiences.yaml`.
+
+Sekcja About pod hero pobiera również imię i nazwisko, tytuł zawodowy oraz pełne
+`Professional Summary` z `cv/cv.md`, bez osobnej kopii w `about.yaml`.

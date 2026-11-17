@@ -1,0 +1,16 @@
+{{/* The About section and PDF share the exact CV title and Professional Summary. */}}
+{{ $source := os.ReadFile "cv/cv.md" | replaceRE "\r\n" "\n" }}
+{{ $intro := index (split $source "\n## ") 0 }}
+{{ $names := findRE `(?m)^# ([^\n]+)` $intro }}
+{{ $titles := findRE `(?m)^\*\*([^\n]+)\*\*` $intro }}
+{{ $summarySections := split $source "\n## Professional Summary\n" }}
+{{ if or (ne (len $names) 1) (ne (len $titles) 1) (ne (len $summarySections) 2) }}
+  {{ errorf "cv/cv.md must contain a name, one professional title and Professional Summary" }}
+{{ end }}
+{{ $name := replaceRE `^# ` "" (index $names 0) }}
+{{ $title := strings.TrimPrefix "**" (strings.TrimSuffix "**" (index $titles 0)) }}
+{{ $summary := strings.TrimSpace (index (split (index $summarySections 1) "\n## ") 0) }}
+{{ if not $summary }}
+  {{ errorf "Professional Summary in cv/cv.md must not be empty" }}
+{{ end }}
+{{ return (dict "name" $name "title" $title "summary" $summary) }}
