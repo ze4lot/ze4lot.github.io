@@ -9,7 +9,7 @@
   {{ $lines := split . "\n" }}
   {{ $heading := index $lines 0 }}
   {{ $body := strings.TrimSpace (delimit (after 1 $lines) "\n") }}
-  {{ $rolePattern := `^\*\*([^\n]+)\*\*` }}
+  {{ $rolePattern := `^\*\*([^\n]+ \| [^\n]+)\*\*` }}
   {{ if findRE $rolePattern $body }}
     {{ $role := replaceRE $rolePattern "$1" (index (findRE $rolePattern $body) 0) }}
     {{ $body = replaceRE $rolePattern "" $body }}

@@ -199,6 +199,17 @@ Digital Agency
 
 PHP · Zend Framework · MySQL · JavaScript · jQuery · Flash / ActionScript
 
+## Additional Experience
+
+**Independent Software Development & Freelance**  
+*Since c. 2006 · Project-based, alongside professional employment*
+
+**Early Product Development & Commercialization (c. 2007):** Built a PHP/MySQL business management application automating spreadsheet processing, data organization, and email communication. Sold five access licenses at €1,200 each in a single day. Maintained and extended the product for approximately three years, including additional paid enhancements.
+
+**Early Company Experience (2010):** Alongside independent projects, gained experience working within companies as a Programmer Intern at Indexo and later as a Junior Programmer at MKI.pl.
+
+**Freelance Development & Maintenance:** Developed websites and custom web applications for various clients, from early PHP-based CMS implementations to later Laravel solutions. Provided ongoing and occasional maintenance, troubleshooting, updates, and targeted improvements. Also handled independent development assignments and technical assistance through client referrals.
+
 ## Education
 
 ### University of Information Technology and Management in Rzeszów
