@@ -168,9 +168,9 @@ E-commerce / Software Development
 
 ### Key Responsibilities & Achievements
 
-- **E-commerce Architecture:** Redesigned the architecture of Profit Shop, a reusable e-commerce platform, separating the application core from frontend presentation and introducing configurable storefront templates.
+- **E-commerce Architecture:** Redesigned Profit Shop, a reusable e-commerce platform, separating the shared application core from store-specific presentation and introducing configurable storefront templates.
 
-- **Technical Leadership & Delivery:** Combined hands-on development with technical decision-making, significantly reducing store launch and upgrade complexity while delivering custom software solutions for external clients.
+- **Delivery Improvement:** Put the redesigned platform into routine use, making storefront customization less invasive and reducing the time needed to launch new stores and upgrade existing deployments.
 
 ### Technologies
 
