@@ -122,19 +122,20 @@ PHP · Laravel · MySQL · Redis · Docker · Jira · ERP
 Enterprise Marketing / Retail  
 [quad.com](https://www.quad.com/)
 
-Contributed to an enterprise platform supporting promotional flyer production for major US retailers, including regional content variations and Excel-based data processing.
+Platform for producing promotional flyers for major US retailers, supporting regional variants and Excel-based data workflows.
 
 ### Key Responsibilities & Achievements
 
-- **Application Recovery:** Joined a self-organizing team of senior engineers to recover a non-functional Laravel application delivered by an external vendor.
+- **Application Recovery:** As the team's Laravel and application architecture specialist, helped restore a non-functional application inherited from an external vendor, upgrading the framework and runtime environment within a self-organizing team of senior engineers.
 
-- **Architecture & Modernization:** Upgraded Laravel, refactored complex controllers and data models, and introduced modular architecture and reusable abstractions to improve maintainability.
+- **Architecture & Modernization:** Refactored oversized controllers and application models, reorganized the codebase into modules, and introduced abstractions to reduce coupling, enabling further feature development.
 
-- **Product Delivery:** Helped bring the application into production under tight deadlines, followed by ongoing feature development, stabilization, and improvements based on operational feedback.
+- **Production Delivery & Stabilization:** Helped bring the application into production with known limitations, supported by a separate team's manual verification of Excel exports. Used validation feedback to fix defects and continued developing business functionality.
 
 ### Technologies
 
 PHP · Laravel · MongoDB · Docker · Nginx · Azure
+
 ---
 
 ## KISS digital
