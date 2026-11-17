@@ -37,6 +37,7 @@ def render(markdown, pandoc="pandoc"):
 def expected(markdown, pandoc="pandoc"):
     # Only the explicitly approved presentation omissions, independent of Lua.
     markdown = re.sub(r"(?m)^### Key Responsibilities & Achievements\s*$", "", markdown)
+    markdown = re.sub(r"(?m)^### Technologies$", "### Technologies:", markdown)
     return Content(render(markdown, pandoc))
 
 

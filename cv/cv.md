@@ -47,7 +47,7 @@ Public cycling infrastructure discovery platform with a catalog of bikeparks, tr
 
 ### Technologies
 
-PHP · Symfony · PostgreSQL · Redis · RabbitMQ · Docker · Nginx · GitHub Actions · AI Coding Agents
+PHP · Symfony · PostgreSQL · Redis · RabbitMQ · Docker · GitHub Actions · AI Coding Agents
 
 ---
 

@@ -125,10 +125,13 @@ rozpoczyna się obok niej. Branża i strona firmy są w jednym wierszu.
 Obsługiwane są też technologie błędnie odczytane przez Markdown jako nagłówki
 Setext wskutek braku pustej linii przed `---`.
 
-Zachowano układ firma → stanowisko i okres → opis i osiągnięcia → technologie.
-Długie opisy i listy mogą przechodzić między stronami; krótkie metadane
-pozostają z nagłówkiem firmy i początkiem opisu. Nie ma ukrywania treści
-ani skalowania tekstu. Numer telefonu pozostaje tekstem zgodnie ze źródłem.
+Nazwa firmy jest po lewej, a stanowisko i okres po prawej w jednym wierszu;
+branża i link pozostają poniżej. Każdy pracodawca jest grupowany w całość
+od nagłówka po technologie. Druk unika dzielenia tych grup oraz sekcji
+podsumowania i kompetencji między stronami. Blok wyższy niż pełna strona
+może zostać podzielony przez przeglądarkę i wymaga przeglądu wizualnego.
+Nie ma ukrywania treści ani skalowania tekstu. Numer telefonu pozostaje
+tekstem zgodnie ze źródłem.
 
 ## Ręczne drukowanie z przeglądarki
 
