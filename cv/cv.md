@@ -146,17 +146,18 @@ Software Development / Digital Products
 
 ### Key Responsibilities & Achievements
 
-- **Backend Architecture — Olimp Premium Club:** Independently designed and developed the backend of a mobile loyalty platform, including points management, reward redemption, API contracts, and integrations. Contributed to product design and mobile application workflows.
+- **Backend Ownership — Olimp Premium Club:** Independently designed and implemented the entire backend of a mobile loyalty platform, from business concept through API contracts, points management, and reward redemption. Worked with the client to shape product workflows.
 
-- **Fraud Detection & Verification:** Designed a strategy-based fraud detection system identifying suspicious activity and duplicate code usage. Integrated external receipt verification services with conditional escalation to manual review.
+- **Fraud Detection & Verification:** Built rule-based checks for suspicious scanning patterns and code reuse. Integrated external receipt verification, with conditional escalation to human review when additional purchase validation was needed.
 
-- **Real-Time Collaboration — Haddad PLM:** Architected and developed the backend of an apparel product lifecycle management platform, implementing shared application state and WebSocket-based synchronization for collaborative design workflows.
+- **Collaborative Workflows — Haddad PLM:** Designed and implemented the backend within a two-developer core team, defining data contracts with the frontend developer. Used persistent shared state and WebSocket updates to support collaborative apparel design and cross-department handoffs.
 
-- **Technical Leadership & Process Improvement:** Took technical ownership of complex projects, mentored developers, and collaborated directly with clients. Helped introduce Scrum and Jira, establishing more structured requirements and development workflows.
+- **Technical Leadership & Mentoring:** Guided developers through complex technical problems and discussed solution trade-offs directly with clients. Helped introduce Scrum and Jira, coaching colleagues on writing user stories and technical tasks to improve requirements clarity.
 
 ### Technologies
 
 PHP · Laravel · Symfony · MySQL · JavaScript · Vue.js · WebSockets · Jira
+
 ---
 
 ## Centrum Nowej Technologii
