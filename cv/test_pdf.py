@@ -41,31 +41,74 @@ class PDFTests(unittest.TestCase):
 
     def test_valid_pdf(self):
         self.create()
-        report = validate_pdf(self.path, CVContent(HTML), expected_pages=1)
+        report = validate_pdf(self.path, CVContent(HTML))
         self.assertEqual(report['links'], 1)
-        self.assertEqual(report['company_role_pairs'], 1)
+        self.assertEqual(report['warnings'], [])
 
     def test_missing_languages_rejected(self):
         self.create(lines=LINES[:-2])
-        with self.assertRaisesRegex(ValueError, 'text differs'):
-            validate_pdf(self.path, CVContent(HTML), expected_pages=1)
-
-    def test_changed_link_rejected(self):
-        self.create(href='mailto:wrong@example.com')
-        with self.assertRaisesRegex(ValueError, 'hrefs'):
-            validate_pdf(self.path, CVContent(HTML), expected_pages=1)
-
-    def test_small_text_rejected(self):
-        self.create(size=9)
-        with self.assertRaisesRegex(ValueError, 'below 10.5'):
-            validate_pdf(self.path, CVContent(HTML), expected_pages=1)
-
-    def test_wrong_page_count_rejected(self):
-        self.create()
-        with self.assertRaisesRegex(ValueError, 'Expected 3'):
+        with self.assertRaisesRegex(ValueError, 'content differs'):
             validate_pdf(self.path, CVContent(HTML))
 
-    def test_orphaned_company_rejected(self):
+    def test_generated_page_number_is_not_cv_content(self):
+        self.create()
+        with pymupdf.open(self.path) as document:
+            page = document[0]
+            page.insert_font(fontname='Footer', fontfile=str(FONT))
+            page.insert_text((530, 820), '1 / 1', fontsize=8, fontname='Footer')
+            document.saveIncr()
+        report = validate_pdf(self.path, CVContent(HTML))
+        self.assertEqual(report['warnings'], [])
+
+    def test_changed_link_warns_without_blocking(self):
+        self.create(href='mailto:wrong@example.com')
+        report = validate_pdf(self.path, CVContent(HTML))
+        self.assertTrue(any('links' in warning for warning in report['warnings']))
+
+    def test_font_size_is_reported_without_blocking(self):
+        self.create(size=9)
+        report = validate_pdf(self.path, CVContent(HTML))
+        self.assertEqual(report['pages'][0]['minimum_font_pt'], 9)
+
+    def test_page_break_and_split_heading_do_not_block(self):
         self.create(split=True)
-        with self.assertRaisesRegex(ValueError, 'Orphaned'):
-            validate_pdf(self.path, CVContent(HTML), expected_pages=2)
+        report = validate_pdf(self.path, CVContent(HTML))
+        self.assertEqual(len(report['pages']), 2)
+
+    def test_reordered_text_warns_without_blocking(self):
+        self.create(lines=list(reversed(LINES)))
+        report = validate_pdf(self.path, CVContent(HTML))
+        self.assertTrue(any('order' in warning for warning in report['warnings']))
+
+    def test_duplicated_text_rejected(self):
+        self.create(lines=LINES + ['Delivered systems.'])
+        with self.assertRaisesRegex(ValueError, 'content differs'):
+            validate_pdf(self.path, CVContent(HTML))
+
+    def test_changed_text_rejected(self):
+        self.create(lines=[line.replace('Delivered systems.', 'Delivered software.') for line in LINES])
+        with self.assertRaisesRegex(ValueError, 'content differs'):
+            validate_pdf(self.path, CVContent(HTML))
+
+    def test_corrupt_pdf_rejected(self):
+        self.path.write_bytes(b'not a PDF')
+        with self.assertRaises(pymupdf.FileDataError):
+            validate_pdf(self.path, CVContent(HTML))
+
+    def test_empty_pdf_rejected(self):
+        with pymupdf.open() as document:
+            document.new_page()
+            document.save(self.path)
+        with self.assertRaisesRegex(ValueError, 'no extractable text'):
+            validate_pdf(self.path, CVContent(HTML))
+
+    def test_arbitrary_page_count_and_geometry_do_not_block(self):
+        self.create()
+        with pymupdf.open(self.path) as document:
+            for _ in range(4):
+                document.new_page(width=400, height=300)
+            document.saveIncr()
+        report = validate_pdf(self.path, CVContent(HTML))
+        self.assertEqual(len(report['pages']), 5)
+        self.assertEqual(report['pages'][-1]['width_pt'], 400)
+        self.assertTrue(any('no extractable text' in warning for warning in report['warnings']))

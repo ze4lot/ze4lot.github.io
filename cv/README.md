@@ -16,8 +16,9 @@ make cv-check
 ```
 
 Otwórz `cv/generated.html` w przeglądarce. To samodzielny HTML z osadzonym CSS
-oraz fontami Ubuntu Sans Regular/Bold 1.006. Nie wymaga serwera, JavaScriptu,
-zasobów sieciowych, zależności npm ani narzędzi do eksportu PDF.
+oraz fontami Ubuntu Sans Regular/SemiBold/Bold 1.006. Nie wymaga serwera,
+zasobów sieciowych ani zależności npm. Osadzony skrypt `paginate.js`
+rozmieszcza treść przed drukowaniem; widok ekranowy pozostaje ciągły.
 Fonty wraz z licencją są w `cv/fonts/`; nie trzeba ich instalować w systemie.
 
 Po zmianie Markdown lub CSS ponownie wykonaj `make cv`.
@@ -50,12 +51,13 @@ Polecenie odtwarza HTML, sprawdza jego zgodność ze źródłem, uruchamia Chrom
 bez dostępu do sieci, czeka na osadzone fonty i generuje **`cv/generated.pdf`**.
 Używa A4 i marginesów z CSS, skali 100%, bez nagłówków/stopek przeglądarki.
 PDF zawiera tekst, linki i znaczniki struktury dokumentu.
-**Poprzedni PDF jest zastępowany dopiero po przejściu kontroli jakości.**
+**Poprzedni PDF jest zastępowany dopiero po przejściu podstawowej kontroli eksportu i kompletności treści.**
 Nie nadpisuje plików w `static/files/`.
 
 Po eksporcie powstają również:
 
-- `cv/review/page-1.png`, `page-2.png`, `page-3.png` — podgląd wszystkich stron;
+- `cv/review/page-N.png` — podgląd każdej wygenerowanej strony;
+  nieaktualne podglądy poprzedniego eksportu są usuwane;
 - `cv/review/pdf-qa.json` — wyniki kontroli, wersje renderera oraz SHA-256 źródła,
   HTML i PDF.
 
@@ -72,23 +74,30 @@ Zmienne `CV_VENV` i `CV_PYTHON` pozwalają wskazać inne środowisko Pythona.
 ## Kontrole i testy
 
 `make cv-check` wymaga tylko Python 3 i Pandoc. Niezależnie renderuje źródło
-bez filtra układu i porównuje pełny tekst z HTML, z wyjątkiem uzgodnionych
-powtórzonych nagłówków osiągnięć. Sprawdza też wszystkie `href`, składnię
-`mailto:`, unikalność identyfikatorów i osadzenie fontu.
+bez filtra układu i porównuje pełny tekst i linki z HTML, z wyjątkiem
+uzgodnionych powtórzonych nagłówków osiągnięć. Brak, zmiana lub powielenie
+treści albo linków blokuje generowanie. Powtórzone identyfikatory HTML i brak
+wykrytego osadzonego fontu są ostrzeżeniami.
 
-Kontrola PDF, wykonywana przy każdym eksporcie, sprawdza:
+Kontrola PDF blokuje eksport tylko wtedy, gdy plik jest nieczytelny,
+zablokowany, nie zawiera stron lub tekstu albo jego treść jest niekompletna.
+Porównuje liczności słów i znaków interpunkcyjnych z HTML, bez narzucania
+kolejności ekstrakcji — pozwala to później stosować układy wielokolumnowe.
+Nie jest to porównanie znaczenia ani gwarancja poprawnej kolejności czytania.
+Różnice kolejności tekstu lub linków oraz strony bez tekstu są raportowane
+jako ostrzeżenia i nie blokują zapisu PDF.
 
-- dokładnie trzy niepuste strony A4 w pionie;
-- pełną zgodność tekstu i kolejności z HTML, także kontakt i Languages;
-- minimum 10,5 pt oraz brak tekstu poza stroną;
-- osadzenie fontów i brak fontów Type 3;
-- zgodność linków PDF z HTML;
-- obecność nagłówka firmy i stanowiska z okresem na tej samej stronie.
+Nie ma sztywnego limitu stron, minimum wielkości fontu ani walidacji geometrii,
+położenia nagłówków lub osadzenia fontów PDF. Liczba i wymiary stron oraz
+najmniejszy rozmiar tekstu są informacjami w `cv/review/pdf-qa.json`.
+Renderer nadal czeka na załadowanie zadeklarowanych fontów i zasobów.
+Błąd renderowania lub ładowania zasobów zatrzymuje eksport; poprzedni PDF
+pozostaje zachowany.
 
-Nie sprawdza dostępności stron WWW ani konkretnego komercyjnego parsera ATS.
-Kontrola automatyczna uzupełnia wizualny przegląd przed wysłaniem dokumentu.
-Liczba stron jest celowym warunkiem kontroli — rozbudowa treści wymagająca
-czwartej strony zatrzyma eksport i wymaga świadomej decyzji o składzie.
+**Przed wysłaniem CV przejrzyj wszystkie podglądy stron:** oceń czytelność,
+ucięcia, kolejność czytania, podziały stron i linki. Udany eksport techniczny
+nie oznacza zatwierdzenia składu. Narzędzia nie sprawdzają dostępności stron
+WWW ani konkretnego komercyjnego parsera ATS.
 
 Po `make cv-setup` uruchom testy regresji:
 
@@ -96,9 +105,11 @@ Po `make cv-setup` uruchom testy regresji:
 make cv-test
 ```
 
-Obejmują one generowanie bez `experience.md`, nieznaną wcześniej firmę,
-zachowanie kontaktu i końcowych sekcji oraz wykrywanie uszkodzonej treści,
-linków, małego tekstu, złej liczby stron i osamotnionego nagłówka w PDF.
+Testy obejmują jedno źródło treści, nieznaną wcześniej firmę, kontakt i sekcje
+końcowe, brak lub zmianę tekstu/linków w HTML, uszkodzony lub pusty PDF oraz
+brak, zmianę i duplikację tekstu w PDF. Sprawdzają też, że zmiany liczby stron,
+fontu, geometrii, podziałów, kolejności ekstrakcji i linków PDF nie blokują
+poprawnego eksportu z kompletną treścią.
 
 ## Konwencje Markdown i układ
 
@@ -115,22 +126,37 @@ rozpoczyna się obok niej. Branża i strona firmy są w jednym wierszu.
 Obsługiwane są też technologie błędnie odczytane przez Markdown jako nagłówki
 Setext wskutek braku pustej linii przed `---`.
 
-Zachowano układ firma → stanowisko i okres → opis i osiągnięcia → technologie.
-Długie opisy i listy mogą przechodzić między stronami; krótkie metadane
-pozostają z nagłówkiem firmy i początkiem opisu. Nie ma ukrywania treści
-ani skalowania tekstu. Numer telefonu pozostaje tekstem zgodnie ze źródłem.
+Nazwa firmy jest po lewej, a stanowisko i okres po prawej w jednym wierszu;
+branża i link pozostają poniżej. Każdy pracodawca jest grupowany w całość
+od nagłówka po technologie. Druk unika dzielenia tych grup oraz sekcji
+podsumowania i kompetencji między stronami. Blok wyższy niż pełna strona
+może zostać podzielony przez przeglądarkę i wymaga przeglądu wizualnego.
+Przed eksportem `paginate.js` mierzy naturalną wysokość bloków przy docelowej
+szerokości druku i załadowanych fontach. Wypełnia kolejne strony całymi blokami,
+a odstępy między blokami dopasowują się w zakresie 12–24 px. Nadmiar wolnego
+miejsca zostaje na dole strony. Linie pozostają tylko pod nagłówkami sekcji
+nadrzędnych. Wymiary strony i marginesy
+pochodzą ze zmiennych CSS; sekcje nie mają narzuconych wysokości.
+AKRA Polska i EURA7 są wyjątkiem redakcyjnym: trafiają razem na osobną ostatnią
+stronę. Klauzula rekrutacyjna pochodzi z bloku `.recruitment-clause`
+w `cv.md` i jest dosuwana do dołu ostatniej strony (9 pt, wyrównanie do lewej).
+Jeśli brak klauzuli, dolne 22 mm pozostają zarezerwowane.
+Po zamknięciu druku wraca widok ciągły.
+Nie ma ukrywania treści ani skalowania tekstu. Numer telefonu pozostaje
+tekstem zgodnie ze źródłem.
 
 ## Ręczne drukowanie z przeglądarki
 
 Otwórz HTML, poczekaj na fonty i wybierz `Ctrl+P`: A4, pionowo, skala 100%,
-bez nagłówków i stopek. Pozostaw marginesy CSS — 12 mm góra/dół,
+bez nagłówków i stopek. Pozostaw marginesy CSS — 16 mm góra/dół,
 14 mm lewo/prawo. Tła nie są wymagane.
 Do przygotowania dokumentu rekrutacyjnego zalecane jest `make cv-pdf`,
 które stosuje te ustawienia i uruchamia kontrolę wyniku.
 
-## Ostatnia weryfikacja — 14 listopada 2026
+## Ostatnia weryfikacja — 17 listopada 2026
 
-Pandoc 3.6.4, Playwright 1.65.2 / Chromium 159.0.8154.6, PyMuPDF 1.28.2:
-trzy strony A4, minimum 10,5 pt, pełny tekst, 13 linków i dziewięć par
-firma–stanowisko. Testy regresji przeszły. Treść zaakceptowanych plików
-Markdown, CSS i istniejący PDF portfolio pozostały bez zmian.
+Zaktualizowano AKRA i EURA7, zachowując korekty Agent Orchestration i Bikeparks.
+Uproszczono QA do poprawności eksportu i kompletności treści, z diagnostyką
+nieblokującą zmian składu. Aktualny eksport i testy sprawdzono poleceniami
+`make cv`, `make cv-check`, `make cv-pdf`, `make cv-pdf-check` i `make cv-test`.
+CSS oraz istniejący PDF portfolio pozostały bez zmian.
