@@ -16,6 +16,8 @@ buttons:
   filter: "all"
 - name: Backend
   filter: "backend"
+- name: Frontend
+  filter: "frontend"
 - name: Databases
   filter: "dbs"
 - name: Infrastructure
@@ -46,7 +48,7 @@ skills:
   logo: /images/sections/skills/js.png
   summary: >
     Used for frontend features in commercial web applications and Vue.js-based projects, working alongside PHP backends.
-  categories: ["backend"]
+  categories: ["frontend"]
 
 - name: Redis
   logo: /images/sections/skills/redis.png
@@ -93,5 +95,5 @@ skills:
 - name: Linux
   logo: /images/sections/skills/linux.png
   summary: >
-    Primary working environment for development and infrastructure-level operations.
+    Linux development in WSL2, container-based application environments, and server administration, including application deployment and ongoing operations.
   categories: ["infra"]

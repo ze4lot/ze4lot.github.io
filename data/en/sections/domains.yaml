@@ -27,3 +27,8 @@ items:
     icon: "fas fa-print"
     description: >
       Helped recover and bring a promotional flyer platform into production for major US retailers, supporting regional variants and Excel-based data workflows.
+
+  - title: Sports Technology / Digital Platforms
+    icon: "fas fa-bicycle"
+    description: >
+      Founded and launched Bikeparks.pl, a public cycling infrastructure discovery platform with a catalog of bikeparks, trails, and organization profiles. Own product direction, application architecture, data ingestion, and production delivery.

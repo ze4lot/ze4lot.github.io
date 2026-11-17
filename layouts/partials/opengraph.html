@@ -1,10 +1,28 @@
-{{- $ogTitle := "Maciej Płocki - Backend & System Architect" -}}
-{{- $ogDescription := "Backend engineer focused on building systems that survive real-world complexity, scale, and evolving business requirements." -}}
-{{- $ogImage := "/og-image.png" -}}
-{{- $ogURL := .Permalink -}}
-<meta property="og:title" content="{{ $ogTitle }}">
-<meta property="og:description" content="{{ $ogDescription }}">
-<meta property="og:image" content="{{ $ogImage }}">
-<meta property="og:type" content="website">
-<meta property="og:url" content="{{ $ogURL }}">
+{{- $siteConfig := (index site.Data site.Language.Lang).site -}}
+{{- $title := $siteConfig.openGraph.title | default site.Title -}}
+{{- $description := $siteConfig.openGraph.description | default $siteConfig.description -}}
+{{- $imagePath := $siteConfig.openGraph.image -}}
+{{- $imageURL := $imagePath | absURL -}}
+{{- $image := resources.Get $imagePath -}}
+{{- if $image -}}
+  {{- $imageURL = $image.Permalink -}}
+{{- end -}}
+<link rel="canonical" href="{{ .Permalink }}">
+<meta name="author" content="{{ (index site.Data site.Language.Lang).author.name }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:image" content="{{ $imageURL }}">
+<meta property="og:image:alt" content="Portrait of Maciej Płocki, Software Architect and Technical Lead">
+{{ with $image }}
+<meta property="og:image:width" content="{{ .Width }}">
+<meta property="og:image:height" content="{{ .Height }}">
+<meta property="og:image:type" content="{{ .MediaType.Type }}">
+{{ end }}
+<meta property="og:type" content="{{ $siteConfig.openGraph.type | default "website" }}">
+<meta property="og:url" content="{{ .Permalink }}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
+<meta name="twitter:image" content="{{ $imageURL }}">
+<meta name="twitter:image:alt" content="Portrait of Maciej Płocki, Software Architect and Technical Lead">

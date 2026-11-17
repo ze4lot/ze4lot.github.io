@@ -46,32 +46,26 @@ badges:
 #  url: "https://www.credly.com/org/grupo-bancolombia/badge/artificial-intelligence-and-machine-learning"
 #  badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
 
-- type: soft-skill-indicator
+- type: decorative-skill
   name: Technical Leadership
-  percentage: 100
   color: pink
 
-- type: soft-skill-indicator
+- type: decorative-skill
   name: System Design
-  percentage: 100
   color: yellow
 
-- type: soft-skill-indicator
+- type: decorative-skill
   name: Problem Solving
-  percentage: 100
   color: orange
 
-- type: soft-skill-indicator
+- type: decorative-skill
   name: Communication
-  percentage: 100
   color: sky
 
-- type: soft-skill-indicator
+- type: decorative-skill
   name: Decision Making
-  percentage: 100
   color: green
 
-- type: soft-skill-indicator
+- type: decorative-skill
   name: Backend Engineering
-  percentage: 100
   color: blue

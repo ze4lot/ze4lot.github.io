@@ -52,11 +52,15 @@
       >
       {{ end }}
     </div>
-    <!-- soft skills circular-progressbar -->
+    <!-- Decorative skill labels; these do not represent proficiency scores. -->
     <div class="col-sm-6 pt-5 ps-md-4 ps-sm-3 pt-sm-0">
-      <div class="row">
+      <div class="about-badges-grid">
         {{ range .badges }}
+          {{ if eq .type "decorative-skill" }}
+          <div class="about-skill-circle"><span>{{ .name }}</span></div>
+          {{ else }}
           {{ partial "misc/badge.html" . }}
+          {{ end }}
         {{ end }}
         <!-- TODO: Remove this part in version v4+ -->
         <!-- Keep backward compatibility with old configuration -->

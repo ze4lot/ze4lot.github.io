@@ -5,7 +5,10 @@ copyright: © 2026 Copyright.
 disclaimer: "This website presents selected professional experience, technologies, and projects of Maciej Płocki."
 
 # Meta description for your site.  This will help the search engines to find your site.
-description: "Backend developer, solution architect, and technical leader focused on scalable systems, clean architecture, and business-driven software delivery."
+description: "Software Architect and Technical Lead specializing in PHP business systems, legacy modernization, team leadership, and AI-native engineering. Founder of Bikeparks.pl."
+
+# Keep the navigation label short while the page title carries the positioning.
+navBarTitle: "Maciej Płocki - Portfolio"
 
 # specify the list of custom menus that you want to show in the top navbar.
 # they will be separated by a divider from the main menus.
@@ -13,8 +16,8 @@ customMenus:
 
 # Specify OpenGraph Headers
 openGraph:
-  title: Maciej Płocki | Backend Developer · Solution Architect · Tech Lead
+  title: Maciej Płocki | Software Architect · Technical Lead · AI-Native Engineering
   type: website
-  description: Backend developer, solution architect, and technical leader focused on scalable systems, clean architecture, and business-driven software delivery.
+  description: Software Architect and Technical Lead specializing in PHP business systems, legacy modernization, team leadership, and AI-native engineering. Founder of Bikeparks.pl.
   image: images/author/maciek.png
   url: https://ze4lot.github.io/
