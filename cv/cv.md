@@ -200,7 +200,7 @@ Digital Agency
 PHP · Zend Framework · MySQL · JavaScript · jQuery · Flash / ActionScript
 
 ::: {.recruitment-clause}
-### § DATA PROCESSING CONSENT
+### DATA PROCESSING CONSENT
 
 I consent to the processing of any additional personal data voluntarily provided in this CV for the purposes of the recruitment process for which I submit my application.
 :::

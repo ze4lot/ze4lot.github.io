@@ -9,7 +9,7 @@ cv:
 		--lua-filter=cv/layout.lua \
 		--standalone --section-divs --embed-resources \
 		--template=cv/template.html --css=cv/cv.css \
-		--metadata=lang:en --metadata=pagetitle:CV \
+		--metadata=lang:en --metadata='pagetitle:Maciej Płocki — Software Architect / Technical Lead' \
 		--output=cv/generated.html
 
 cv-check: cv
