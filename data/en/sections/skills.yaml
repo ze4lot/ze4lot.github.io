@@ -27,49 +27,49 @@ skills:
 - name: PHP
   logo: /images/sections/skills/php.png
   summary: >
-    Core language used to design and evolve high-load backend systems, with focus on long-term maintainability and architectural clarity.
+    Core language for backend applications and business systems, used across production delivery, application architecture, and legacy modernization.
   categories: ["backend"]
 
 - name: Laravel
   logo: /images/sections/skills/laravel.png
   summary: >
-    Primary delivery framework for complex business platforms - used pragmatically as infrastructure layer, not as application core.
+    Used to deliver insurance portals, product platforms, and loyalty APIs, and to modernize inherited business applications.
   categories: ["backend"]
 
 - name: Symfony
   logo: /images/sections/skills/symfony.png
   summary: >
-    Applied where structure, explicitness, and long-term stability are critical - especially in more demanding or legacy-constrained environments.
+    Used to design and evolve the modular Bikeparks.pl application, defining domain rules, persistence, and integration boundaries.
   categories: ["backend"]
 
 - name: JavaScript
   logo: /images/sections/skills/js.png
   summary: >
-    Used as a supporting layer for product delivery, internal tooling, and integration with modern frontend stacks.
+    Used for frontend features in commercial web applications and Vue.js-based projects, working alongside PHP backends.
   categories: ["backend"]
 
 - name: Redis
   logo: /images/sections/skills/redis.png
   summary: >
-    Leveraged for performance-critical paths - caching, queues, and reducing system load under real traffic.
+    Part of the technology stack used for Bikeparks.pl, the Nord Partner insurance portal, and Fashion Trends Group business applications.
   categories: ["infra"]
 
 - name: MySQL
   logo: /images/sections/skills/mysql.svg
   summary: >
-    Extensive experience with relational modeling, indexing strategies, and query optimization in production-scale systems.
+    Relational database used across product management, configurable pricing, loyalty platforms, and e-commerce applications.
   categories: ["dbs"]
 
 - name: PostgreSQL
   logo: /images/sections/skills/elephant.png
   summary: >
-    Used in more demanding scenarios requiring advanced querying, data integrity, and complex data structures.
+    Used in Bikeparks.pl and insurance applications, alongside work on persistence, read models, data consistency, and performance evaluation.
   categories: ["dbs"]
 
 - name: Docker
   logo: /images/sections/skills/docker.svg
   summary: >
-    Foundation for reproducible environments and production parity - eliminating "works on my machine" class of issues.
+    Used for containerized development and production environments, supporting application deployment, database migrations, and controlled releases.
   categories: ["infra"]
 
 - name: Git
@@ -78,16 +78,16 @@ skills:
     Daily driver for structured collaboration, clean history management, and controlled delivery processes.
   categories: ["tools"]
 
-- name: AI-assisted Development
+- name: AI-Native Development
   logo: /images/sections/skills/openai.webp
   summary: >
-    Actively integrated into development workflow - used for acceleration, exploration, and reducing low-value manual work.
+    Specification-driven development with AI coding agents, implementation review, and automated quality gates, including integration and E2E tests and performance benchmarks.
   categories: ["tools"]
 
-- name: Atlassian Stack
+- name: Jira
   logo: /images/sections/skills/atlassian.webp
   summary: >
-    Used for managing delivery in structured environments - supporting coordination, planning, and visibility across teams.
+    Used for sprint planning and delivery coordination, with experience introducing Scrum and coaching developers on user stories and technical tasks.
   categories: ["tools"]
 
 - name: Linux

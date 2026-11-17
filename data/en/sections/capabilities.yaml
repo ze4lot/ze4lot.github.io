@@ -14,29 +14,29 @@ skills:
 - name: Legacy Modernization
   icon: "fas fa-layer-group"
   summary: >
-    I turn difficult legacy systems into clearer and more maintainable platforms, reducing hidden complexity without breaking what already works.
+    I modernize inherited applications by recovering undocumented business rules, upgrading frameworks and runtime environments, and restructuring code to support continued development and production use.
 
 - name: Integration Architecture
   icon: "fas fa-diagram-project"
   summary: >
-    I design reliable integration flows between internal services and external systems, with strong attention to data consistency, boundaries, and long-term stability.
+    I separate business logic from data access and define integration boundaries that accommodate changing data sources. My work includes event-driven integrations, data synchronization, and API contracts.
 
 - name: Domain Clarity
   icon: "fas fa-sitemap"
   summary: >
-    I translate messy business rules into explicit domain structures, helping teams understand what the system actually does and where responsibilities belong.
+    I turn business rules into explicit domain models and responsibilities, covering insurance workflows, configurable pricing, and collaborative processes across departments.
 
 - name: Technical Leadership
   icon: "fas fa-gears"
   summary: >
-    I support engineering decisions with architectural thinking, helping teams move faster without losing structure, maintainability, or delivery focus.
+    I combine hands-on engineering with people leadership, mentoring, recruitment, and employee evaluation. I establish work intake, sprint planning, and release practices in collaboration with business stakeholders.
 
 - name: Business-to-Technology Translation
   icon: "fas fa-compass"
   summary: >
-    I work between stakeholders and engineering, turning product and domain needs into technical direction that is realistic, scalable, and easier to execute.
+    I work with stakeholders to shape product workflows and translate business needs into application architecture and working software, from loyalty platforms and product operations to Bikeparks.pl.
 
-- name: AI-accelerated Engineering
+- name: AI-Native Engineering
   icon: "fas fa-microchip"
   summary: >
-    I use AI to speed up analysis, refactoring, documentation, and technical exploration - as leverage for better delivery, not as a shortcut for weak decisions.
+    I define specifications and architectural boundaries for AI coding agents, review their implementation, and retain final authority over merges and releases. Automated quality gates support this workflow.

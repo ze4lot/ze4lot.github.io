@@ -11,19 +11,19 @@ items:
   - title: Insurance / InsurTech
     icon: "fas fa-shield-alt"
     description: >
-      Worked with complex contracts, claims flows, policy structures, and legacy insurance data that required domain-aware system design.
+      Delivered an insurance portal supporting broker workflows, customer self-service, policy and claims access, reporting, and claims submission. Modernized legacy insurance applications and data access.
 
   - title: Internal Business Systems
     icon: "fas fa-building"
     description: >
-      Designed and improved custom platforms supporting internal operations, reporting, workflows, and business-critical processes.
+      Designed and developed platforms for product management, collaborative apparel design, reporting, and cross-department workflows, including integration with ERP systems.
 
   - title: Retail & Distribution
     icon: "fas fa-shopping-cart"
     description: >
-      Built and maintained systems related to e-commerce, logistics, product flows, and operational sales support.
+      Delivered configurable B2B/B2C pricing, product publishing to e-commerce and marketplaces, and reusable storefront architecture. Provided advisory support on purchasing, order management, and logistics processes.
 
   - title: Marketing & Print Systems
     icon: "fas fa-print"
     description: >
-      Worked on campaign, publishing, and print-related systems where process clarity, automation, and delivery coordination mattered.
+      Helped recover and bring a promotional flyer platform into production for major US retailers, supporting regional variants and Excel-based data workflows.
