@@ -192,6 +192,7 @@ img { max-width: 100%; }
     break-after: page;
   }
   .cv-page:last-child { break-after: auto; }
+  .cv-page-final { --section-gap: var(--section-gap-max); }
   .cv-page:has(> .experience-entry), .early-career {
     --section-gap-min: 16px;
     --section-gap-max: 28px;

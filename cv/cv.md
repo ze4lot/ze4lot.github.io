@@ -188,7 +188,7 @@ PHP · CakePHP · MySQL · JavaScript · jQuery
 
 ## EURA7
 
-**PHP Developer | October 2011 – April 2013**  
+**PHP Developer | October 2011 – November 2012**  
 Digital Agency
 
 ### Key Responsibilities & Achievements
@@ -198,6 +198,18 @@ Digital Agency
 ### Technologies
 
 PHP · Zend Framework · MySQL · JavaScript · jQuery · Flash / ActionScript
+
+## Education
+
+### University of Information Technology and Management in Rzeszów
+
+**2010–2011**  
+Computer Science studies
+
+### Cracow University of Technology — Faculty of Mechanical Engineering
+
+**2008–2010**  
+Safety Engineering studies (Occupational Health and Safety)
 
 ::: {.recruitment-clause}
 ### DATA PROCESSING CONSENT

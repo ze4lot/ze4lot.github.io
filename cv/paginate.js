@@ -18,6 +18,8 @@ window.paginateCV = function () {
   const experience = units.find(node => node.id === 'professional-experience');
   const entries = [...experience.querySelectorAll(':scope > .experience-entry')];
   const lastEntries = entries.filter(entry => ['AKRA Polska', 'EURA7'].includes(entry.querySelector('h3').textContent.trim()));
+  // Sections after employment must follow the final early-career entries in print.
+  const laterSections = lastEntries.length ? units.splice(units.indexOf(experience) + 1) : [];
   const first = document.createElement('div');
   first.className = 'experience-start';
   first.append(experience.querySelector(':scope > h2'), entries[0]);
@@ -59,7 +61,7 @@ window.paginateCV = function () {
     const reserve = document.createElement('div');
     reserve.className = 'recruitment-clause-space';
     reserve.setAttribute('aria-hidden', 'true');
-    page.append(group, clause || reserve);
+    page.append(group, ...laterSections, clause || reserve);
   }
   if (clause && !lastEntries.length) {
     page.append(clause);
