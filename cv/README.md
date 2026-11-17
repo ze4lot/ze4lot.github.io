@@ -50,12 +50,13 @@ Polecenie odtwarza HTML, sprawdza jego zgodność ze źródłem, uruchamia Chrom
 bez dostępu do sieci, czeka na osadzone fonty i generuje **`cv/generated.pdf`**.
 Używa A4 i marginesów z CSS, skali 100%, bez nagłówków/stopek przeglądarki.
 PDF zawiera tekst, linki i znaczniki struktury dokumentu.
-**Poprzedni PDF jest zastępowany dopiero po przejściu kontroli jakości.**
+**Poprzedni PDF jest zastępowany dopiero po przejściu podstawowej kontroli eksportu i kompletności treści.**
 Nie nadpisuje plików w `static/files/`.
 
 Po eksporcie powstają również:
 
-- `cv/review/page-1.png`, `page-2.png`, `page-3.png`, `page-4.png` — podgląd wszystkich stron;
+- `cv/review/page-N.png` — podgląd każdej wygenerowanej strony;
+  nieaktualne podglądy poprzedniego eksportu są usuwane;
 - `cv/review/pdf-qa.json` — wyniki kontroli, wersje renderera oraz SHA-256 źródła,
   HTML i PDF.
 
@@ -72,23 +73,30 @@ Zmienne `CV_VENV` i `CV_PYTHON` pozwalają wskazać inne środowisko Pythona.
 ## Kontrole i testy
 
 `make cv-check` wymaga tylko Python 3 i Pandoc. Niezależnie renderuje źródło
-bez filtra układu i porównuje pełny tekst z HTML, z wyjątkiem uzgodnionych
-powtórzonych nagłówków osiągnięć. Sprawdza też wszystkie `href`, składnię
-`mailto:`, unikalność identyfikatorów i osadzenie fontu.
+bez filtra układu i porównuje pełny tekst i linki z HTML, z wyjątkiem
+uzgodnionych powtórzonych nagłówków osiągnięć. Brak, zmiana lub powielenie
+treści albo linków blokuje generowanie. Powtórzone identyfikatory HTML i brak
+wykrytego osadzonego fontu są ostrzeżeniami.
 
-Kontrola PDF, wykonywana przy każdym eksporcie, sprawdza:
+Kontrola PDF blokuje eksport tylko wtedy, gdy plik jest nieczytelny,
+zablokowany, nie zawiera stron lub tekstu albo jego treść jest niekompletna.
+Porównuje liczności słów i znaków interpunkcyjnych z HTML, bez narzucania
+kolejności ekstrakcji — pozwala to później stosować układy wielokolumnowe.
+Nie jest to porównanie znaczenia ani gwarancja poprawnej kolejności czytania.
+Różnice kolejności tekstu lub linków oraz strony bez tekstu są raportowane
+jako ostrzeżenia i nie blokują zapisu PDF.
 
-- dokładnie cztery niepuste strony A4 w pionie;
-- pełną zgodność tekstu i kolejności z HTML, także kontakt i Languages;
-- minimum 10,5 pt oraz brak tekstu poza stroną;
-- osadzenie fontów i brak fontów Type 3;
-- zgodność linków PDF z HTML;
-- obecność nagłówka firmy i stanowiska z okresem na tej samej stronie.
+Nie ma sztywnego limitu stron, minimum wielkości fontu ani walidacji geometrii,
+położenia nagłówków lub osadzenia fontów PDF. Liczba i wymiary stron oraz
+najmniejszy rozmiar tekstu są informacjami w `cv/review/pdf-qa.json`.
+Renderer nadal czeka na załadowanie zadeklarowanych fontów i zasobów.
+Błąd renderowania lub ładowania zasobów zatrzymuje eksport; poprzedni PDF
+pozostaje zachowany.
 
-Nie sprawdza dostępności stron WWW ani konkretnego komercyjnego parsera ATS.
-Kontrola automatyczna uzupełnia wizualny przegląd przed wysłaniem dokumentu.
-Liczba stron jest celowym warunkiem kontroli — rozbudowa treści wymagająca
-piątej strony zatrzyma eksport i wymaga świadomej decyzji o składzie.
+**Przed wysłaniem CV przejrzyj wszystkie podglądy stron:** oceń czytelność,
+ucięcia, kolejność czytania, podziały stron i linki. Udany eksport techniczny
+nie oznacza zatwierdzenia składu. Narzędzia nie sprawdzają dostępności stron
+WWW ani konkretnego komercyjnego parsera ATS.
 
 Po `make cv-setup` uruchom testy regresji:
 
@@ -96,9 +104,11 @@ Po `make cv-setup` uruchom testy regresji:
 make cv-test
 ```
 
-Obejmują one generowanie bez `experience.md`, nieznaną wcześniej firmę,
-zachowanie kontaktu i końcowych sekcji oraz wykrywanie uszkodzonej treści,
-linków, małego tekstu, złej liczby stron i osamotnionego nagłówka w PDF.
+Testy obejmują jedno źródło treści, nieznaną wcześniej firmę, kontakt i sekcje
+końcowe, brak lub zmianę tekstu/linków w HTML, uszkodzony lub pusty PDF oraz
+brak, zmianę i duplikację tekstu w PDF. Sprawdzają też, że zmiany liczby stron,
+fontu, geometrii, podziałów, kolejności ekstrakcji i linków PDF nie blokują
+poprawnego eksportu z kompletną treścią.
 
 ## Konwencje Markdown i układ
 
@@ -130,7 +140,8 @@ które stosuje te ustawienia i uruchamia kontrolę wyniku.
 
 ## Ostatnia weryfikacja — 17 listopada 2026
 
-Pandoc 3.6.4, Playwright 1.65.2 / Chromium 159.0.8154.6, PyMuPDF 1.28.2:
-cztery strony A4, minimum 10,5 pt, pełny tekst, 13 linków i dziewięć par
-firma–stanowisko. Testy regresji przeszły. Zaktualizowano Professional Summary, Core Competencies i Bikeparks oraz
-uzgodniony warunek czterech stron. CSS i istniejący PDF portfolio pozostały bez zmian.
+Zaktualizowano AKRA i EURA7, zachowując korekty Agent Orchestration i Bikeparks.
+Uproszczono QA do poprawności eksportu i kompletności treści, z diagnostyką
+nieblokującą zmian składu. Aktualny eksport i testy sprawdzono poleceniami
+`make cv`, `make cv-check`, `make cv-pdf`, `make cv-pdf-check` i `make cv-test`.
+CSS oraz istniejący PDF portfolio pozostały bez zmian.

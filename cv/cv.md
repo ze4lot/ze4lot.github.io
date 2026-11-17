@@ -21,7 +21,7 @@ Currently building Bikeparks.pl as Founder & Software Architect, owning product 
 
 **Leadership & Delivery:** Technical Leadership, People Management, Recruitment & Employee Evaluation, Mentoring, Delivery Process Improvement, Business Collaboration
 
-**AI-Native Development:** AI Agent Orchestration, Specification-Driven Development, Automated Quality Gates
+**AI-Native Development:** Agent Orchestration, Specification-Driven Development, Automated Quality Gates
 
 ## Professional Experience
 
@@ -37,7 +37,7 @@ Public cycling infrastructure discovery platform with a catalog of bikeparks, tr
 
 - **Product Ownership & Delivery:** Founded the platform and led its production launch. Own product vision, business strategy, roadmap, requirements, and delivery priorities, developing the product beyond its current discovery functionality.
 
-- **Software Architecture:** Designed the modular Symfony application architecture and direct its evolution, defining domain rules, persistence, and integration boundaries. Oversee data ingestion, read models, and performance evaluation.
+- **Software Architecture:** Designed the modular Symfony application architecture. Direct its evolution, defining domain rules, persistence, and integration boundaries. Oversee data ingestion, read models, and performance evaluation.
 
 - **AI-Native SDLC:** Designed and established a development lifecycle in which AI coding agents implement changes under my architectural direction. Specify complex changes before implementation, review agent output, and retain final authority over merge and release decisions.
 
@@ -183,7 +183,9 @@ Software Development / Digital Media
 
 ### Key Responsibilities & Achievements
 
-- **Legacy Modernization & Development:** Migrated an unfinished stock photography platform from CakePHP 1.x to CakePHP 2.x, implemented missing functionality, resolved existing defects, and prepared the application for launch.
+- **Legacy Modernization:** Took over an unfinished stock photography platform and migrated it from CakePHP 1.x to CakePHP 2.x.
+
+- **Application Development:** Implemented missing backend functionality, fixed existing defects, and prepared the application for launch alongside the framework migration.
 
 ### Technologies
 
@@ -198,7 +200,7 @@ Digital Agency
 
 ### Key Responsibilities & Achievements
 
-- Developed and maintained websites, marketing applications, and interactive solutions for commercial clients, working across backend and frontend technologies.
+- Developed and maintained marketing websites, interactive solutions, and commercial web applications across multiple client projects. Implemented backend and frontend features, resolved defects, and delivered client-requested changes.
 
 ### Technologies
 
