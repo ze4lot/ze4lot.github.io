@@ -39,7 +39,12 @@ def validate_pdf(path, content):
 
     with pymupdf.open(path) as document:
         require(not document.needs_pass and len(document) > 0, "PDF is locked or has no pages")
-        extracted = "\n".join(page.get_text() for page in document)
+        # CSS page counters are generated presentation, not CV source content.
+        extracted = "\n".join(
+            block[4] for index, page in enumerate(document)
+            for block in page.get_text("blocks") if block[6] == 0
+            and not (block[4].strip() == f"{index + 1} / {len(document)}"
+                     and block[1] > page.rect.height * 0.9))
         require(extracted.strip(), "PDF has no extractable text")
         reference = " ".join(content.text)
         require(content_tokens(reference) == content_tokens(extracted),
@@ -84,6 +89,7 @@ def render_pdf(html, target):
             page.evaluate("document.fonts.ready")
             require(not failures, f"Failed document resources: {failures}")
             require(page.evaluate('''() => [...document.fonts].every(font => font.status === 'loaded')'''), "Embedded fonts did not load")
+            page.evaluate("window.paginateCV()")
             page.pdf(path=str(target), prefer_css_page_size=True, scale=1,
                      display_header_footer=False, print_background=False, tagged=True, outline=True)
             return {"playwright": version("playwright"), "chromium": browser.version}

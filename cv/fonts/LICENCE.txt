@@ -1,6 +1,6 @@
-Ubuntu Sans Regular and Bold — unmodified static TTF files, version 1.006.
+Ubuntu Sans Regular, SemiBold and Bold — unmodified static TTF files, version 1.006.
 Source: https://github.com/canonical/Ubuntu-Sans-fonts/tree/v1.006/fonts/ttf
-Files: UbuntuSans-Regular.ttf, UbuntuSans-Bold.ttf
+Files: UbuntuSans-Regular.ttf, UbuntuSans-SemiBold.ttf, UbuntuSans-Bold.ttf
 Licence text: Ubuntu fonts-ubuntu package, Ubuntu Font Licence 1.0.
 Copyright 2011, 2022, 2023 Canonical Ltd. (as recorded in the font metadata)
 

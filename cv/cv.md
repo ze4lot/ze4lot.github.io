@@ -27,11 +27,10 @@ Currently building Bikeparks.pl as Founder & Software Architect, owning product 
 
 ## Professional Experience
 
-## Bikeparks.pl
+## [Bikeparks.pl](https://bikeparks.pl/)
 
 **Founder & Software Architect | 2026 – Present**  
-Sports Technology / Digital Platforms  
-[bikeparks.pl](https://bikeparks.pl/)
+Sports Technology / Digital Platforms
 
 Public cycling infrastructure discovery platform with a catalog of bikeparks, trails, and organization profiles.
 
@@ -54,8 +53,7 @@ PHP · Symfony · PostgreSQL · Redis · RabbitMQ · Docker · GitHub Actions ·
 ## Nord Partner (part of PIB Group)
 
 **Senior Engineer / Architect | March 2025 – May 2026**  
-Insurance & Brokerage  
-[nordpartner.pl](https://nordpartner.pl/)
+Insurance & Brokerage
 
 ### Key Responsibilities & Achievements
 
@@ -76,8 +74,7 @@ PHP · Laravel · FilamentPHP · Redis · Docker · JavaScript · CI/CD
 ## ONWELO
 
 **Technical Coordinator | April 2024 – January 2025**  
-IT Consulting / Insurance / E-commerce  
-[onwelo.com](https://onwelo.com/)
+IT Consulting / Insurance / E-commerce
 
 ### Key Responsibilities & Achievements
 
@@ -98,8 +95,7 @@ PHP · PostgreSQL · Nginx · Docker
 ## Fashion Trends Group
 
 **Team Leader & Senior Software Developer | April 2022 – March 2023**  
-Fashion Retail / E-commerce  
-[ftggroup.com](https://ftggroup.com/)
+Fashion Retail / E-commerce
 
 ### Key Responsibilities & Achievements
 
@@ -119,8 +115,7 @@ PHP · Laravel · MySQL · Redis · Docker · Jira · ERP
 ## Quad/Graphics
 
 **Senior Software Developer | October 2020 – March 2022**  
-Enterprise Marketing / Retail  
-[quad.com](https://www.quad.com/)
+Enterprise Marketing / Retail
 
 Platform for producing promotional flyers for major US retailers, supporting regional variants and Excel-based data workflows.
 
@@ -141,8 +136,7 @@ PHP · Laravel · MongoDB · Docker · Nginx · Azure
 ## KISS digital
 
 **Senior Software Developer & Team Leader | April 2016 – May 2020**  
-Software Development / Digital Products  
-[kissdigital.com](https://kissdigital.com/)
+Software Development / Digital Products
 
 ### Key Responsibilities & Achievements
 
@@ -163,8 +157,7 @@ PHP · Laravel · Symfony · MySQL · JavaScript · Vue.js · WebSockets · Jira
 ## Centrum Nowej Technologii
 
 **CTO & Programmer | April 2013 – June 2015**  
-E-commerce / Software Development  
-[nowetechnologie.pl](http://www.nowetechnologie.pl/)
+E-commerce / Software Development
 
 ### Key Responsibilities & Achievements
 
@@ -180,8 +173,7 @@ PHP · Kohana · Laravel · MySQL · JavaScript · HTML · CSS / SASS
 ## AKRA Polska
 
 **PHP Developer | December 2012 – April 2013**  
-Software Development / Digital Media  
-[akra.net](https://akra.net/)
+Software Development / Digital Media
 
 ### Key Responsibilities & Achievements
 
@@ -197,8 +189,7 @@ PHP · CakePHP · MySQL · JavaScript · jQuery
 ## EURA7
 
 **PHP Developer | October 2011 – April 2013**  
-Digital Agency  
-[eura7.com](https://www.eura7.com/)
+Digital Agency
 
 ### Key Responsibilities & Achievements
 
@@ -207,3 +198,9 @@ Digital Agency
 ### Technologies
 
 PHP · Zend Framework · MySQL · JavaScript · jQuery · Flash / ActionScript
+
+::: {.recruitment-clause}
+### § DATA PROCESSING CONSENT
+
+I consent to the processing of any additional personal data voluntarily provided in this CV for the purposes of the recruitment process for which I submit my application.
+:::

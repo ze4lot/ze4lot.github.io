@@ -16,8 +16,9 @@ make cv-check
 ```
 
 Otwórz `cv/generated.html` w przeglądarce. To samodzielny HTML z osadzonym CSS
-oraz fontami Ubuntu Sans Regular/Bold 1.006. Nie wymaga serwera, JavaScriptu,
-zasobów sieciowych, zależności npm ani narzędzi do eksportu PDF.
+oraz fontami Ubuntu Sans Regular/SemiBold/Bold 1.006. Nie wymaga serwera,
+zasobów sieciowych ani zależności npm. Osadzony skrypt `paginate.js`
+rozmieszcza treść przed drukowaniem; widok ekranowy pozostaje ciągły.
 Fonty wraz z licencją są w `cv/fonts/`; nie trzeba ich instalować w systemie.
 
 Po zmianie Markdown lub CSS ponownie wykonaj `make cv`.
@@ -130,13 +131,24 @@ branża i link pozostają poniżej. Każdy pracodawca jest grupowany w całość
 od nagłówka po technologie. Druk unika dzielenia tych grup oraz sekcji
 podsumowania i kompetencji między stronami. Blok wyższy niż pełna strona
 może zostać podzielony przez przeglądarkę i wymaga przeglądu wizualnego.
+Przed eksportem `paginate.js` mierzy naturalną wysokość bloków przy docelowej
+szerokości druku i załadowanych fontach. Wypełnia kolejne strony całymi blokami,
+a odstępy między blokami dopasowują się w zakresie 12–24 px. Nadmiar wolnego
+miejsca zostaje na dole strony. Linie pozostają tylko pod nagłówkami sekcji
+nadrzędnych. Wymiary strony i marginesy
+pochodzą ze zmiennych CSS; sekcje nie mają narzuconych wysokości.
+AKRA Polska i EURA7 są wyjątkiem redakcyjnym: trafiają razem na osobną ostatnią
+stronę. Klauzula rekrutacyjna pochodzi z bloku `.recruitment-clause`
+w `cv.md` i jest dosuwana do dołu ostatniej strony (9 pt, wyrównanie do lewej).
+Jeśli brak klauzuli, dolne 22 mm pozostają zarezerwowane.
+Po zamknięciu druku wraca widok ciągły.
 Nie ma ukrywania treści ani skalowania tekstu. Numer telefonu pozostaje
 tekstem zgodnie ze źródłem.
 
 ## Ręczne drukowanie z przeglądarki
 
 Otwórz HTML, poczekaj na fonty i wybierz `Ctrl+P`: A4, pionowo, skala 100%,
-bez nagłówków i stopek. Pozostaw marginesy CSS — 12 mm góra/dół,
+bez nagłówków i stopek. Pozostaw marginesy CSS — 16 mm góra/dół,
 14 mm lewo/prawo. Tła nie są wymagane.
 Do przygotowania dokumentu rekrutacyjnego zalecane jest `make cv-pdf`,
 które stosuje te ustawienia i uruchamia kontrolę wyniku.

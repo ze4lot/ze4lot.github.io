@@ -50,6 +50,16 @@ class PDFTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'content differs'):
             validate_pdf(self.path, CVContent(HTML))
 
+    def test_generated_page_number_is_not_cv_content(self):
+        self.create()
+        with pymupdf.open(self.path) as document:
+            page = document[0]
+            page.insert_font(fontname='Footer', fontfile=str(FONT))
+            page.insert_text((530, 820), '1 / 1', fontsize=8, fontname='Footer')
+            document.saveIncr()
+        report = validate_pdf(self.path, CVContent(HTML))
+        self.assertEqual(report['warnings'], [])
+
     def test_changed_link_warns_without_blocking(self):
         self.create(href='mailto:wrong@example.com')
         report = validate_pdf(self.path, CVContent(HTML))

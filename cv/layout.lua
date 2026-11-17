@@ -65,7 +65,8 @@ function Pandoc(document)
     if block.t == 'Div' and block.classes:includes('experience-heading') then
       flush_entry()
       entry = pandoc.List({block})
-    elseif block.t == 'Header' and block.level <= 2 then
+    elseif (block.t == 'Header' and block.level <= 2)
+        or (block.t == 'Div' and block.classes:includes('recruitment-clause')) then
       flush_entry()
       grouped:insert(block)
     elseif entry then
