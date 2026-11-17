@@ -23,6 +23,8 @@ Currently building Bikeparks.pl as Founder & Software Architect, owning product 
 
 **AI-Native Development:** Agent Orchestration, Specification-Driven Development, Automated Quality Gates
 
+**Languages:** Polish · English
+
 ## Professional Experience
 
 ## Bikeparks.pl
@@ -205,7 +207,3 @@ Digital Agency
 ### Technologies
 
 PHP · Zend Framework · MySQL · JavaScript · jQuery · Flash / ActionScript
-
-## Languages
-
-Polish · English
