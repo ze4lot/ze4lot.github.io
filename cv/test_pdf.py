@@ -62,7 +62,7 @@ class PDFTests(unittest.TestCase):
 
     def test_wrong_page_count_rejected(self):
         self.create()
-        with self.assertRaisesRegex(ValueError, 'Expected 3'):
+        with self.assertRaisesRegex(ValueError, 'Expected 4'):
             validate_pdf(self.path, CVContent(HTML))
 
     def test_orphaned_company_rejected(self):

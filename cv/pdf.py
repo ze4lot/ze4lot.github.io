@@ -62,7 +62,7 @@ def normalized(text):
     return re.sub(r"[\s•\u00ad]", "", text).casefold()
 
 
-def validate_pdf(path, content, expected_pages=3):
+def validate_pdf(path, content, expected_pages=4):
     import pymupdf
 
     with pymupdf.open(path) as document:

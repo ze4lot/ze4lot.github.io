@@ -55,7 +55,7 @@ Nie nadpisuje plików w `static/files/`.
 
 Po eksporcie powstają również:
 
-- `cv/review/page-1.png`, `page-2.png`, `page-3.png` — podgląd wszystkich stron;
+- `cv/review/page-1.png`, `page-2.png`, `page-3.png`, `page-4.png` — podgląd wszystkich stron;
 - `cv/review/pdf-qa.json` — wyniki kontroli, wersje renderera oraz SHA-256 źródła,
   HTML i PDF.
 
@@ -78,7 +78,7 @@ powtórzonych nagłówków osiągnięć. Sprawdza też wszystkie `href`, składn
 
 Kontrola PDF, wykonywana przy każdym eksporcie, sprawdza:
 
-- dokładnie trzy niepuste strony A4 w pionie;
+- dokładnie cztery niepuste strony A4 w pionie;
 - pełną zgodność tekstu i kolejności z HTML, także kontakt i Languages;
 - minimum 10,5 pt oraz brak tekstu poza stroną;
 - osadzenie fontów i brak fontów Type 3;
@@ -88,7 +88,7 @@ Kontrola PDF, wykonywana przy każdym eksporcie, sprawdza:
 Nie sprawdza dostępności stron WWW ani konkretnego komercyjnego parsera ATS.
 Kontrola automatyczna uzupełnia wizualny przegląd przed wysłaniem dokumentu.
 Liczba stron jest celowym warunkiem kontroli — rozbudowa treści wymagająca
-czwartej strony zatrzyma eksport i wymaga świadomej decyzji o składzie.
+piątej strony zatrzyma eksport i wymaga świadomej decyzji o składzie.
 
 Po `make cv-setup` uruchom testy regresji:
 
@@ -128,9 +128,9 @@ bez nagłówków i stopek. Pozostaw marginesy CSS — 12 mm góra/dół,
 Do przygotowania dokumentu rekrutacyjnego zalecane jest `make cv-pdf`,
 które stosuje te ustawienia i uruchamia kontrolę wyniku.
 
-## Ostatnia weryfikacja — 14 listopada 2026
+## Ostatnia weryfikacja — 17 listopada 2026
 
 Pandoc 3.6.4, Playwright 1.65.2 / Chromium 159.0.8154.6, PyMuPDF 1.28.2:
-trzy strony A4, minimum 10,5 pt, pełny tekst, 13 linków i dziewięć par
-firma–stanowisko. Testy regresji przeszły. Treść zaakceptowanych plików
-Markdown, CSS i istniejący PDF portfolio pozostały bez zmian.
+cztery strony A4, minimum 10,5 pt, pełny tekst, 13 linków i dziewięć par
+firma–stanowisko. Testy regresji przeszły. Zaktualizowano Professional Summary, Core Competencies i Bikeparks oraz
+uzgodniony warunek czterech stron. CSS i istniejący PDF portfolio pozostały bez zmian.

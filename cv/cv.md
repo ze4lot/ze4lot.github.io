@@ -7,21 +7,21 @@ Poland · [maciek@ze4lot.pl](mailto:maciek@ze4lot.pl) · +48 509 332 460
 
 ## Professional Summary
 
-Software Architect and Technical Leader with over 16 years of experience in software development, backend architecture, and complex business systems.
+Software Architect and Technical Leader with over 16 years of software development experience, specializing in PHP backend applications and business systems. Designed and implemented production systems, modernized legacy applications, and made architectural decisions that balanced immediate delivery needs with future system evolution.
 
-Combines a strong hands-on engineering background with experience in leading development teams, mentoring engineers, and improving software delivery processes. Skilled in architectural decision-making, legacy modernization, stakeholder collaboration, and building effective engineering environments.
+Combined hands-on engineering with managing a five-person development and testing team, participating in recruitment and employee evaluations, mentoring developers, and improving delivery processes in collaboration with business stakeholders.
 
-Currently developing Bikeparks.pl as a founder and software architect, having designed and implemented a documentation-first, AI-native software development lifecycle combining autonomous coding agents with human architectural oversight, quality assurance, and controlled production delivery.
+Currently building Bikeparks.pl as Founder & Software Architect, owning product direction, architecture, and delivery through an AI-native development lifecycle.
 
 ## Core Competencies
 
-**Architecture:** Software Architecture, Domain Modeling, Legacy Modernization, Enterprise Integrations
+**Architecture:** Application & Backend Architecture, Domain Modeling, Legacy Modernization, System Integration
 
-**Engineering:** PHP, Symfony, Laravel, PostgreSQL, Redis, Docker, CI/CD
+**Engineering:** PHP, Symfony, Laravel, PostgreSQL, MySQL, Redis, Docker, CI/CD
 
-**Leadership:** Technical Leadership, Mentoring, Stakeholder Management, Engineering Process Improvement
+**Leadership & Delivery:** Technical Leadership, People Management, Recruitment & Employee Evaluation, Mentoring, Delivery Process Improvement, Business Collaboration
 
-**AI Engineering:** AI Agent Orchestration, AI-Native SDLC, Specification-Driven Development
+**AI-Native Development:** AI Agent Orchestration, Specification-Driven Development, Automated Quality Gates
 
 ## Professional Experience
 
@@ -31,19 +31,17 @@ Currently developing Bikeparks.pl as a founder and software architect, having de
 Sports Technology / Digital Platforms  
 [bikeparks.pl](https://bikeparks.pl/)
 
-Founded and developed a digital platform for discovering cycling infrastructure and connecting cyclists with facility operators and service providers.
+Public cycling infrastructure discovery platform with a catalog of bikeparks, trails, and organization profiles.
 
 ### Key Responsibilities & Achievements
 
-- **Product & Technical Leadership:** Defined product vision, business strategy, roadmap, and technical direction. Led the development and production launch of a cycling infrastructure discovery platform.
+- **Product Ownership & Delivery:** Founded the platform and led its production launch. Own product vision, business strategy, roadmap, requirements, and delivery priorities, developing the product beyond its current discovery functionality.
 
-- **Software Architecture:** Architected and directed the development of a modular Symfony-based application, including domain modeling, data persistence, integrations, and business workflows.
+- **Software Architecture:** Designed the modular Symfony application architecture and direct its evolution, defining domain rules, persistence, and integration boundaries. Oversee data ingestion, read models, and performance evaluation.
 
-- **AI-Native SDLC:** Designed and implemented an end-to-end software development lifecycle built around AI coding agents, covering requirements, architecture, implementation, code review, testing, and delivery.
+- **AI-Native SDLC:** Designed and established a development lifecycle in which AI coding agents implement changes under my architectural direction. Specify complex changes before implementation, review agent output, and retain final authority over merge and release decisions.
 
-- **Documentation-First Engineering:** Established specification- and DSL-driven development practices, ensuring documented business rules, technical decisions, and implementation traceability.
-
-- **Engineering Quality & Operations:** Established automated quality gates, E2E testing, performance benchmarking, and containerized infrastructure. Maintained final authority over merge approvals and controlled, batched production releases.
+- **Quality & Operations:** Established automated quality gates, integration and E2E tests, and performance benchmarks. Oversee containerized development and production environments, database migrations, and controlled, batched releases.
 
 ### Technologies
 
