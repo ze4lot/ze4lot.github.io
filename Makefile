@@ -33,3 +33,8 @@ cv-pdf-check: cv-check
 cv-test:
 	@test -x "$(CV_PYTHON)" || { echo "Run make cv-setup before testing PDF tooling." >&2; exit 1; }
 	PANDOC="$(PANDOC)" "$(CV_PYTHON)" -m unittest discover -s cv -p 'test_*.py'
+
+# Optional Poppler verification of the saved PDF.
+.PHONY: cv-pdf-text-check
+cv-pdf-text-check: cv-check
+	PLAYWRIGHT_BROWSERS_PATH="$(CV_VENV)/browsers" "$(CV_PYTHON)" cv/pdf.py --check-only --poppler-check

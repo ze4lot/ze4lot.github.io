@@ -5,9 +5,9 @@ import unittest
 
 import pymupdf
 
-from pdf import CVContent, validate_pdf
+from pdf import CVContent, finalize_pdf, validate_pdf
 
-FONT = Path(__file__).parent / 'fonts/UbuntuSans-Regular.ttf'
+FONT = Path(__file__).parent / 'fonts/IBMPlexSans-400.ttf'
 HTML = '''<h1>Candidate</h1><p><a href="mailto:candidate@example.com">candidate@example.com</a></p>
 <h2>Professional Experience</h2><h3>Example Company</h3>
 <div class="role-metadata"><p><strong>Engineer | 2024-Present</strong></p></div>
@@ -64,6 +64,51 @@ class PDFTests(unittest.TestCase):
         self.create(href='mailto:wrong@example.com')
         report = validate_pdf(self.path, CVContent(HTML))
         self.assertTrue(any('links' in warning for warning in report['warnings']))
+
+    def test_theme_footer_and_opt_in_running_header(self):
+        self.create()
+        with pymupdf.open(self.path) as document:
+            page = document[0]
+            page.insert_text((40, 22), 'CANDIDATE', fontsize=7)
+            page.insert_text((440, 22), 'SOFTWARE ARCHITECT', fontsize=7)
+            page.insert_text((530, 820), '01 / 01', fontsize=8)
+            document.saveIncr()
+        with self.assertRaisesRegex(ValueError, 'content differs'):
+            validate_pdf(self.path, CVContent(HTML))
+        report = validate_pdf(self.path, CVContent(HTML),
+                              running_header=('CANDIDATE', 'SOFTWARE ARCHITECT'))
+        self.assertEqual(report['warnings'], [])
+
+    def test_header_exemption_does_not_hide_body_duplicates(self):
+        self.create(lines=LINES + ['CANDIDATE'])
+        with self.assertRaisesRegex(ValueError, 'content differs'):
+            validate_pdf(self.path, CVContent(HTML), running_header=('CANDIDATE',))
+
+    def test_heading_actual_text_preserves_drawing_and_structure(self):
+        html = Path(self.directory.name) / 'cv.html'
+        html.write_text('<h2>Professional Summary</h2>')
+        with pymupdf.open() as document:
+            page = document.new_page()
+            page.insert_font(fontname='CVRegular', fontfile=str(FONT))
+            page.insert_text((40, 80), 'PROFESSIONAL SUMMARY', fontname='CVRegular', fontsize=11)
+            stream = page.get_contents()[0]
+            drawing = document.xref_stream(stream).replace(b'BT', b'BT\n1 Tc', 1)
+            document.update_stream(stream, b'/NonStruct <</MCID 0>>BDC\n' + drawing + b'\nEMC')
+            root, heading, child = [document.get_new_xref() for _ in range(3)]
+            document.update_object(root, f'<</Type /StructTreeRoot /K [{heading} 0 R]>>')
+            document.update_object(heading, f'<</Type /StructElem /S /H2 /P {root} 0 R /Pg {page.xref} 0 R /K [{child} 0 R]>>')
+            document.update_object(child, f'<</Type /StructElem /S /NonStruct /P {heading} 0 R /Pg {page.xref} 0 R /K 0>>')
+            document.xref_set_key(document.pdf_catalog(), 'StructTreeRoot', f'{root} 0 R')
+            document.save(self.path)
+            before = page.get_pixmap().samples
+        report = finalize_pdf(self.path, html)
+        self.assertEqual(report['heading_actual_text'], 1)
+        with pymupdf.open(self.path) as document:
+            self.assertEqual(document[0].get_pixmap().samples, before)
+            self.assertEqual(document.xref_get_key(child, 'S'), ('name', '/Span'))
+            data = document.xref_stream(stream)
+            self.assertIn(b'/ActualText <feff', data)
+            self.assertIn(drawing, data)
 
     def test_font_size_is_reported_without_blocking(self):
         self.create(size=9)

@@ -18,7 +18,8 @@ make cv-check
 ```
 
 Otwórz `cv/generated.html` w przeglądarce. To samodzielny HTML z osadzonym CSS
-oraz fontami Ubuntu Sans Regular/SemiBold/Bold 1.006. Nie wymaga serwera,
+oraz statycznymi fontami IBM Plex Sans Regular/Medium/SemiBold/Bold.
+Engineering Blueprint jest jedynym stylem dokumentu. Nie wymaga serwera,
 zasobów sieciowych ani zależności npm. Osadzony skrypt `paginate.js`
 rozmieszcza treść przed drukowaniem; widok ekranowy pozostaje ciągły.
 Fonty wraz z licencją są w `cv/fonts/`; nie trzeba ich instalować w systemie.
@@ -53,7 +54,12 @@ make cv-pdf
 Polecenie odtwarza HTML, sprawdza jego zgodność ze źródłem, uruchamia Chromium
 bez dostępu do sieci, czeka na osadzone fonty i generuje **`static/files/Maciej_Plocki_CV.pdf`**.
 Używa A4 i marginesów z CSS, skali 100%, bez nagłówków/stopek przeglądarki.
-PDF zawiera tekst, linki i znaczniki struktury dokumentu.
+PDF zawiera tekst, linki i znaczniki struktury dokumentu. Fonty są osadzane
+jako CID TrueType z mapowaniem Unicode. Po eksporcie nagłówki sekcji i running
+header otrzymują znaczniki Span / ActualText, aby tracking nie powodował
+dodatkowych spacji przy ekstrakcji tekstu przez Poppler. Pozycje liter pozostają
+bez zmian. Przeglądarka jest przypięta wersją Playwright; zmiana struktury
+PDF niezgodna z tym krokiem zatrzymuje eksport przed zastąpieniem wyniku.
 **Poprzedni PDF jest zastępowany dopiero po przejściu podstawowej kontroli eksportu i kompletności treści.**
 Każdy eksport zastępuje `static/files/Maciej_Plocki_CV.pdf`. Przycisk „My Resume”
 w sekcji About wskazuje `/files/Maciej_Plocki_CV.pdf`; Hugo publikuje go z katalogu
@@ -92,8 +98,8 @@ Nie jest to porównanie znaczenia ani gwarancja poprawnej kolejności czytania.
 Różnice kolejności tekstu lub linków oraz strony bez tekstu są raportowane
 jako ostrzeżenia i nie blokują zapisu PDF.
 
-Nie ma sztywnego limitu stron, minimum wielkości fontu ani walidacji geometrii,
-położenia nagłówków lub osadzenia fontów PDF. Liczba i wymiary stron oraz
+Nie ma sztywnego limitu stron, minimum wielkości fontu ani walidacji geometrii.
+Eksport wymaga osadzenia CID TrueType i oczekiwanej struktury nagłówków PDF. Liczba i wymiary stron oraz
 najmniejszy rozmiar tekstu są informacjami w `cv/review/pdf-qa.json`.
 Renderer nadal czeka na załadowanie zadeklarowanych fontów i zasobów.
 Błąd renderowania lub ładowania zasobów zatrzymuje eksport; poprzedni PDF
@@ -158,10 +164,33 @@ bez nagłówków i stopek. Pozostaw marginesy CSS — 16 mm góra/dół,
 Do przygotowania dokumentu rekrutacyjnego zalecane jest `make cv-pdf`,
 które stosuje te ustawienia i uruchamia kontrolę wyniku.
 
-## Ostatnia weryfikacja — 17 listopada 2026
+## Typografia i kontrola ekstrakcji
 
-Zaktualizowano AKRA i EURA7, zachowując korekty Agent Orchestration i Bikeparks.
-Uproszczono QA do poprawności eksportu i kompletności treści, z diagnostyką
-nieblokującą zmian składu. Aktualny eksport i testy sprawdzono poleceniami
-`make cv`, `make cv-check`, `make cv-pdf`, `make cv-pdf-check` i `make cv-test`.
-CSS oraz istniejący PDF portfolio pozostały bez zmian.
+Engineering Blueprint: IBM Plex Sans, grafit/teal, geometryczne separatory,
+tekst główny 11 pt, marginesy 16/14 mm. Na stronach od drugiej running header
+mieści się w istniejącym górnym marginesie; stopka używa numeracji `01 / 04`.
+Lokalne statyczne fonty i licencja SIL OFL 1.1 znajdują się w `cv/fonts/`.
+Nie ma alternatywnych motywów ani zależności od zewnętrznego serwisu fontów.
+
+Opcjonalna dodatkowa kontrola wymaga `pdffonts` i `pdftotext` z Poppler w PATH:
+
+```sh
+make cv-pdf-text-check
+```
+
+Nie nadpisuje PDF. Sprawdza cztery osadzone podzbiory CID TrueType, brak Type 3,
+pełne nagłówki bez dodatkowych spacji w domyślnym oraz layoutowym trybie
+`pdftotext`, a w trybie layout także kompletność tekstu względem HTML.
+Domyślna ekstrakcja Popplera może usuwać łączniki przy łączeniu wierszy.
+Wyniki narzędzi zapisują się jako `cv/review/pdffonts.txt`, `pdftotext.txt`
+i `pdftotext-layout.txt`. Poppler nie jest wymagany do eksportu PDF.
+
+## Ostatnia weryfikacja — 18 listopada 2026
+
+Zaakceptowany Engineering Blueprint przeniesiono do standardowego eksportu.
+Dokument zachowuje cztery strony A4, treść źródłową i pięć hiperłączy.
+Po konsolidacji stylów wszystkie cztery strony są identyczne wizualnie
+z zaakceptowanym PDF-em (porównanie rastra i pozycji znaków).
+Usunięto kod wariantów, stare fonty oraz podglądy eksperymentu. Archiwalne
+PDF-y w `static/files/` pozostają zachowane, a przycisk pobierania nadal
+wskazuje jedyny aktualny dokument `Maciej_Plocki_CV.pdf`.
